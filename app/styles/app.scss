@@ -35,7 +35,7 @@ body {
 
 .header-title{
   text-align:center;
-  color:rgba(250, 220, 0, 1);
+  color:rgba(235, 195, 16, 1);
   font-style:italic;
 
 }
@@ -45,7 +45,8 @@ body {
   //background-color:rgba(250, 220, 0, 1);
   padding-top:4px;
   padding-bottom:4px;
-  border-bottom:1px solid black;
+  border:5px solid rgb(235, 195, 16);
+	background-color:rgba(0, 0, 0, .45);
 }
 
 .nav-left{
@@ -55,8 +56,8 @@ body {
   }
 
 .user-id{
-  @include span-columns(3);
-  @include shift(7);
+  @include span-columns(2);
+  float:right;
   display:inline-block;
 }
 
@@ -64,4 +65,129 @@ body {
   font-size:20px;
   background:none;
   border:none;
+}
+
+//Top Stocks
+
+.top-stocks-page{
+  height:auto;
+  background-color:black;
+}
+
+.research-top-stocks{
+  color:rgba(235, 195, 16, 1);
+  margin-top:0px;
+	padding-top:10px;
+	padding-left:10px;
+}
+
+.top-stocks-title{
+  display:inline-block;
+  color:white;
+	padding-left:10px;
+}
+
+.number-of-stocks{
+  display:inline-block;
+  float:right;
+  color:white;
+	padding-right:20px;
+	padding-top:25px;
+	vertical-align:bottom;
+}
+
+.stock-table{
+  width:100%;
+}
+
+.top-stocks-options{
+  color:white;
+	padding:5px;
+	font-size:20px;
+}
+
+.ts-symbol,
+.ts-name,
+.ts-value,
+.ts-streak{
+	border-top:2px solid white;
+	border-right:2px solid white;
+}
+
+.ts-upcoming{
+	border-top:2px solid white;
+}
+
+.stock-one{
+  background-color:rgba(0, 150, 0, .7);
+  color:white;
+}
+
+.stock-two{
+  background-color:rgba(0, 150, 0, .7);
+  color:white;
+}
+
+.stock-three{
+  background-color:rgba(0, 150, 0, .7);
+  color:white;
+}
+
+.stock-four{
+  background-color:rgba(0, 150, 0, .7);
+  color:white;
+}
+
+.stock-five{
+  background-color:rgba(0, 150, 0, .7);
+  color:white;
+}
+
+.stock-six{
+  background-color:rgba(200, 0, 0, .8);
+  color:white;
+}
+
+.stock-seven{
+  background-color:rgba(200, 0, 0, .8);
+  color:white;
+}
+
+.stock-eight{
+  color:white;
+	background-color:rgba(0, 150, 0, .7);
+	 /* .gradient{
+	 		background-image:
+	 			linear-gradient(
+	 			to right,
+	 			rgb(0, 0, 0),
+	 			rgb(0, 55, 0),
+	 			rgb(0, 105, 0),
+	 			rgb(0, 150, 0)
+	 			);
+	 		}; */
+}
+
+.stock-nine{
+  background-color:rgba(0, 150, 0, .7);
+  color:white;
+}
+
+.stock-ten{
+  background-color:rgba(200, 0, 0, .8);
+  color:white;
+}
+
+.symbol-column,
+.name-column,
+.upcoming-column{
+	padding-left:5px;
+	font-size:18px;
+}
+
+.value-column,
+.streak-column{
+	text-align:center;
+	padding:5px;
+	font-size:18px;
 }
