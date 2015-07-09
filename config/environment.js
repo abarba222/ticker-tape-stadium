@@ -14,8 +14,8 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      applicationId: 'cuynRBSgSE61Pc3XOiblptLRUMiBQ3nq7phxjYEc',
+      restApiId: 'H1SByxa5a9OhRR4RxMF5zJxiYuRD7QiULtilUFJm'
     }
   };
 

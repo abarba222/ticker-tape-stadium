@@ -18,7 +18,7 @@ body {
 
 //Mobile
 
-
+//Header
 
 .header{
   max-width:786px;
@@ -28,43 +28,188 @@ body {
 }
 
 .header-box{
-  background-color:black;
-  padding-top:1px;
-  padding-bottom:1px;
+  display: span-columns(12);
+	background-color:black;
+  padding-top:10px;
+  padding-bottom:10m,mpx;
+	border-bottom:3px solid rgb(200, 200, 200);
 }
 
 .header-title{
-  text-align:center;
-  color:rgba(235, 195, 16, 1);
+  display:span-columns(6);
+	display:inline-block;
+	text-align:center;
+  color:rgba(200, 200, 200, 1);
   font-style:italic;
-
+	font-family:serif;
+	margin-top:0px;
+	margin-bottom:0px;
 }
 
-.nav-box{
+/* .nav-box{
   @include span-columns(12);
   //background-color:rgba(250, 220, 0, 1);
-  padding-top:4px;
+	padding-top:4px;
   padding-bottom:4px;
-  border:5px solid rgb(235, 195, 16);
-	background-color:rgba(0, 0, 0, .45);
-}
+
+	//border-top:3px solid rgb(200, 200, 200);
+	background-color:black;
+} */
 
 .nav-left{
-  @include span-columns(1);
+  @include span-columns(2);
   @include shift(.4);
   display:inline-block;
   }
 
 .user-id{
-  @include span-columns(2);
-  float:right;
+  display:span-columns(4);
+	float:right;
+	//@include span-columns(2);
   display:inline-block;
+	padding-right:2%;
+}
+
+.user-picture{
+	display:inline-block;
 }
 
 .username{
-  font-size:20px;
+	display:inline-block;
+	font-size:20px;
   background:none;
   border:none;
+	color:white;
+}
+
+//Dashboard
+
+//Dash Recent Games
+
+.dashboard-page{
+	height:auto;
+	background-color:black;
+	padding-bottom:50px;
+}
+
+.dashboard-title{
+	color:white;
+	margin-top:0px;
+	padding-top:10px;
+	padding-left:4%;
+}
+
+.d-recent-games{
+	color:white;
+	text-align:center;
+}
+
+.dashboard-recent-games{
+  width:100%;
+	margin-left:4%;
+	margin-right:4%;
+	border:1px solid white;
+}
+
+.d-recent-games-list{
+  color:white;
+	padding:5px;
+	font-size:20px;
+}
+
+.d-date,
+.d-home,
+.d-away,
+.d-score,{
+	text-decoration:underline;
+	padding:5px;
+}
+
+//Dash Top Stocks
+
+.d-top-stocks{
+	color:white;
+	text-align:center;
+}
+
+.dashboard-top-stocks{
+  width:100%;
+	margin-left:4%;
+	margin-right:4%;
+	border:1px solid white;
+}
+
+.d-top-stocks-list{
+  color:white;
+	padding:5px;
+	font-size:20px;
+}
+
+.d-symbol,
+.d-name,
+.d-value,
+.d-streak,{
+	text-decoration:underline;
+	padding:5px;
+}
+
+//Dash Trending
+
+.dashboard-trending-teams{
+	color:white;
+	text-align:center;
+}
+
+.dashboard-trending-up-title{
+	color:white;
+	margin-left:4%;
+}
+
+.dashboard-trending-up{
+  width:100%;
+	margin-left:4%;
+	margin-right:4%;
+	border:1px solid white;
+}
+
+.trending-up{
+  color:white;
+	padding:5px;
+	font-size:20px;
+}
+
+.tud-symbol,
+.tud-name,
+.tud-rank-jump,
+.tud-stock-jump,{
+	text-decoration:underline;
+	padding:5px;
+}
+
+.dashboard-trending-down-title{
+	color:white;
+	margin-left:4%;
+}
+
+.dashboard-trending-down{
+  width:100%;
+	margin-left:4%;
+	margin-right:4%;
+	border:1px solid white;
+}
+
+.trending-down{
+  color:white;
+	padding:5px;
+	font-size:20px;
+}
+
+.tdd-symbol,
+.tdd-name,
+.tdd-rank-drop,
+.tdd-stock-drop,{
+	text-decoration:underline;
+	padding:5px;
 }
 
 //Top Stocks
@@ -72,32 +217,36 @@ body {
 .top-stocks-page{
   height:auto;
   background-color:black;
+	padding-bottom:50px;
 }
 
 .research-top-stocks{
-  color:rgba(235, 195, 16, 1);
+  color:white;
   margin-top:0px;
 	padding-top:10px;
-	padding-left:10px;
+	padding-left:4%;
 }
 
 .top-stocks-title{
   display:inline-block;
   color:white;
-	padding-left:10px;
+	padding-left:4%;
 }
 
 .number-of-stocks{
   display:inline-block;
   float:right;
   color:white;
-	padding-right:20px;
+	padding-right:4%;
 	padding-top:25px;
 	vertical-align:bottom;
 }
 
 .stock-table{
   width:100%;
+	margin-left:4%;
+	margin-right:4%;
+	border:1px solid white;
 }
 
 .top-stocks-options{
@@ -109,73 +258,72 @@ body {
 .ts-symbol,
 .ts-name,
 .ts-value,
-.ts-streak{
-	border-top:2px solid white;
-	border-right:2px solid white;
-}
-
+.ts-streak,
 .ts-upcoming{
-	border-top:2px solid white;
+	text-decoration:underline;
+	padding:5px;
 }
 
 .stock-one{
-  background-color:rgba(0, 150, 0, .7);
-  color:white;
+  background-color:black;
+  color:rgba(0, 150, 0, 1);
 }
 
 .stock-two{
-  background-color:rgba(0, 150, 0, .7);
-  color:white;
+  background-color:rgba(175, 175, 175, .25);
+  color:rgba(0, 150, 0, 1);
 }
 
 .stock-three{
-  background-color:rgba(0, 150, 0, .7);
-  color:white;
+  background-color:black;
+  color:rgba(0, 150, 0, 1);
 }
 
 .stock-four{
-  background-color:rgba(0, 150, 0, .7);
-  color:white;
+  background-color:rgba(175, 175, 175, .25);
+  color:rgba(0, 150, 0, 1);
 }
 
 .stock-five{
-  background-color:rgba(0, 150, 0, .7);
-  color:white;
+  background-color:black;
+  color:rgba(0, 150, 0, 1);
 }
 
 .stock-six{
-  background-color:rgba(200, 0, 0, .8);
-  color:white;
+  background-color:rgba(175, 175, 175, .25);
+  color:rgba(200, 0, 0, 1);
 }
 
 .stock-seven{
-  background-color:rgba(200, 0, 0, .8);
-  color:white;
+  background-color:black;
+  color:rgba(200, 0, 0, 1);
 }
 
 .stock-eight{
-  color:white;
-	background-color:rgba(0, 150, 0, .7);
-	 /* .gradient{
-	 		background-image:
-	 			linear-gradient(
-	 			to right,
-	 			rgb(0, 0, 0),
-	 			rgb(0, 55, 0),
-	 			rgb(0, 105, 0),
-	 			rgb(0, 150, 0)
-	 			);
-	 		}; */
+  background-color:rgba(175, 175, 175, .25);
+	color:rgba(0, 150, 0, 1);
 }
 
+
+/* .stock-eight .gradient{
+	background-image:
+		linear-gradient(
+		to right,
+		rgb(0, 0, 0),
+		rgb(0, 55, 0),
+		rgb(0, 105, 0),
+		rgb(0, 150, 0)
+		);
+	} */
+
 .stock-nine{
-  background-color:rgba(0, 150, 0, .7);
-  color:white;
+  background-color:black;
+  color:rgba(0, 150, 0, 1);
 }
 
 .stock-ten{
-  background-color:rgba(200, 0, 0, .8);
-  color:white;
+  background-color:rgba(175, 175, 175, .25);
+  color:rgba(200, 0, 0, 1);
 }
 
 .symbol-column,
