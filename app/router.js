@@ -10,7 +10,7 @@ Router.map(function() {
     this.route('portfolio');
     this.route('top-stocks');
     this.route('standings');
-    this.route('stocks');
+    this.route('stocks', {path: 'stocks/:team_id'});
     this.route('dashboard');
     this.route('help');
   });

@@ -1,1 +1,36 @@
-{{yield}}
+<h1 class="research-top-stocks">Research</h1>
+
+<div class="top-stocks-header">
+  <h2 class="top-stocks-title">Top Stocks</h2>
+  <span class="number-of-stocks">1-10
+    <select>
+      <optgroup>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>All</option>
+      </optgroup>
+    </select>
+  </span>
+</div>
+
+<table class="stock-table">
+  <tr class="top-stocks-options">
+    <th class="ts-symbol">Sym</th>
+    <th class="ts-name">Name</th>
+    <th class="ts-value">Value</th>
+    <th class="ts-streak">Streak</th>
+    <th class="ts-upcoming">Upcoming</th>
+  </tr>
+
+{{#each content as |stock|}}
+  <tr class=".all-top-stocks">
+    <td class="symbol-column">{{stock.symbol}}</td>
+    <td class="name-column">{{link-to stock.Teams "header.stocks" stock}}</td>
+    <td class="value-column">{{stock.value}}</td>
+    <td class="streak-column">{{stock.streak}}</td>
+    <td class="upcoming-column">@Shalke 04</td>
+  </tr>
+{{/each}}
+
+</table>

@@ -14,6 +14,7 @@ body {
 	font-family: sans-serif;
 	height: 100%;
 	width: 100%;
+	background-color:rgba(235, 195, 16, 1);
 }
 
 //Mobile
@@ -247,19 +248,38 @@ body {
 	margin-left:4%;
 	margin-right:4%;
 	border:1px solid white;
+	@include outer-container(100%);
 }
 
 .top-stocks-options{
   color:white;
 	padding:5px;
 	font-size:20px;
+	@include span-columns(12);
 }
 
-.ts-symbol,
-.ts-name,
-.ts-value,
-.ts-streak,
+.ts-symbol{
+	@include span-columns(2);
+	text-decoration:underline;
+	padding:5px;
+}
+.ts-name{
+	@include span-columns(4);
+	text-decoration:underline;
+	padding:5px;
+}
+.ts-value{
+	@include span-columns(2);
+	text-decoration:underline;
+	padding:5px;
+}
+.ts-streak{
+	@include span-columns(2);
+	text-decoration:underline;
+	padding:5px;
+}
 .ts-upcoming{
+	@include span-columns(2);
 	text-decoration:underline;
 	padding:5px;
 }
@@ -269,7 +289,7 @@ body {
   color:rgba(0, 150, 0, 1);
 }
 
-.stock-two{
+/* .stock-two{
   background-color:rgba(175, 175, 175, .25);
   color:rgba(0, 150, 0, 1);
 }
@@ -305,7 +325,7 @@ body {
 }
 
 
-/* .stock-eight .gradient{
+.stock-eight .gradient{
 	background-image:
 		linear-gradient(
 		to right,
@@ -314,7 +334,7 @@ body {
 		rgb(0, 105, 0),
 		rgb(0, 150, 0)
 		);
-	} */
+	}
 
 .stock-nine{
   background-color:black;
@@ -324,18 +344,83 @@ body {
 .stock-ten{
   background-color:rgba(175, 175, 175, .25);
   color:rgba(200, 0, 0, 1);
+} */
+
+.all-top-stocks{
+	@include span-columns(12);
 }
 
-.symbol-column,
-.name-column,
+.symbol-column{
+	@include span-columns(2);
+	padding:7px;
+	font-size:18px;
+}
+
+.name-column{
+	@include span-columns(4);
+	padding:7px;
+	font-size:18px;
+}
+
 .upcoming-column{
-	padding-left:5px;
+	@include span-columns(2);
+	padding:7px;
 	font-size:18px;
 }
 
-.value-column,
-.streak-column{
+.value-column{
+	@include span-columns(2);
 	text-align:center;
-	padding:5px;
+	padding:7px;
 	font-size:18px;
+}
+.streak-column{
+	@include span-columns(2);
+	text-align:center;
+	padding:7px;
+	font-size:18px;
+}
+
+//Stocks
+
+.team-stocks-page{
+	height:auto;
+	background-color:black;
+	padding-bottom:50px;
+}
+
+.stock-header{
+	margin-left:3%;
+}
+
+.stock-header-left{
+	display:inline-block;
+}
+
+.stock-league{
+	padding-top:20px;
+	color:white;
+	margin:0px;
+}
+
+.stock-name{
+	color:white;
+	margin-top:10px;
+}
+
+.stock-header-right{
+	display:inline-block;
+	float:right;
+	margin-right:3%;
+}
+
+.stock-symbol{
+	color:white;
+	margin-top:10px;
+}
+
+.stock-value{
+	padding-top:20px;
+	color:green;
+	margin:0px;
 }

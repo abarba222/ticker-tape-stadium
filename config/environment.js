@@ -16,6 +16,16 @@ module.exports = function(environment) {
     APP: {
       applicationId: 'cuynRBSgSE61Pc3XOiblptLRUMiBQ3nq7phxjYEc',
       restApiId: 'H1SByxa5a9OhRR4RxMF5zJxiYuRD7QiULtilUFJm'
+    },
+
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self'",
+      'connect-src': "'self' api.parse.com",
+      'img-src': "'self'",
+      'style-src': "'self'",
+      'media-src': "'self'"
     }
   };
 
