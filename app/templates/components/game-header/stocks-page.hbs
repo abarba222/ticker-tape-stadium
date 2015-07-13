@@ -1,21 +1,26 @@
 <div class="team-stocks-page">
 
   <div class="stock-header">
-      <h1 class="stock-name">{{model.Teams}}</h1>
-      <h1 class="stock-league">{{model.Name}}</h1>
-      <h1 class="stock-symbol">{{model.symbol}}</h1>
-      <h1 class="stock-value">{{model.value}}</h1>
+      <h1 class="stock-name">{{model.team.Teams}}</h1>
+      <h1 class="stock-league">{{model.team.Name}}</h1>
+      <h1 class="stock-symbol">{{model.team.symbol}}</h1>
+      <h1 class="stock-value">{{model.team.value}}</h1>
   </div>
 
-  <div class="recent-stock-matches">
+  <table class="recent-stock-matches">
     <h2 class="s-recent-matches">Recent Matches</h2>
-    <ul class="recent-match-list">
-      <li class="t-date">Date</li>
-      <li class="t-home">Home</li>
-      <li class="t-away">Away</li>
-      <li class="t-score">Score</li>
-    </ul>
-  </div>
+    <tr class="recent-match-list">
+      <th class="t-date">Date</th>
+      <th class="t-home">Home</th>
+      <th class="t-away">Away</th>
+      <th class="t-score">Score</th>
+    </tr>
+
+    {{#each model.recent as |match|}}
+      {{recent-match match=match}}
+    {{/each}}
+  </table>
+
 
   <div class="team-stock-performance">
     <h2 class="performance-title">Performane</h2>
@@ -25,7 +30,7 @@
 
     <div class="trade-stock-header">
       <h2 class="trade-stock">Trade</h2>
-      <h2 class="stock-price">Price</h2>
+      <h2 class="stock-price">Price: {{model.team.value}}</h2>
     </div>
 
     <div class="trade-stock-action">
@@ -42,7 +47,3 @@
   </div>
 
 </div>
-
-
-
-{{yield}}

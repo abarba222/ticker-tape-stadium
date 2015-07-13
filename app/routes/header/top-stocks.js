@@ -21,20 +21,20 @@ export default Ember.Route.extend({
 // App.TopStocksComponent = Ember.Component.extend(Ember.SortableMixin, {
 //
 //   actions: {
-//     sortAge: function(){
-//       // sort by age
-//       if(this.get('sortProperties.0') == 'age') {
+//     sortValue: function(){
+//       // sort by value
+//       if(this.get('sortProperties.0') === 'value') {
 //         this.toggleProperty('sortAscending');
 //       }
-//       this.set('sortProperties', ['age']);
-//     },
-//     sortName: function(){
-//       // sort by name
-//       if(this.get('sortProperties.0') == 'name') {
-//         this.toggleProperty('sortAscending');
-//       }
-//       this.set('sortProperties', ['name']);
+//       this.set('sortProperties', ['value']);
 //     }
-//   }
+// //     sortName: function(){
+// //       // sort by name
+// //       if(this.get('sortProperties.0') == 'name') {
+// //         this.toggleProperty('sortAscending');
+// //       }
+// //       this.set('sortProperties', ['name']);
+// //     }
+//  }
 //
 // });

@@ -5,6 +5,8 @@ $gutter: 0em;
 $light-gray: rgb(200,200,200);
 $medium-gray: rgb(175,175,175);
 
+$mobile: new-breakpoint(max-width 768px);
+
 * {
 	box-sizing: border-box;
 	outline: none;
@@ -23,10 +25,14 @@ body {
 //Header
 
 .header{
-  max-width:786px;
   height:auto;
-  @include outer-container(100%);
   margin-top:0px;
+
+	@include media($mobile) {
+		min-width: 0;
+	  max-width: 768px;
+	}
+
 }
 
 .header-box{
@@ -34,6 +40,15 @@ body {
   padding-top:10px;
   padding-bottom:10px;
 	border-bottom:3px solid rgb(235, 195, 16);
+
+  background-image: linear-gradient(
+		to right,
+		rgb(0, 0, 0),
+		rgb(25, 0, 0),
+		rgb(55, 0, 0),
+		rgb(105, 0, 0),
+		rgb(150, 0, 0)
+	);
 }
 
 .header-title{
@@ -215,14 +230,14 @@ body {
 
 .top-stocks-page{
   height:auto;
-  background-color:rgba(230, 230, 230, 1);
+  background-color:black;
 	padding-bottom:50px;
 }
 
 .research-top-stocks{
-  color:black;
+  color:white;
   margin-top:0px;
-	padding-top:10px;
+	padding-top:30px;
 	padding-left:4%;
 }
 
@@ -393,8 +408,13 @@ body {
 	font-size:18px;
 		a{
 			text-decoration: none;
-			color:black;
+			color:inherit;
 		}
+}
+
+.name-column:hover{
+	color:rgb(235, 195, 16);
+	font-weight:bold;
 }
 
 .league-column{
@@ -428,7 +448,8 @@ body {
 }
 
 .stock-header{
-	margin-left:3%;
+	margin-left:4%;
+	padding-top:20px;
 }
 
 .stock-league{
@@ -451,4 +472,34 @@ body {
 	padding-top:20px;
 	color:green;
 	margin:0px;
+}
+
+.recent-stock-matches{
+	width:92%;
+	background-color:white;
+	@include outer-container(100%);
+}
+
+.s-recent-matches{
+	padding-left:4%;
+}
+
+.recent-match-list{
+	@include span-columns(12);
+}
+
+.t-date{
+	@include span-columns(2);
+}
+
+.t-home{
+	@include span-columns(4);
+}
+
+.t-away{
+	@include span-columns(4);
+}
+
+.t-score{
+	@include span-columns(2);
 }
