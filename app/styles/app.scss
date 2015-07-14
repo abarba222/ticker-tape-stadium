@@ -36,16 +36,16 @@ body {
 }
 
 .header-box{
-	background-color:black;
+	background-color:rgb(25, 25, 25);
   padding-top:10px;
   padding-bottom:10px;
 	border-bottom:3px solid rgb(235, 195, 16);
 
   background-image: linear-gradient(
 		to right,
-		rgb(0, 0, 0),
-		rgb(25, 0, 0),
-		rgb(55, 0, 0),
+		rgb(25, 25, 25),
+		rgb(35, 15, 15),
+		rgb(55, 5, 5),
 		rgb(105, 0, 0),
 		rgb(150, 0, 0)
 	);
@@ -66,7 +66,7 @@ body {
   padding-bottom:4px;
 
 	//border-top:3px solid rgb(200, 200, 200);
-	background-color:black;
+	background-color:rgb(25, 25, 25);
 }
 
 .nav-left{
@@ -102,7 +102,7 @@ body {
 
 .dashboard-page{
 	height:auto;
-	background-color:black;
+	background-color:rgb(25, 25, 25);
 	padding-bottom:50px;
 }
 
@@ -113,124 +113,378 @@ body {
 	padding-left:4%;
 }
 
-.d-recent-games{
-	color:white;
-	text-align:center;
+.dashboard-recent-games{
+  @include outer-container(100%);
+	width:92%;
+	border:3px solid rgb(235, 195, 16);
+	border-radius:5px;
+	background-color:white;
 }
 
-.dashboard-recent-games{
-  width:100%;
-	margin-left:4%;
-	margin-right:4%;
-	border:1px solid white;
+.d-recent-games{
+	color:rgb(25, 25, 25);
+	text-align:left;
+	padding-left:4%;
 }
 
 .d-recent-games-list{
-  color:white;
+	@include span-columns(12);
+  color:rgb(25, 25, 25);
 	padding:5px;
+	//padding-left:4%;
 	font-size:20px;
 }
 
-.d-date,
-.d-home,
-.d-away,
+.d-date{
+	@include span-columns(2);
+	font-weight:bold;
+	color:rgb(25, 25, 25);
+	text-align:left;
+}
+
+.d-home{
+	@include span-columns(4);
+	font-weight:bold;
+	color:rgb(25, 25, 25);
+	text-align:left;
+}
+
+.d-away{
+	@include span-columns(4);
+	font-weight:bold;
+	color:rgb(25, 25, 25);
+	text-align:left;
+}
+
 .d-score,{
-	text-decoration:underline;
+	@include span-columns(2);
+	text-align:center;
+	font-weight:bold;
+	color:rgb(25, 25, 25);
+}
+
+.d-recent-games-data{
+	@include span-columns(12);
 	padding:5px;
+	//padding-left:4%;
+	padding-top:10px;
+}
+
+.d-date-column{
+	@include span-columns(2);
+	text-align:left;
+}
+
+.d-home-column{
+	@include span-columns(4);
+	text-align:left;
+}
+
+.d-away-column{
+	@include span-columns(4);
+	text-align:left;
+}
+
+.d-score-column{
+	@include span-columns(2);
+	text-align:center;
 }
 
 //Dash Top Stocks
 
-.d-top-stocks{
-	color:white;
-	text-align:center;
+.dashboard-top-stocks{
+	@include outer-container(100%);
+	width:92%;
+	border:3px solid rgb(235, 195, 16);
+	border-radius:5px;
+	background-color:white;
+	margin-top:20px;
+	padding-bottom:10px;
 }
 
-.dashboard-top-stocks{
-  width:100%;
-	margin-left:4%;
-	margin-right:4%;
-	border:1px solid white;
+.dashboard-top-stocks td{
+	//border-right: 2px solid black;
+}
+
+.dashboard-top-stocks tr{
+	//background-color:black;
+}
+
+.dashboard-top-stocks tr:nth-child(odd){
+	background:white;
+}
+
+.dashboard-top-stocks tr:nth-child(even){
+	background:rgb(225, 225, 225);
+}
+
+.d-top-stocks{
+	color:rgb(25, 25, 25);
+	text-align:left;
+	padding-left:4%;
 }
 
 .d-top-stocks-list{
-  color:white;
+	@include span-columns(12);
+  color:rgb(25, 25, 25);
 	padding:5px;
+	//padding-left:4%;
 	font-size:20px;
 }
 
-.d-symbol,
-.d-name,
-.d-value,
-.d-streak,{
-	text-decoration:underline;
+.d-symbol{
+	@include span-columns(2);
+	font-weight:bold;
+	color:rgb(25, 25, 25);
+	text-align:left;
+}
+
+.d-name{
+	@include span-columns(6);
+	font-weight:bold;
+	color:rgb(25, 25, 25);
+	text-align:left;
+}
+
+.d-value{
+	@include span-columns(2);
+	font-weight:bold;
+	color:rgb(25, 25, 25);
+	text-align:center;
+}
+
+.d-streak{
+	@include span-columns(2);
+	font-weight:bold;
+	color:rgb(25, 25, 25);
+	text-align:center;
+}
+
+.d-top-stocks-data{
+	@include span-columns(12);
 	padding:5px;
+	//padding-left:4%;
+	padding-top:10px;
+}
+
+.d-symbol-column{
+	@include span-columns(2);
+	text-align:left;
+}
+
+.d-name-column{
+	@include span-columns(6);
+	text-align:left;
+}
+
+.d-value-column{
+	@include span-columns(2);
+	text-align:center;
+}
+
+.d-streak-column{
+	@include span-columns(2);
+	text-align:center;
 }
 
 //Dash Trending
 
+.both-trending{
+	@include outer-container(100%);
+	width:92%;
+	margin-top:20px;
+	background-color:white;
+	border-radius:5px;
+	border:3px solid rgb(235, 195, 16);
+}
+
+.dashboard-trending-up{
+
+}
+
+.dashboard-trending-up td{
+	//border-right: 2px solid black;
+}
+
+.dashboard-trending-up tr{
+	//background-color:black;
+}
+
+.dashboard-trending-up tr:nth-child(odd){
+	background:white;
+}
+
+.dashboard-trending-up tr:nth-child(even){
+	background:rgb(225, 225, 225);
+}
+
 .dashboard-trending-teams{
-	color:white;
+	color:rgb(25, 25, 25);
 	text-align:center;
 }
 
 .dashboard-trending-up-title{
-	color:white;
-	margin-left:4%;
+	color:rgb(25, 25, 25);
+	width:100%;
+	color:green;
 }
 
 .dashboard-trending-up{
-  width:100%;
-	margin-left:4%;
-	margin-right:4%;
-	border:1px solid white;
+	@include outer-container(100%);
+	width:92%;
 }
 
 .trending-up{
-  color:white;
-	padding:5px;
+	@include span-columns(12);
+	//padding:5px;
 	font-size:20px;
+	font-weight:bold;
 }
 
-.tud-symbol,
-.tud-name,
-.tud-rank-jump,
-.tud-stock-jump,{
-	text-decoration:underline;
+.tud-symbol{
+	@include span-columns(2);
+	text-align:left;
+}
+
+.tud-name{
+	@include span-columns(6);
+	text-align:left;
+}
+
+.tud-rank-jump{
+	@include span-columns(2);
+	text-align:center;
+}
+
+.tud-stock-jump{
+	@include span-columns(2);
+	text-align:center;
+}
+
+.trending-up-teams{
+	@include span-columns(12);
 	padding:5px;
+	//padding-left:4%;
+	padding-top:10px;
+}
+
+.tud-symbol-column{
+	@include span-columns(2);
+	text-align:left;
+}
+
+.tud-name-column{
+	@include span-columns(6);
+	text-align:left;
+}
+
+.tud-rank-jump-column{
+	@include span-columns(2);
+	text-align:center;
+	color:green;
+	font-weight:bold;
+}
+
+.tud-stock-jump-column{
+	@include span-columns(2);
+	text-align:center;
+	background-color:green;
+	border-radius:10px;
+	color:white;
+	font-weight:bold;
 }
 
 .dashboard-trending-down-title{
-	color:white;
-	margin-left:4%;
+	color:red;
 }
 
 .dashboard-trending-down{
-  width:100%;
-	margin-left:4%;
-	margin-right:4%;
-	border:1px solid white;
+  @include outer-container(100%);
+	width:92%;
+	padding-bottom:10px;
 }
+
+.dashboard-trending-down td{
+	//border-right: 2px solid black;
+}
+
+.dashboard-trending-down tr{
+	//background-color:black;
+}
+
+.dashboard-trending-down tr:nth-child(odd){
+	background:white;
+}
+
+.dashboard-trending-down tr:nth-child(even){
+	background:rgb(225, 225, 225);
+}
+
 
 .trending-down{
-  color:white;
-	padding:5px;
+  @include span-columns(12);
+	color:rgb(25, 25, 25);
+	//padding:5px;
 	font-size:20px;
+	font-weight:bold;
 }
 
-.tdd-symbol,
-.tdd-name,
-.tdd-rank-drop,
-.tdd-stock-drop,{
-	text-decoration:underline;
-	padding:5px;
+.tdd-symbol{
+	@include span-columns(2);
+	text-align:left;
+}
+
+.tdd-name{
+	@include span-columns(6);
+	text-align:left;
+}
+
+.tdd-rank-drop{
+	@include span-columns(2);
+	text-align:center;
+}
+
+.tdd-stock-drop{
+	@include span-columns(2);
+	text-align:center;
+}
+
+.trending-down-teams{
+	@include span-columns(12);
+	padding-top:20px;
+}
+
+.tdd-symbol-column{
+	@include span-columns(2);
+	text-align:left;
+}
+
+.tdd-name-column{
+	@include span-columns(6);
+	text-align:left;
+}
+
+.tdd-rank-drop-column{
+	@include span-columns(2);
+	text-align:center;
+	color:red;
+	font-weight:bold;
+}
+
+.tdd-stock-drop-column{
+	@include span-columns(2);
+	text-align:center;
+	color:white;
+	background-color:red;
+	border-radius:10px;
+	font-weight:bold;
 }
 
 //Top Stocks
 
 .top-stocks-page{
   height:auto;
-  background-color:black;
+  background-color:rgb(25, 25, 25);
 	padding-bottom:50px;
 }
 
@@ -252,14 +506,14 @@ body {
 
 .top-stocks-title{
   display:inline-block;
-  color:black;
+  color:rgb(25, 25, 25);
 	padding-left:4%;
 }
 
 .number-of-stocks{
   display:inline-block;
   float:right;
-  color:black;
+  color:rgb(25, 25, 25);
 	padding-right:4%;
 	padding-top:25px;
 	vertical-align:bottom;
@@ -330,68 +584,6 @@ body {
 	padding:5px;
 }
 
-.stock-one{
-  background-color:black;
-  color:rgba(0, 150, 0, 1);
-}
-
-/* .stock-two{
-  background-color:rgba(175, 175, 175, .25);
-  color:rgba(0, 150, 0, 1);
-}
-
-.stock-three{
-  background-color:black;
-  color:rgba(0, 150, 0, 1);
-}
-
-.stock-four{
-  background-color:rgba(175, 175, 175, .25);
-  color:rgba(0, 150, 0, 1);
-}
-
-.stock-five{
-  background-color:black;
-  color:rgba(0, 150, 0, 1);
-}
-
-.stock-six{
-  background-color:rgba(175, 175, 175, .25);
-  color:rgba(200, 0, 0, 1);
-}
-
-.stock-seven{
-  background-color:black;
-  color:rgba(200, 0, 0, 1);
-}
-
-.stock-eight{
-  background-color:rgba(175, 175, 175, .25);
-	color:rgba(0, 150, 0, 1);
-}
-
-
-.stock-eight .gradient{
-	background-image:
-		linear-gradient(
-		to right,
-		rgb(0, 0, 0),
-		rgb(0, 55, 0),
-		rgb(0, 105, 0),
-		rgb(0, 150, 0)
-		);
-	}
-
-.stock-nine{
-  background-color:black;
-  color:rgba(0, 150, 0, 1);
-}
-
-.stock-ten{
-  background-color:rgba(175, 175, 175, .25);
-  color:rgba(200, 0, 0, 1);
-} */
-
 .all-top-stocks{
 	@include span-columns(12);
 }
@@ -413,8 +605,8 @@ body {
 }
 
 .name-column:hover{
-	color:rgb(235, 195, 16);
 	font-weight:bold;
+	color:rgb(25, 25, 25);
 }
 
 .league-column{
@@ -443,41 +635,68 @@ body {
 
 .team-stocks-page{
 	height:auto;
-	background-color:black;
+	background-color:rgb(25, 25, 25);
 	padding-bottom:50px;
 }
 
+.stock-header-title{
+	margin:0px;
+	color:white;
+	padding-left:4%;
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
 .stock-header{
+	@include outer-container(100%);
+	width:92%;
 	margin-left:4%;
 	padding-top:20px;
+	background-color:white;
+	border-radius:5px;
+	border:3px solid rgb(235, 195, 16);
+}
+
+.stock-name{
+	color:rgb(25, 25, 25);
+	text-align:center;
+	padding-top:5px;
+	margin:0px;
+	padding-left:4%;
+	padding-bottom:15px;
+	border-bottom:1px solid rgb(25, 25, 25);
+	background-color:rgb(235, 195 ,16);
 }
 
 .stock-league{
 	padding-top:20px;
-	color:white;
+	color:rgb(25, 25, 25);
 	margin:0px;
-}
-
-.stock-name{
-	color:white;
-	margin-top:10px;
+	padding-left:4%;
 }
 
 .stock-symbol{
-	color:white;
-	margin-top:10px;
+	color:rgb(25, 25, 25);
+	margin-top:15px;
+	padding-left:4%;
+	display:inline-block;
 }
 
 .stock-value{
-	padding-top:20px;
-	color:green;
+	padding-top:15px;
+	color:rgb(25, 25, 25);
 	margin:0px;
+	display:inline-block;
+	padding-left:4%;
 }
 
 .recent-stock-matches{
 	width:92%;
 	background-color:white;
 	@include outer-container(100%);
+	border-radius: 5px;
+	border:3px solid rgb(235, 195, 16);
+	margin-top:30px;
 }
 
 .s-recent-matches{
@@ -490,16 +709,118 @@ body {
 
 .t-date{
 	@include span-columns(2);
+	font-size:20px;
+	text-align:left;
+	padding:5px;
 }
 
 .t-home{
 	@include span-columns(4);
+	font-size:20px;
+	text-align:left;
+	padding:5px;
 }
 
 .t-away{
 	@include span-columns(4);
+	font-size:20px;
+	text-align:left;
+	padding:5px;
 }
 
 .t-score{
 	@include span-columns(2);
+	font-size:20px;
+	padding:5px;
+}
+
+.recent-match-info{
+	@include span-columns(12);
+	padding:5px;
+}
+
+.t-date-column{
+	@include span-columns(2);
+	text-align:left;
+}
+
+.t-home-column{
+	@include span-columns(4);
+	text-align:left;
+}
+
+.t-away-column{
+	@include span-columns(4);
+	text-align:left;
+}
+
+.t-score-column{
+	@include span-columns(2);
+	text-align:center;
+}
+
+.performance-title{
+	color:white;
+	padding-left:4%;
+	padding-top:30px;
+	margin:0px;
+	padding-bottom:15px;
+}
+
+.buy-sell-stocks{
+	background-color:white;
+	//background-color:rgba(235, 195, 16, .9);
+	@include outer-container(100%);
+	width:92%;
+	border-radius:5px;
+	border:3px solid rgb(235, 195, 16);
+}
+
+.trade-stock-header{
+
+}
+
+.trade-stock{
+	display:inline-block;
+	padding-left:4%;
+}
+
+.stock-price{
+	display:inline-block;
+	float:right;
+	padding-right:4%;
+}
+
+.trade-stock-action{
+	padding-left:4%;
+	margin-top:10px;
+}
+
+.buy-sell-action{
+	font-weight:bold;
+	font-size:14px;
+	border-radius:5px;
+}
+
+.stock-input{
+	font-size:14px;
+	border:1px solid black;
+}
+
+.submit-action{
+	font-weight:bold;
+	font-size:14px;
+	border-radius:5px;
+}
+
+.trade-stock-bottom{
+	padding-top:15px;
+}
+
+.total-stock-amount{
+	padding-left:4%;
+}
+
+.shares-you-own{
+	padding-left:4%;
 }

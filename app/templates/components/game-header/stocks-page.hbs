@@ -1,10 +1,12 @@
 <div class="team-stocks-page">
 
+  <h1 class="stock-header-title">Stocks</h1>
+
   <div class="stock-header">
       <h1 class="stock-name">{{model.team.Teams}}</h1>
       <h1 class="stock-league">{{model.team.Name}}</h1>
       <h1 class="stock-symbol">{{model.team.symbol}}</h1>
-      <h1 class="stock-value">{{model.team.value}}</h1>
+      <h1 class="stock-value">${{model.team.value}}</h1>
   </div>
 
   <table class="recent-stock-matches">
@@ -23,20 +25,20 @@
 
 
   <div class="team-stock-performance">
-    <h2 class="performance-title">Performane</h2>
+    <h2 class="performance-title">Performance</h2>
   </div>
 
   <div class="buy-sell-stocks">
 
     <div class="trade-stock-header">
       <h2 class="trade-stock">Trade</h2>
-      <h2 class="stock-price">Price: {{model.team.value}}</h2>
+      <h2 class="stock-price">${{model.team.value}}</h2>
     </div>
 
     <div class="trade-stock-action">
       <button class="buy-sell-action">Action</button>
-      <input type="text" placeholder="Quantity">
-      <button class="sumbit-action" type="submit">Submit</button>
+      <input class="stock-input" type="text" placeholder="Quantity">
+      <button class="submit-action" type="submit">Submit</button>
     </div>
 
     <div class=trade-stock-bottom>
