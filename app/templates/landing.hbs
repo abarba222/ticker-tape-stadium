@@ -1,0 +1,11 @@
+<button>Sign up with Facebook</button>
+
+{{#link-to 'users.create'}}
+  <button>Sign up with email</button>
+{{/link-to}}
+
+{{#link-to 'sessions.create'}}
+  <p>Already have an account? Log In.</p>
+{{/link-to}}
+
+{{outlet}}

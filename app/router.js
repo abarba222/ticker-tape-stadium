@@ -15,6 +15,18 @@ Router.map(function() {
     this.route('help');
   });
   this.route('portfolio');
+
+  this.route('landing', {path: 'header/help'});
+
+  this.route('sessions', function() {
+    this.route('create');
+  });
+
+  this.route('users', function() {
+    this.route('create');
+    this.route('show', {path: ':parse-user_id'});
+  });
+  this.route('users.current', {path: 'me'});
 });
 
 export default Router;
