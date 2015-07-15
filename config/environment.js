@@ -26,6 +26,14 @@ module.exports = function(environment) {
       'img-src': "'self'",
       'style-src': "'self'",
       'media-src': "'self'"
+    },
+
+    'simple-auth': {
+      authenticationRoute: 'landing',
+      routeIfAlreadyAuthenticated: 'users.current',
+      routeAfterAuthentication: 'header.portfolio',
+      authorizer: 'authorizer:parse',
+      crossOriginWhitelist: ['https://api.parse.com'],
     }
   };
 

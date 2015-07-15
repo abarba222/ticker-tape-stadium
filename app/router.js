@@ -14,19 +14,18 @@ Router.map(function() {
     this.route('dashboard');
     this.route('help');
   });
-  this.route('portfolio');
 
-  this.route('landing', {path: 'header/help'});
+  this.route('landing', {path: ''});
 
   this.route('sessions', function() {
     this.route('create');
   });
 
   this.route('users', function() {
-    this.route('create');
+    this.route('create', {path: 'header/help'});
     this.route('show', {path: ':parse-user_id'});
   });
-  this.route('users.current', {path: 'me'});
+  this.route('users.current', {path: 'header/portfolio'});
 });
 
 export default Router;
