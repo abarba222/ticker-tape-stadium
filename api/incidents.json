@@ -1,0 +1,2754 @@
+{
+  "t": 197,
+  "n": 422,
+  "i": [
+    {
+      "event_incident_typefk": 344,
+      "elapsed": 0,
+      "sortorder": -1,
+      "type": "special",
+      "venue": "Emirates Stadium",
+      "id": 4510373,
+      "n": 1
+    },
+    {
+      "event_incident_typefk": 29,
+      "elapsed": 0,
+      "sortorder": 0,
+      "type": "1h",
+      "id": 4510405,
+      "n": 2
+    },
+    {
+      "event_incident_typefk": 279,
+      "elapsed": 1,
+      "sortorder": 0,
+      "type": "kickoff",
+      "team": 9825,
+      "id": 4510407,
+      "n": 3
+    },
+    {
+      "event_incident_typefk": 794,
+      "elapsed": 1,
+      "sortorder": 1,
+      "type": "pass",
+      "subtype": "pass",
+      "team": 9825,
+      "player1": 36378,
+      "id": 4510421,
+      "n": 4
+    },
+    {
+      "event_incident_typefk": 61,
+      "elapsed": 2,
+      "sortorder": 0,
+      "type": "shoton",
+      "subtype": "blocked_shot",
+      "coordinates": [
+        33,
+        8
+      ],
+      "team": 9825,
+      "player1": 31013,
+      "stats": {
+        "blocked": 1
+      },
+      "id": 4510425,
+      "n": 9
+    },
+    {
+      "event_incident_typefk": 34,
+      "elapsed": 3,
+      "sortorder": 0,
+      "type": "offside",
+      "coordinates": [
+        33,
+        57
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "offsides": 1
+      },
+      "id": 4510452,
+      "n": 11
+    },
+    {
+      "event_incident_typefk": 794,
+      "elapsed": 4,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "pass",
+      "team": 9825,
+      "player1": 37436,
+      "id": 4510494,
+      "n": 25
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 4,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 9825,
+      "player1": 31013,
+      "id": 4510495,
+      "n": 27
+    },
+    {
+      "event_incident_typefk": 393,
+      "elapsed": 4,
+      "comment": "n",
+      "sortorder": 2,
+      "type": "goal",
+      "subtype": "shot",
+      "goal_type": "n",
+      "coordinates": [
+        34,
+        9
+      ],
+      "team": 9825,
+      "player1": 31013,
+      "player2": 37436,
+      "stats": {
+        "goals": 1,
+        "shoton": 1
+      },
+      "id": 4510497,
+      "n": 29
+    },
+    {
+      "event_incident_typefk": 893,
+      "elapsed": 4,
+      "sortorder": 3,
+      "type": "assist",
+      "event_incidentFK": "4510497",
+      "coordinates": [
+        30,
+        18
+      ],
+      "team": 9825,
+      "player1": 37436,
+      "id": 4510514,
+      "n": 30
+    },
+    {
+      "event_incident_typefk": 730,
+      "elapsed": 7,
+      "sortorder": 0,
+      "type": "foulcommit",
+      "subtype": "trip",
+      "coordinates": [
+        6,
+        13
+      ],
+      "team": 8659,
+      "player2": 36378,
+      "player1": 169162,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4510557,
+      "n": 31
+    },
+    {
+      "event_incident_typefk": 81,
+      "elapsed": 7,
+      "sortorder": 1,
+      "type": "shotoff",
+      "subtype": "direct_freekick",
+      "coordinates": [
+        6,
+        13
+      ],
+      "team": 9825,
+      "player1": 50047,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4510567,
+      "n": 34
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 7,
+      "sortorder": 2,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4510571,
+      "n": 35
+    },
+    {
+      "event_incident_typefk": 7,
+      "elapsed": 8,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        4,
+        55
+      ],
+      "team": 8659,
+      "player1": 172841,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4510607,
+      "n": 36
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 8,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 9825,
+      "player1": 177503,
+      "id": 4510609,
+      "n": 37
+    },
+    {
+      "event_incident_typefk": 812,
+      "elapsed": 9,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 50047,
+      "id": 4510620,
+      "n": 38
+    },
+    {
+      "event_incident_typefk": 122,
+      "elapsed": 9,
+      "sortorder": 1,
+      "type": "throwin",
+      "subtype": "opponent_half",
+      "team": 8659,
+      "id": 4510633,
+      "n": 39
+    },
+    {
+      "event_incident_typefk": 810,
+      "elapsed": 9,
+      "sortorder": 2,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 8659,
+      "player1": 24171,
+      "id": 4510646,
+      "n": 40
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 9,
+      "sortorder": 3,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4510649,
+      "n": 43
+    },
+    {
+      "event_incident_typefk": 794,
+      "elapsed": 11,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "pass",
+      "team": 9825,
+      "player1": 36378,
+      "id": 4510692,
+      "n": 44
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 11,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 9825,
+      "player1": 50047,
+      "id": 4510695,
+      "n": 45
+    },
+    {
+      "event_incident_typefk": 135,
+      "elapsed": 11,
+      "sortorder": 2,
+      "type": "shoton",
+      "subtype": "shot",
+      "coordinates": [
+        28,
+        9
+      ],
+      "team": 9825,
+      "player1": 50047,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4510697,
+      "n": 46
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 11,
+      "sortorder": 3,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 8659,
+      "player1": 239807,
+      "id": 4510712,
+      "n": 48
+    },
+    {
+      "event_incident_typefk": 46,
+      "elapsed": 11,
+      "sortorder": 4,
+      "type": "shotoff",
+      "subtype": "shot",
+      "coordinates": [
+        12,
+        59
+      ],
+      "team": 8659,
+      "player1": 239807,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4510714,
+      "n": 54
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 11,
+      "sortorder": 5,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4510715,
+      "n": 55
+    },
+    {
+      "event_incident_typefk": 7,
+      "elapsed": 13,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        2,
+        52
+      ],
+      "team": 8659,
+      "player1": 169162,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4510761,
+      "n": 56
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 13,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 9825,
+      "player1": 35606,
+      "id": 4510764,
+      "n": 57
+    },
+    {
+      "event_incident_typefk": 490,
+      "elapsed": 14,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "defensive error",
+      "team": 8659,
+      "player1": 32441,
+      "id": 4510803,
+      "n": 66
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 15,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 9825,
+      "player1": 31013,
+      "id": 4510804,
+      "n": 65
+    },
+    {
+      "event_incident_typefk": 80,
+      "elapsed": 15,
+      "comment": "n",
+      "sortorder": 1,
+      "type": "goal",
+      "subtype": "shot",
+      "goal_type": "n",
+      "coordinates": [
+        25,
+        7
+      ],
+      "team": 9825,
+      "player1": 31013,
+      "stats": {
+        "goals": 1,
+        "shoton": 1
+      },
+      "id": 4510806,
+      "n": 64
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 16,
+      "sortorder": 0,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4510852,
+      "n": 67
+    },
+    {
+      "event_incident_typefk": 751,
+      "elapsed": 17,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "run",
+      "team": 9825,
+      "player1": 31013,
+      "id": 4510884,
+      "n": 69
+    },
+    {
+      "event_incident_typefk": 501,
+      "elapsed": 17,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 8659,
+      "player1": 33086,
+      "id": 4510886,
+      "n": 72
+    },
+    {
+      "event_incident_typefk": 869,
+      "elapsed": 17,
+      "sortorder": 2,
+      "type": "corner",
+      "subtype": "cross_right",
+      "coordinates": [
+        45,
+        1
+      ],
+      "team": 9825,
+      "player1": 36378,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4510895,
+      "n": 73
+    },
+    {
+      "event_incident_typefk": 61,
+      "elapsed": 17,
+      "sortorder": 3,
+      "type": "shoton",
+      "subtype": "blocked_shot",
+      "coordinates": [
+        15,
+        9
+      ],
+      "team": 9825,
+      "player1": 50047,
+      "stats": {
+        "blocked": 1
+      },
+      "id": 4510899,
+      "n": 94
+    },
+    {
+      "event_incident_typefk": 808,
+      "elapsed": 17,
+      "sortorder": 4,
+      "del": 1,
+      "type": "pass",
+      "subtype": "pass",
+      "id": 4510902,
+      "n": 96
+    },
+    {
+      "event_incident_typefk": 794,
+      "elapsed": 17,
+      "sortorder": 5,
+      "type": "pass",
+      "subtype": "pass",
+      "team": 9825,
+      "player1": 177503,
+      "id": 4510905,
+      "n": 89
+    },
+    {
+      "event_incident_typefk": 411,
+      "elapsed": 17,
+      "comment": "n",
+      "sortorder": 6,
+      "type": "goal",
+      "subtype": "volley",
+      "goal_type": "n",
+      "coordinates": [
+        26,
+        10
+      ],
+      "team": 9825,
+      "player1": 143793,
+      "player2": 177503,
+      "stats": {
+        "goals": 1,
+        "shoton": 1
+      },
+      "id": 4510907,
+      "n": 86
+    },
+    {
+      "event_incident_typefk": 893,
+      "elapsed": 17,
+      "sortorder": 7,
+      "type": "assist",
+      "event_incidentFK": "4510907",
+      "coordinates": [
+        24,
+        10
+      ],
+      "team": 9825,
+      "player1": 177503,
+      "id": 4510911,
+      "n": 88
+    },
+    {
+      "event_incident_typefk": 816,
+      "elapsed": 19,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 50047,
+      "id": 4510947,
+      "n": 97
+    },
+    {
+      "event_incident_typefk": 730,
+      "elapsed": 19,
+      "sortorder": 1,
+      "type": "foulcommit",
+      "subtype": "trip",
+      "coordinates": [
+        42,
+        42
+      ],
+      "team": 9825,
+      "player2": 172841,
+      "player1": 427438,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4510959,
+      "n": 102
+    },
+    {
+      "event_incident_typefk": 728,
+      "elapsed": 21,
+      "sortorder": 0,
+      "type": "foulcommit",
+      "subtype": "pull",
+      "coordinates": [
+        22,
+        21
+      ],
+      "team": 9825,
+      "player2": 24171,
+      "player1": 159594,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4511008,
+      "n": 106
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 21,
+      "sortorder": 1,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4511018,
+      "n": 107
+    },
+    {
+      "event_incident_typefk": 34,
+      "elapsed": 22,
+      "sortorder": 0,
+      "type": "offside",
+      "coordinates": [
+        13,
+        52
+      ],
+      "team": 8659,
+      "player1": 239807,
+      "stats": {
+        "offsides": 1
+      },
+      "id": 4511039,
+      "n": 110
+    },
+    {
+      "event_incident_typefk": 794,
+      "elapsed": 23,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "pass",
+      "team": 9825,
+      "player1": 50047,
+      "id": 4511074,
+      "n": 111
+    },
+    {
+      "event_incident_typefk": 153,
+      "elapsed": 23,
+      "sortorder": 1,
+      "type": "shoton",
+      "subtype": "shot",
+      "coordinates": [
+        11,
+        9
+      ],
+      "team": 9825,
+      "player1": 31013,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4511079,
+      "n": 115
+    },
+    {
+      "event_incident_typefk": 122,
+      "elapsed": 23,
+      "sortorder": 2,
+      "type": "throwin",
+      "subtype": "opponent_half",
+      "team": 9825,
+      "id": 4511087,
+      "n": 116
+    },
+    {
+      "event_incident_typefk": 352,
+      "elapsed": 23,
+      "comment": "65",
+      "sortorder": 3,
+      "type": "special",
+      "subtype": "possession",
+      "homepos": "65",
+      "awaypos": "35",
+      "stats": {
+        "homepos": "65",
+        "awaypos": "35"
+      },
+      "id": 4511090,
+      "n": 117
+    },
+    {
+      "event_incident_typefk": 728,
+      "elapsed": 24,
+      "sortorder": 0,
+      "type": "foulcommit",
+      "subtype": "pull",
+      "coordinates": [
+        35,
+        19
+      ],
+      "team": 8659,
+      "player2": 36378,
+      "player1": 113968,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4511125,
+      "n": 121
+    },
+    {
+      "event_incident_typefk": 774,
+      "elapsed": 24,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        40,
+        16
+      ],
+      "team": 9825,
+      "player1": 36378,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4511138,
+      "n": 128
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 24,
+      "sortorder": 2,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 8659,
+      "player1": 26527,
+      "id": 4511145,
+      "n": 129
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 25,
+      "sortorder": 0,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4511152,
+      "n": 130
+    },
+    {
+      "event_incident_typefk": 491,
+      "elapsed": 26,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "1-2 pass",
+      "team": 9825,
+      "player1": 143793,
+      "id": 4511192,
+      "n": 133
+    },
+    {
+      "event_incident_typefk": 135,
+      "elapsed": 26,
+      "sortorder": 1,
+      "type": "shoton",
+      "subtype": "shot",
+      "coordinates": [
+        20,
+        10
+      ],
+      "team": 9825,
+      "player1": 143793,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4511194,
+      "n": 140
+    },
+    {
+      "event_incident_typefk": 818,
+      "elapsed": 27,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "square",
+      "team": 9825,
+      "player1": 31013,
+      "id": 4511242,
+      "n": 141
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 27,
+      "sortorder": 1,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4511244,
+      "n": 142
+    },
+    {
+      "event_incident_typefk": 730,
+      "elapsed": 29,
+      "sortorder": 0,
+      "type": "foulcommit",
+      "subtype": "trip",
+      "coordinates": [
+        40,
+        3
+      ],
+      "team": 8659,
+      "player1": 33086,
+      "player2": 37436,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4511305,
+      "n": 144
+    },
+    {
+      "event_incident_typefk": 774,
+      "elapsed": 30,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        40,
+        3
+      ],
+      "team": 9825,
+      "player1": 36378,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4511331,
+      "n": 146
+    },
+    {
+      "event_incident_typefk": 135,
+      "elapsed": 30,
+      "sortorder": 1,
+      "type": "shoton",
+      "subtype": "shot",
+      "coordinates": [
+        26,
+        6
+      ],
+      "team": 9825,
+      "player1": 35606,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4511334,
+      "n": 148
+    },
+    {
+      "event_incident_typefk": 317,
+      "elapsed": 32,
+      "sortorder": 0,
+      "type": "shotoff",
+      "subtype": "deflected",
+      "coordinates": [
+        16,
+        15
+      ],
+      "team": 9825,
+      "player1": 37436,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4511379,
+      "n": 150
+    },
+    {
+      "event_incident_typefk": 869,
+      "elapsed": 32,
+      "sortorder": 1,
+      "type": "corner",
+      "subtype": "cross_right",
+      "coordinates": [
+        45,
+        1
+      ],
+      "team": 9825,
+      "player1": 37436,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4511394,
+      "n": 151
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 32,
+      "sortorder": 2,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 8659,
+      "player1": 32441,
+      "id": 4511396,
+      "n": 152
+    },
+    {
+      "event_incident_typefk": 730,
+      "elapsed": 32,
+      "sortorder": 3,
+      "type": "foulcommit",
+      "subtype": "trip",
+      "coordinates": [
+        42,
+        34
+      ],
+      "team": 9825,
+      "player1": 37436,
+      "player2": 172841,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4511402,
+      "n": 156
+    },
+    {
+      "event_incident_typefk": 822,
+      "elapsed": 34,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "square",
+      "team": 9825,
+      "player1": 31013,
+      "id": 4511459,
+      "n": 157
+    },
+    {
+      "event_incident_typefk": 61,
+      "elapsed": 34,
+      "sortorder": 1,
+      "type": "shoton",
+      "subtype": "blocked_shot",
+      "coordinates": [
+        21,
+        10
+      ],
+      "team": 9825,
+      "player1": 50047,
+      "stats": {
+        "blocked": 1
+      },
+      "id": 4511462,
+      "n": 160
+    },
+    {
+      "event_incident_typefk": 814,
+      "elapsed": 35,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 37436,
+      "id": 4511468,
+      "n": 161
+    },
+    {
+      "event_incident_typefk": 135,
+      "elapsed": 35,
+      "sortorder": 1,
+      "type": "shoton",
+      "subtype": "shot",
+      "coordinates": [
+        31,
+        8
+      ],
+      "team": 9825,
+      "player1": 31013,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4511470,
+      "n": 163
+    },
+    {
+      "event_incident_typefk": 874,
+      "elapsed": 35,
+      "sortorder": 2,
+      "type": "special",
+      "subtype": "play_stopped",
+      "id": 4511482,
+      "n": 165
+    },
+    {
+      "event_incident_typefk": 40,
+      "elapsed": 36,
+      "sortorder": 0,
+      "type": "special",
+      "subtype": "play_restarted",
+      "id": 4511498,
+      "n": 166
+    },
+    {
+      "event_incident_typefk": 491,
+      "elapsed": 37,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "1-2 pass",
+      "team": 9825,
+      "player1": 143793,
+      "id": 4511539,
+      "n": 184
+    },
+    {
+      "event_incident_typefk": 814,
+      "elapsed": 37,
+      "sortorder": 1,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 143793,
+      "id": 4511541,
+      "n": 182
+    },
+    {
+      "event_incident_typefk": 822,
+      "elapsed": 37,
+      "sortorder": 2,
+      "type": "pass",
+      "subtype": "square",
+      "team": 9825,
+      "player1": 37436,
+      "id": 4511542,
+      "n": 180
+    },
+    {
+      "event_incident_typefk": 721,
+      "elapsed": 37,
+      "comment": "n",
+      "sortorder": 3,
+      "type": "goal",
+      "subtype": "tap_in",
+      "goal_type": "n",
+      "coordinates": [
+        26,
+        2
+      ],
+      "team": 9825,
+      "player1": 31013,
+      "player2": 37436,
+      "stats": {
+        "goals": 1,
+        "shoton": 1
+      },
+      "id": 4511543,
+      "n": 176
+    },
+    {
+      "event_incident_typefk": 893,
+      "elapsed": 37,
+      "sortorder": 4,
+      "type": "assist",
+      "event_incidentFK": "4511543",
+      "coordinates": [
+        14,
+        3
+      ],
+      "team": 9825,
+      "player1": 37436,
+      "id": 4511562,
+      "n": 178
+    },
+    {
+      "event_incident_typefk": 122,
+      "elapsed": 39,
+      "sortorder": 0,
+      "type": "throwin",
+      "subtype": "opponent_half",
+      "team": 8659,
+      "id": 4511616,
+      "n": 185
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 42,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 9825,
+      "player1": 31013,
+      "id": 4511680,
+      "n": 187
+    },
+    {
+      "event_incident_typefk": 147,
+      "elapsed": 42,
+      "sortorder": 1,
+      "type": "shoton",
+      "subtype": "shot",
+      "coordinates": [
+        26,
+        11
+      ],
+      "team": 9825,
+      "player1": 31013,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4511682,
+      "n": 189
+    },
+    {
+      "event_incident_typefk": 873,
+      "elapsed": 42,
+      "sortorder": 2,
+      "type": "corner",
+      "subtype": "short_right",
+      "coordinates": [
+        45,
+        1
+      ],
+      "team": 9825,
+      "player1": 31013,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4511695,
+      "n": 190
+    },
+    {
+      "event_incident_typefk": 810,
+      "elapsed": 43,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 36378,
+      "id": 4511713,
+      "n": 191
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 43,
+      "sortorder": 1,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4511718,
+      "n": 192
+    },
+    {
+      "event_incident_typefk": 730,
+      "elapsed": 44,
+      "sortorder": 0,
+      "type": "foulcommit",
+      "subtype": "trip",
+      "coordinates": [
+        21,
+        52
+      ],
+      "team": 9825,
+      "player2": 24171,
+      "player1": 177503,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4511749,
+      "n": 196
+    },
+    {
+      "event_incident_typefk": 312,
+      "elapsed": 45,
+      "sortorder": 0,
+      "type": "shoton",
+      "subtype": "deflected",
+      "coordinates": [
+        21,
+        51
+      ],
+      "team": 8659,
+      "player1": 24171,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4511768,
+      "n": 200
+    },
+    {
+      "event_incident_typefk": 352,
+      "elapsed": 45,
+      "comment": "67",
+      "sortorder": 1,
+      "type": "special",
+      "subtype": "possession",
+      "homepos": "67",
+      "awaypos": "33",
+      "stats": {
+        "homepos": "67",
+        "awaypos": "33"
+      },
+      "id": 4511778,
+      "n": 201
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 45,
+      "elapsed_plus": 1,
+      "sortorder": 2,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4511795,
+      "n": 204
+    },
+    {
+      "event_incident_typefk": 280,
+      "elapsed": 45,
+      "elapsed_plus": 1,
+      "comment": "2",
+      "sortorder": 3,
+      "type": "special",
+      "subtype": "injury_time",
+      "injury_time": "2",
+      "id": 4511803,
+      "n": 207
+    },
+    {
+      "event_incident_typefk": 794,
+      "elapsed": 45,
+      "elapsed_plus": 2,
+      "sortorder": 4,
+      "type": "pass",
+      "subtype": "pass",
+      "team": 9825,
+      "player1": 37436,
+      "id": 4511843,
+      "n": 208
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 45,
+      "elapsed_plus": 2,
+      "sortorder": 5,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 9825,
+      "player1": 143793,
+      "id": 4511846,
+      "n": 209
+    },
+    {
+      "event_incident_typefk": 317,
+      "elapsed": 45,
+      "elapsed_plus": 2,
+      "sortorder": 6,
+      "type": "shotoff",
+      "subtype": "deflected",
+      "coordinates": [
+        26,
+        9
+      ],
+      "team": 9825,
+      "player1": 143793,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4511849,
+      "n": 211
+    },
+    {
+      "event_incident_typefk": 873,
+      "elapsed": 45,
+      "elapsed_plus": 2,
+      "sortorder": 7,
+      "type": "corner",
+      "subtype": "short_right",
+      "coordinates": [
+        45,
+        1
+      ],
+      "team": 9825,
+      "player1": 36378,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4511852,
+      "n": 213
+    },
+    {
+      "event_incident_typefk": 820,
+      "elapsed": 45,
+      "elapsed_plus": 2,
+      "sortorder": 8,
+      "type": "pass",
+      "subtype": "square",
+      "team": 9825,
+      "player1": 31013,
+      "id": 4511856,
+      "n": 214
+    },
+    {
+      "event_incident_typefk": 320,
+      "elapsed": 45,
+      "elapsed_plus": 2,
+      "sortorder": 9,
+      "type": "foulcommit",
+      "subtype": "pushing",
+      "coordinates": [
+        36,
+        33
+      ],
+      "team": 8659,
+      "player2": 35606,
+      "player1": 239807,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4511891,
+      "n": 217
+    },
+    {
+      "event_incident_typefk": 30,
+      "elapsed": 45,
+      "elapsed_plus": 3,
+      "sortorder": 10,
+      "type": "ht",
+      "id": 4511899,
+      "n": 218
+    },
+    {
+      "event_incident_typefk": 31,
+      "elapsed": 46,
+      "sortorder": 0,
+      "type": "2h",
+      "id": 4512061,
+      "n": 219
+    },
+    {
+      "event_incident_typefk": 122,
+      "elapsed": 46,
+      "sortorder": 1,
+      "type": "throwin",
+      "subtype": "opponent_half",
+      "team": 8659,
+      "id": 4512075,
+      "n": 220
+    },
+    {
+      "event_incident_typefk": 730,
+      "elapsed": 48,
+      "sortorder": 0,
+      "type": "foulcommit",
+      "subtype": "trip",
+      "coordinates": [
+        43,
+        62
+      ],
+      "team": 9825,
+      "player2": 24171,
+      "player1": 427438,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4512103,
+      "n": 224
+    },
+    {
+      "event_incident_typefk": 70,
+      "elapsed": 48,
+      "comment": "y",
+      "sortorder": 1,
+      "type": "card",
+      "card_type": "y",
+      "team": 9825,
+      "player1": 427438,
+      "stats": {
+        "ycards": 1
+      },
+      "id": 4512105,
+      "n": 223
+    },
+    {
+      "event_incident_typefk": 774,
+      "elapsed": 48,
+      "sortorder": 2,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        41,
+        63
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4512129,
+      "n": 227
+    },
+    {
+      "event_incident_typefk": 53,
+      "elapsed": 48,
+      "sortorder": 3,
+      "type": "shotoff",
+      "subtype": "volley",
+      "coordinates": [
+        32,
+        66
+      ],
+      "team": 8659,
+      "player1": 26527,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4512139,
+      "n": 229
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 48,
+      "sortorder": 4,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4512143,
+      "n": 230
+    },
+    {
+      "event_incident_typefk": 824,
+      "elapsed": 49,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "square",
+      "team": 9825,
+      "player1": 143793,
+      "id": 4512169,
+      "n": 231
+    },
+    {
+      "event_incident_typefk": 810,
+      "elapsed": 50,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 50047,
+      "id": 4512203,
+      "n": 233
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 50,
+      "sortorder": 1,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4512207,
+      "n": 236
+    },
+    {
+      "event_incident_typefk": 503,
+      "elapsed": 51,
+      "sortorder": 0,
+      "type": "subst",
+      "subtype": "Tactical",
+      "team": 8659,
+      "player2": 25666,
+      "player1": 26527,
+      "id": 4512227,
+      "n": 237
+    },
+    {
+      "event_incident_typefk": 7,
+      "elapsed": 52,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        42,
+        2
+      ],
+      "team": 9825,
+      "player1": 427438,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4512273,
+      "n": 240
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 52,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 8659,
+      "player1": 169162,
+      "id": 4512280,
+      "n": 241
+    },
+    {
+      "event_incident_typefk": 317,
+      "elapsed": 52,
+      "sortorder": 2,
+      "type": "shotoff",
+      "subtype": "deflected",
+      "coordinates": [
+        31,
+        17
+      ],
+      "team": 9825,
+      "player1": 159594,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4512282,
+      "n": 248
+    },
+    {
+      "event_incident_typefk": 869,
+      "elapsed": 53,
+      "sortorder": 0,
+      "type": "corner",
+      "subtype": "cross_right",
+      "coordinates": [
+        45,
+        1
+      ],
+      "team": 9825,
+      "player1": 36378,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4512294,
+      "n": 249
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 53,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 8659,
+      "player1": 25666,
+      "id": 4512296,
+      "n": 250
+    },
+    {
+      "event_incident_typefk": 155,
+      "elapsed": 53,
+      "sortorder": 2,
+      "type": "shoton",
+      "subtype": "distance",
+      "coordinates": [
+        13,
+        13
+      ],
+      "team": 9825,
+      "player1": 37436,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4512300,
+      "n": 254
+    },
+    {
+      "event_incident_typefk": 46,
+      "elapsed": 53,
+      "sortorder": 3,
+      "type": "shotoff",
+      "subtype": "shot",
+      "coordinates": [
+        30,
+        5
+      ],
+      "team": 9825,
+      "player1": 31013,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4512308,
+      "n": 257
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 53,
+      "sortorder": 4,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4512310,
+      "n": 258
+    },
+    {
+      "event_incident_typefk": 503,
+      "elapsed": 54,
+      "sortorder": 0,
+      "type": "subst",
+      "subtype": "Tactical",
+      "team": 8659,
+      "player2": 25075,
+      "player1": 172841,
+      "id": 4512318,
+      "n": 259
+    },
+    {
+      "event_incident_typefk": 751,
+      "elapsed": 55,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "run",
+      "team": 9825,
+      "player1": 31013,
+      "id": 4512333,
+      "n": 260
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 55,
+      "sortorder": 1,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4512336,
+      "n": 261
+    },
+    {
+      "event_incident_typefk": 320,
+      "elapsed": 55,
+      "sortorder": 2,
+      "type": "foulcommit",
+      "subtype": "pushing",
+      "coordinates": [
+        12,
+        50
+      ],
+      "team": 9825,
+      "player2": 25666,
+      "player1": 78513,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4512355,
+      "n": 262
+    },
+    {
+      "event_incident_typefk": 874,
+      "elapsed": 56,
+      "sortorder": 0,
+      "type": "special",
+      "subtype": "play_stopped",
+      "id": 4512364,
+      "n": 263
+    },
+    {
+      "event_incident_typefk": 497,
+      "elapsed": 56,
+      "sortorder": 1,
+      "type": "treatment",
+      "subtype": "Treatment On-Field",
+      "team": 9825,
+      "player1": 78513,
+      "id": 4512365,
+      "n": 264
+    },
+    {
+      "event_incident_typefk": 498,
+      "elapsed": 56,
+      "sortorder": 2,
+      "type": "treatment",
+      "subtype": "Treatment Off-Field",
+      "team": 9825,
+      "player1": 78513,
+      "id": 4512383,
+      "n": 265
+    },
+    {
+      "event_incident_typefk": 774,
+      "elapsed": 56,
+      "sortorder": 3,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        9,
+        51
+      ],
+      "team": 8659,
+      "player1": 24148,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4512387,
+      "n": 269
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 57,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 9825,
+      "player1": 427438,
+      "id": 4512392,
+      "n": 270
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 57,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 8659,
+      "player1": 25666,
+      "id": 4512394,
+      "n": 271
+    },
+    {
+      "event_incident_typefk": 147,
+      "elapsed": 57,
+      "sortorder": 2,
+      "type": "shoton",
+      "subtype": "shot",
+      "coordinates": [
+        33,
+        60
+      ],
+      "team": 8659,
+      "player1": 25666,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4512397,
+      "n": 277
+    },
+    {
+      "event_incident_typefk": 722,
+      "elapsed": 57,
+      "sortorder": 3,
+      "type": "treatment",
+      "subtype": "Player back in play",
+      "team": 9825,
+      "player1": 78513,
+      "id": 4512405,
+      "n": 278
+    },
+    {
+      "event_incident_typefk": 869,
+      "elapsed": 57,
+      "sortorder": 4,
+      "type": "corner",
+      "subtype": "cross_right",
+      "coordinates": [
+        1,
+        69
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4512414,
+      "n": 280
+    },
+    {
+      "event_incident_typefk": 406,
+      "elapsed": 57,
+      "comment": "n",
+      "sortorder": 5,
+      "type": "goal",
+      "subtype": "header",
+      "goal_type": "n",
+      "coordinates": [
+        26,
+        65
+      ],
+      "team": 8659,
+      "player2": 23257,
+      "player1": 32441,
+      "stats": {
+        "goals": 1,
+        "shoton": 1
+      },
+      "id": 4512421,
+      "n": 282
+    },
+    {
+      "event_incident_typefk": 893,
+      "elapsed": 57,
+      "sortorder": 6,
+      "type": "assist",
+      "event_incidentFK": "4512421",
+      "coordinates": [
+        2,
+        68
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "id": 4512430,
+      "n": 287
+    },
+    {
+      "event_incident_typefk": 730,
+      "elapsed": 60,
+      "sortorder": 0,
+      "type": "foulcommit",
+      "subtype": "trip",
+      "coordinates": [
+        30,
+        28
+      ],
+      "team": 8659,
+      "player1": 25075,
+      "player2": 159594,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4512485,
+      "n": 292
+    },
+    {
+      "event_incident_typefk": 503,
+      "elapsed": 60,
+      "sortorder": 1,
+      "type": "subst",
+      "subtype": "Tactical",
+      "team": 8659,
+      "player2": 43247,
+      "player1": 113968,
+      "id": 4512501,
+      "n": 295
+    },
+    {
+      "event_incident_typefk": 767,
+      "elapsed": 61,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        34,
+        5
+      ],
+      "team": 9825,
+      "player1": 143793,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4512514,
+      "n": 297
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 61,
+      "sortorder": 1,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4512516,
+      "n": 298
+    },
+    {
+      "event_incident_typefk": 343,
+      "elapsed": 61,
+      "comment": "59971",
+      "sortorder": 2,
+      "type": "special",
+      "subtype": "specators",
+      "spectators": "59971",
+      "id": 4512524,
+      "n": 299
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 61,
+      "sortorder": 3,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4512537,
+      "n": 301
+    },
+    {
+      "event_incident_typefk": 9,
+      "elapsed": 63,
+      "sortorder": 0,
+      "type": "shotoff",
+      "subtype": "distance",
+      "coordinates": [
+        27,
+        55
+      ],
+      "team": 8659,
+      "player1": 24171,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4512585,
+      "n": 309
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 63,
+      "sortorder": 1,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4512587,
+      "n": 308
+    },
+    {
+      "event_incident_typefk": 767,
+      "elapsed": 64,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        44,
+        55
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4512608,
+      "n": 316
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 64,
+      "sortorder": 1,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4512612,
+      "n": 313
+    },
+    {
+      "event_incident_typefk": 7,
+      "elapsed": 65,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        3,
+        12
+      ],
+      "team": 9825,
+      "player1": 36378,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4512644,
+      "n": 319
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 65,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 8659,
+      "player1": 23257,
+      "id": 4512646,
+      "n": 320
+    },
+    {
+      "event_incident_typefk": 34,
+      "elapsed": 65,
+      "sortorder": 2,
+      "type": "offside",
+      "coordinates": [
+        24,
+        51
+      ],
+      "team": 8659,
+      "player1": 25666,
+      "stats": {
+        "offsides": 1
+      },
+      "id": 4512666,
+      "n": 322
+    },
+    {
+      "event_incident_typefk": 352,
+      "elapsed": 67,
+      "comment": "66",
+      "sortorder": 0,
+      "type": "special",
+      "subtype": "possession",
+      "homepos": "66",
+      "awaypos": "34",
+      "stats": {
+        "homepos": "66",
+        "awaypos": "34"
+      },
+      "id": 4512706,
+      "n": 323
+    },
+    {
+      "event_incident_typefk": 794,
+      "elapsed": 67,
+      "sortorder": 1,
+      "type": "pass",
+      "subtype": "pass",
+      "team": 8659,
+      "player1": 25075,
+      "id": 4512724,
+      "n": 325
+    },
+    {
+      "event_incident_typefk": 46,
+      "elapsed": 67,
+      "sortorder": 2,
+      "type": "shotoff",
+      "subtype": "shot",
+      "coordinates": [
+        13,
+        65
+      ],
+      "team": 8659,
+      "player1": 25666,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4512726,
+      "n": 326
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 67,
+      "sortorder": 3,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4512729,
+      "n": 328
+    },
+    {
+      "event_incident_typefk": 810,
+      "elapsed": 68,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 37436,
+      "id": 4512758,
+      "n": 329
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 68,
+      "sortorder": 1,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4512759,
+      "n": 331
+    },
+    {
+      "event_incident_typefk": 503,
+      "elapsed": 69,
+      "sortorder": 0,
+      "type": "subst",
+      "subtype": "Tactical",
+      "team": 9825,
+      "player2": 75489,
+      "player1": 159594,
+      "id": 4512775,
+      "n": 332
+    },
+    {
+      "event_incident_typefk": 503,
+      "elapsed": 69,
+      "sortorder": 2,
+      "type": "subst",
+      "subtype": "Tactical",
+      "team": 9825,
+      "player1": 31013,
+      "player2": 46469,
+      "id": 4512787,
+      "n": 334
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 71,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 9825,
+      "player1": 50047,
+      "id": 4512857,
+      "n": 336
+    },
+    {
+      "event_incident_typefk": 137,
+      "elapsed": 71,
+      "sortorder": 1,
+      "type": "shoton",
+      "subtype": "distance",
+      "coordinates": [
+        12,
+        13
+      ],
+      "team": 9825,
+      "player1": 50047,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4512859,
+      "n": 338
+    },
+    {
+      "event_incident_typefk": 783,
+      "elapsed": 72,
+      "sortorder": 0,
+      "type": "special",
+      "subtype": "weather",
+      "id": 4512879,
+      "n": 339
+    },
+    {
+      "event_incident_typefk": 61,
+      "elapsed": 72,
+      "sortorder": 1,
+      "type": "shoton",
+      "subtype": "blocked_shot",
+      "coordinates": [
+        20,
+        52
+      ],
+      "team": 8659,
+      "player1": 239807,
+      "stats": {
+        "blocked": 1
+      },
+      "id": 4512902,
+      "n": 342
+    },
+    {
+      "event_incident_typefk": 3,
+      "elapsed": 73,
+      "sortorder": 0,
+      "type": "foulcommit",
+      "subtype": "hands",
+      "coordinates": [
+        19,
+        53
+      ],
+      "team": 8659,
+      "player1": 239807,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4512904,
+      "n": 343
+    },
+    {
+      "event_incident_typefk": 767,
+      "elapsed": 73,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        5,
+        10
+      ],
+      "team": 9825,
+      "player1": 50047,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4512924,
+      "n": 346
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 73,
+      "sortorder": 2,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4512927,
+      "n": 347
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 74,
+      "sortorder": 0,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4512960,
+      "n": 348
+    },
+    {
+      "event_incident_typefk": 122,
+      "elapsed": 75,
+      "sortorder": 0,
+      "type": "throwin",
+      "subtype": "opponent_half",
+      "team": 8659,
+      "id": 4512992,
+      "n": 349
+    },
+    {
+      "event_incident_typefk": 751,
+      "elapsed": 76,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "run",
+      "team": 8659,
+      "player1": 23257,
+      "id": 4513022,
+      "n": 351
+    },
+    {
+      "event_incident_typefk": 153,
+      "elapsed": 76,
+      "sortorder": 1,
+      "type": "shoton",
+      "subtype": "shot",
+      "coordinates": [
+        35,
+        64
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4513027,
+      "n": 354
+    },
+    {
+      "event_incident_typefk": 53,
+      "elapsed": 76,
+      "sortorder": 2,
+      "type": "shotoff",
+      "subtype": "volley",
+      "coordinates": [
+        18,
+        61
+      ],
+      "team": 8659,
+      "player1": 25075,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4513030,
+      "n": 360
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 76,
+      "sortorder": 3,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4513031,
+      "n": 356
+    },
+    {
+      "event_incident_typefk": 503,
+      "elapsed": 77,
+      "sortorder": 0,
+      "type": "subst",
+      "subtype": "Tactical",
+      "team": 9825,
+      "player1": 143793,
+      "player2": 196386,
+      "id": 4513044,
+      "n": 361
+    },
+    {
+      "event_incident_typefk": 816,
+      "elapsed": 77,
+      "sortorder": 2,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 46469,
+      "id": 4513065,
+      "n": 362
+    },
+    {
+      "event_incident_typefk": 34,
+      "elapsed": 79,
+      "sortorder": 0,
+      "type": "offside",
+      "coordinates": [
+        10,
+        7
+      ],
+      "team": 9825,
+      "player1": 50047,
+      "stats": {
+        "offsides": 1
+      },
+      "id": 4513113,
+      "n": 363
+    },
+    {
+      "event_incident_typefk": 113,
+      "elapsed": 81,
+      "sortorder": 0,
+      "type": "shotoff",
+      "subtype": "post",
+      "coordinates": [
+        17,
+        11
+      ],
+      "team": 9825,
+      "player1": 75489,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4513167,
+      "n": 365
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 83,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 9825,
+      "player1": 75489,
+      "id": 4513204,
+      "n": 366
+    },
+    {
+      "event_incident_typefk": 113,
+      "elapsed": 83,
+      "sortorder": 1,
+      "type": "shotoff",
+      "subtype": "post",
+      "coordinates": [
+        12,
+        7
+      ],
+      "team": 9825,
+      "player1": 75489,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4513211,
+      "n": 367
+    },
+    {
+      "event_incident_typefk": 873,
+      "elapsed": 83,
+      "sortorder": 2,
+      "type": "corner",
+      "subtype": "short_right",
+      "coordinates": [
+        45,
+        1
+      ],
+      "team": 9825,
+      "player1": 37436,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4513230,
+      "n": 371
+    },
+    {
+      "event_incident_typefk": 814,
+      "elapsed": 84,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 50047,
+      "id": 4513239,
+      "n": 372
+    },
+    {
+      "event_incident_typefk": 46,
+      "elapsed": 84,
+      "sortorder": 1,
+      "type": "shotoff",
+      "subtype": "shot",
+      "coordinates": [
+        13,
+        8
+      ],
+      "team": 9825,
+      "player1": 75489,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4513240,
+      "n": 375
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 84,
+      "sortorder": 2,
+      "type": "goalkick",
+      "team": 8659,
+      "id": 4513242,
+      "n": 376
+    },
+    {
+      "event_incident_typefk": 61,
+      "elapsed": 84,
+      "sortorder": 3,
+      "type": "shoton",
+      "subtype": "blocked_shot",
+      "coordinates": [
+        33,
+        54
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "blocked": 1
+      },
+      "id": 4513259,
+      "n": 379
+    },
+    {
+      "event_incident_typefk": 37,
+      "elapsed": 85,
+      "sortorder": 0,
+      "type": "foulcommit",
+      "coordinates": [
+        32,
+        55
+      ],
+      "team": 8659,
+      "player1": 25075,
+      "player2": 35606,
+      "stats": {
+        "foulscommitted": 1
+      },
+      "id": 4513264,
+      "n": 380
+    },
+    {
+      "event_incident_typefk": 816,
+      "elapsed": 85,
+      "sortorder": 1,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 50047,
+      "id": 4513273,
+      "n": 381
+    },
+    {
+      "event_incident_typefk": 741,
+      "elapsed": 85,
+      "sortorder": 2,
+      "type": "shotoff",
+      "subtype": "lob",
+      "coordinates": [
+        11,
+        66
+      ],
+      "team": 8659,
+      "player1": 25075,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4513286,
+      "n": 384
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 86,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 9825,
+      "player1": 177503,
+      "id": 4513292,
+      "n": 385
+    },
+    {
+      "event_incident_typefk": 122,
+      "elapsed": 86,
+      "sortorder": 1,
+      "type": "throwin",
+      "subtype": "opponent_half",
+      "team": 8659,
+      "id": 4513293,
+      "n": 387
+    },
+    {
+      "event_incident_typefk": 7,
+      "elapsed": 88,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        43,
+        63
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4513337,
+      "n": 389
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 88,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 9825,
+      "player1": 78513,
+      "id": 4513339,
+      "n": 390
+    },
+    {
+      "event_incident_typefk": 137,
+      "elapsed": 88,
+      "sortorder": 2,
+      "type": "shoton",
+      "subtype": "distance",
+      "coordinates": [
+        26,
+        52
+      ],
+      "team": 8659,
+      "player1": 43247,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4513346,
+      "n": 393
+    },
+    {
+      "event_incident_typefk": 340,
+      "elapsed": 89,
+      "sortorder": 0,
+      "type": "cross",
+      "subtype": "dribble",
+      "team": 9825,
+      "player1": 46469,
+      "id": 4513367,
+      "n": 394
+    },
+    {
+      "event_incident_typefk": 501,
+      "elapsed": 89,
+      "sortorder": 1,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 8659,
+      "player1": 33086,
+      "id": 4513371,
+      "n": 396
+    },
+    {
+      "event_incident_typefk": 871,
+      "elapsed": 89,
+      "sortorder": 2,
+      "type": "corner",
+      "subtype": "short_left",
+      "coordinates": [
+        1,
+        1
+      ],
+      "team": 9825,
+      "player1": 36378,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4513375,
+      "n": 397
+    },
+    {
+      "event_incident_typefk": 7,
+      "elapsed": 89,
+      "sortorder": 3,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        3,
+        8
+      ],
+      "team": 9825,
+      "player1": 36378,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4513378,
+      "n": 402
+    },
+    {
+      "event_incident_typefk": 338,
+      "elapsed": 89,
+      "sortorder": 4,
+      "type": "cross",
+      "subtype": "clear",
+      "team": 8659,
+      "player1": 43247,
+      "id": 4513382,
+      "n": 403
+    },
+    {
+      "event_incident_typefk": 824,
+      "elapsed": 90,
+      "sortorder": 0,
+      "type": "pass",
+      "subtype": "square",
+      "team": 8659,
+      "player1": 25075,
+      "id": 4513408,
+      "n": 404
+    },
+    {
+      "event_incident_typefk": 812,
+      "elapsed": 90,
+      "sortorder": 1,
+      "type": "pass",
+      "subtype": "through_ball",
+      "team": 9825,
+      "player1": 50047,
+      "id": 4513420,
+      "n": 406
+    },
+    {
+      "event_incident_typefk": 280,
+      "elapsed": 90,
+      "elapsed_plus": 1,
+      "comment": "3",
+      "sortorder": 2,
+      "type": "special",
+      "subtype": "injury_time",
+      "injury_time": "3",
+      "id": 4513436,
+      "n": 407
+    },
+    {
+      "event_incident_typefk": 149,
+      "elapsed": 90,
+      "elapsed_plus": 2,
+      "sortorder": 3,
+      "type": "shoton",
+      "subtype": "distance",
+      "coordinates": [
+        21,
+        51
+      ],
+      "team": 8659,
+      "player1": 25075,
+      "stats": {
+        "shoton": 1
+      },
+      "id": 4513458,
+      "n": 409
+    },
+    {
+      "event_incident_typefk": 871,
+      "elapsed": 90,
+      "elapsed_plus": 2,
+      "sortorder": 4,
+      "type": "corner",
+      "subtype": "short_left",
+      "coordinates": [
+        45,
+        69
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4513471,
+      "n": 410
+    },
+    {
+      "event_incident_typefk": 7,
+      "elapsed": 90,
+      "elapsed_plus": 2,
+      "sortorder": 5,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        42,
+        57
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4513477,
+      "n": 412
+    },
+    {
+      "event_incident_typefk": 317,
+      "elapsed": 90,
+      "elapsed_plus": 2,
+      "sortorder": 6,
+      "type": "shotoff",
+      "subtype": "deflected",
+      "coordinates": [
+        13,
+        61
+      ],
+      "team": 8659,
+      "player1": 24148,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4513479,
+      "n": 413
+    },
+    {
+      "event_incident_typefk": 871,
+      "elapsed": 90,
+      "elapsed_plus": 2,
+      "sortorder": 7,
+      "type": "corner",
+      "subtype": "short_left",
+      "coordinates": [
+        45,
+        69
+      ],
+      "team": 8659,
+      "player1": 23257,
+      "stats": {
+        "corners": 1
+      },
+      "id": 4513485,
+      "n": 414
+    },
+    {
+      "event_incident_typefk": 7,
+      "elapsed": 90,
+      "elapsed_plus": 3,
+      "sortorder": 8,
+      "type": "cross",
+      "subtype": "cross",
+      "coordinates": [
+        41,
+        56
+      ],
+      "team": 8659,
+      "player1": 25075,
+      "stats": {
+        "crosses": 1
+      },
+      "id": 4513487,
+      "n": 416
+    },
+    {
+      "event_incident_typefk": 47,
+      "elapsed": 90,
+      "elapsed_plus": 3,
+      "sortorder": 9,
+      "type": "shotoff",
+      "subtype": "header",
+      "coordinates": [
+        14,
+        65
+      ],
+      "team": 8659,
+      "player1": 33086,
+      "stats": {
+        "shotoff": 1
+      },
+      "id": 4513488,
+      "n": 418
+    },
+    {
+      "event_incident_typefk": 16,
+      "elapsed": 90,
+      "elapsed_plus": 3,
+      "sortorder": 10,
+      "type": "goalkick",
+      "team": 9825,
+      "id": 4513491,
+      "n": 419
+    },
+    {
+      "event_incident_typefk": 352,
+      "elapsed": 90,
+      "elapsed_plus": 3,
+      "comment": "64",
+      "sortorder": 11,
+      "type": "special",
+      "subtype": "possession",
+      "homepos": "64",
+      "awaypos": "36",
+      "stats": {
+        "homepos": "64",
+        "awaypos": "36"
+      },
+      "id": 4513497,
+      "n": 420
+    },
+    {
+      "event_incident_typefk": 32,
+      "elapsed": 90,
+      "elapsed_plus": 4,
+      "sortorder": 12,
+      "type": "f",
+      "id": 4513517,
+      "n": 422
+    }
+  ],
+  "s": "finished"
+}
