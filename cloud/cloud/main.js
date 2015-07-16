@@ -12,21 +12,43 @@ Parse.Cloud.afterSave("Match", function(request){
     match.get('away') && match.get('away').fetch()
   ).then(function(home, away){
     var homeValue = 0;
-    console.log(homeValue);
+    console.log('1:' + homeValue);
+
     var awayValue = 0;
+    console.log('1:' + awayValue);
 
     match.get('homeGoals').forEach(function(goalMins){
       homeValue += (100 + (90 - goalMins));
     });
-    console.log(homeValue);
+    console.log('2:' + homeValue);
 
     match.get('awayGoals').forEach(function(goalMins){
       awayValue += (100 + (90 - goalMins));
     });
+    console.log('2:' + awayValue);
 
     homeValue = (homeValue - awayValue);
     awayValue = (awayValue - homeValue);
-    console.log(homeValue);
+    console.log('3:' + homeValue);
+    console.log('3:' + awayValue);
+
+
+    if (home && away && match.get('type') === 'league'){
+      var homeScore = match.get("homeGoals").length;
+      var awayScore = match.get("awayGoals").length;
+      if(homeScore > awayScore) {
+        homeValue = homeValue * 1.1 + 20;
+        awayValue = awayValue * 1.1 - 20;
+      }else if(homeScore < awayScore){
+        homeValue = homeValue * 1.2 - 40;
+        awayValue = awayValue * 1.2 + 40;
+      }else if(homeScore === awayScore){
+        awayValue = awayValue + 25;
+      }
+      console.log('4:' + homeValue);
+      console.log('4:' + awayValue);
+
+    }
 
     if (home && away && match.get('type') === 'league'){
       var homeAdjustment = adjustmentForRank(home.get('rank'));
@@ -41,16 +63,28 @@ Parse.Cloud.afterSave("Match", function(request){
         awayValue = awayValue * (1 + adjustment);
         homeValue = homeValue * (1 - adjustment);
       }
+      console.log('5:' + homeValue);
+      console.log('5:' + awayValue);
+
     }
 
     homeValue += (match.get('homeShotsOnGoal')*5) - (match.get('homeShotsOffGoal'));
-    console.log(homeValue);
+    awayValue += (match.get('awayShotsOnGoal')*5) - (match.get('awayShotsOffGoal'));
+
+    console.log('6:' + homeValue);
+    console.log('6:' + awayValue);
+
 
     homeValue += (match.get('homeCorner') * 3) - (match.get('homeYellowCard') * 15) - (match.get('homeRedCard') * 35) - (match.get('homeFoul'));
-    console.log(homeValue);
+    awayValue += (match.get('awayCorner') * 3) - (match.get('awayYellowCard') * 15) - (match.get('awayRedCard') * 35) - (match.get('awayFoul'));
+    console.log('7:' + homeValue);
+    console.log('7:' + awayValue);
 
     homeValue += (match.get('homePos') - match.get('awayPos'))*2;
-    console.log(homeValue);
+    awayValue += (match.get('awayPos') - match.get('homePos'))*2;
+    console.log('8:' + homeValue);
+    console.log('8:' + awayValue);
+
   });
 });
 

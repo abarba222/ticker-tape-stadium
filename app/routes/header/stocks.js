@@ -8,5 +8,18 @@ export default Ember.Route.extend({
       // to only find the correct matches
       recent: this.store.findAll('match')
     });
-  }
+  },
+
+  // var date = Date.parse('Mon Jul 13 2015 12:46:00 GMT-0400 (EDT)');
+  //
+  // function format(date) {
+  //   date = new Date(date);
+  //
+  //   var year = date.getFullYear();
+  //   var month = ('0' + (date.getMonth() + 1));
+  //   var day = ('0' + date.getDate());
+  //
+  //   return month + "/" + day + "/" + year;
+  // }
+  // console.log(format(date));
 });

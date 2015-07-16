@@ -137,7 +137,6 @@ body {
 
 .p-symbol{
 	@include span-columns(2);
-	text-align:left;
 }
 
 .p-quantity{
@@ -163,6 +162,7 @@ body {
 .stock-holdings-list-down{
 	@include span-columns(12);
 	padding-top:20px;
+	padding-bottom:20px;
 }
 
 .p-symbol-column{
@@ -171,23 +171,66 @@ body {
 
 .p-quantity-column{
 	@include span-columns(2);
+	text-align:center;
 }
 
 .p-value-column{
 	@include span-columns(2);
+	text-align:center;
 }
 
 .p-plus-minus-column{
 	@include span-columns(2);
+	text-align:center;
 }
 
 .p-profit-loss-column{
 	@include span-columns(2);
+	text-align:center;
 }
 
 .p-to-date-column{
 	@include span-columns(2);
+	text-align:center;
 }
+
+.user-portfolio{
+	@include outer-container(100%);
+	width:92%;
+	background-color:white;
+	border-radius:5px;
+	border:3px solid rgb(235, 195, 16);
+	margin-top:20px;
+}
+
+.username-portfolio-title{
+	color:rgb(25, 25, 25);
+	padding-left:4%;
+	padding-top:20px;
+	margin:0px;
+}
+
+.username-portfolio{
+	list-style:none;
+	margin:0px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.user-capital{
+	padding-top:20px
+}
+
+.user-worth{
+	padding-top:20px;
+}
+
+.user-deposits{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+
 
 //Dashboard
 
