@@ -1,1 +1,35 @@
-{{yield}}
+<div class="portfolio-page">
+
+  <h1 class="portfolio">Portfolio</h1>
+
+  <table class="stock-holdings">
+    <h2 class="current-stock-holdings">Current Stock Holdings</h2>
+    <tr class="stock-holdings-list">
+      <th class="p-symbol">Sym</th>
+      <th class="p-quantity">Qty</th>
+      <th class="p-value">Value</th>
+      <th class="p-plus-minus">+/-</th>
+      <th class="p-profit-loss">P/L</th>
+      <th class="p-to-date">To Date</th>
+    </tr>
+
+    <tr class="stock-holdings-list-down">
+      <td class="p-symbol-column">{{model.symbol}}</td>
+      <td class="p-quantity-column">100</td>
+      <td class="p-value-column">{{model.value}}</td>
+      <td class="p-plus-minus-column">$</td>
+      <td class="p-profit-loss-column">$</td>
+      <td class="p-to-date-column">$</td>
+    </tr>
+  </table>
+
+  <div class="user-portfolio">
+    <h2 class="username-portfolio-title">Username Portfolio</h2>
+    <ul class="username-portfolio">
+      <li class="user-capital">Capital</li>
+      <li class="user-worth">Worth</li>
+      <li class="user-deposits">Deposits</li>
+    </ul>
+  </div>
+
+</div>

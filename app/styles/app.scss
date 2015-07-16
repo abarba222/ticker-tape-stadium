@@ -96,6 +96,99 @@ body {
 	color:white;
 }
 
+//Portfolio
+
+.portfolio-page{
+	background-color:rgb(25, 25, 25);
+	height:auto;
+	padding-bottom:50px;
+}
+
+.portfolio{
+	color:white;
+	margin:0px;
+	padding-top:10px;
+	padding-left:4%;
+}
+
+.stock-holdings{
+	@include outer-container(100%);
+	width:92%;
+	background-color:white;
+	margin-top:20px;
+	border-radius:5px;
+	border:3px solid rgb(235, 195, 16);
+}
+
+.current-stock-holdings{
+	margin:0px;
+	padding-left:4%;
+	padding-top:20px;
+	color:rgb(25, 25, 25);
+}
+
+.stock-holdings-list{
+	@include span-columns(12);
+	font-size:20px;
+	font-weight:bold;
+	padding-top:20px;
+	margin:0px;
+}
+
+.p-symbol{
+	@include span-columns(2);
+	text-align:left;
+}
+
+.p-quantity{
+	@include span-columns(2);
+}
+
+.p-value{
+	@include span-columns(2);
+}
+
+.p-plus-minus{
+	@include span-columns(2);
+}
+
+.p-profit-loss{
+	@include span-columns(2);
+}
+
+.p-to-date{
+	@include span-columns(2);
+}
+
+.stock-holdings-list-down{
+	@include span-columns(12);
+	padding-top:20px;
+}
+
+.p-symbol-column{
+	@include span-columns(2);
+}
+
+.p-quantity-column{
+	@include span-columns(2);
+}
+
+.p-value-column{
+	@include span-columns(2);
+}
+
+.p-plus-minus-column{
+	@include span-columns(2);
+}
+
+.p-profit-loss-column{
+	@include span-columns(2);
+}
+
+.p-to-date-column{
+	@include span-columns(2);
+}
+
 //Dashboard
 
 //Dash Recent Games
@@ -805,6 +898,7 @@ body {
 .stock-input{
 	font-size:14px;
 	border:1px solid black;
+	text-align:center;
 }
 
 .submit-action{

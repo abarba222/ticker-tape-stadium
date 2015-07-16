@@ -13,6 +13,7 @@ Router.map(function() {
     this.route('stocks', {path: 'stocks/:team_id'});
     this.route('dashboard');
     this.route('help');
+    this.route('userbox');
   });
 
   this.route('landing', {path: ''});

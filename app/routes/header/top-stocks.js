@@ -2,7 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function(){
-    return this.store.findAll('team');
+    return this.store.findAll('team', {
+      order: 'value'
+    });
     //this.store.findRecord('team', paramsObj.id)
     // return [
     //   {

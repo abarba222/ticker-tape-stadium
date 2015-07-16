@@ -1,11 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function(params) {
-    //return Ember.RSVP.hash({
-      return this.store.findAll('team', params.length=5);
+  model: function() {
+    return Ember.RSVP.hash({
+      team: this.store.findQuery('team', {
+        limit: 10,
+        order: 'value'
+      }),
 
-      //this.store.findAll('match', params.length=5);
-  //  });
+      match: this.store.findQuery('match', {
+        limit: 5,
+        order: 'date'
+      })
+    });
+
   }
 });

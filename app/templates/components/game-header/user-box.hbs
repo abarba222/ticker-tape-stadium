@@ -1,0 +1,21 @@
+<div class="user-box-show">
+
+  {{#each model as |user|}}
+  <div class="user-box-content">
+    <img class="userbox-image">{{user.image}}
+    <h1 class="userbox-username">{{user.username}}</h1>
+    <h2 class="user-capital">{{user.capital}}</h2>
+    <h2 class="user-status">{{user.status}}</h2>
+  </div>
+  {{/each}}
+
+  <div>
+  {{#if session.isAuthenticated}}
+    {{#link-to 'landing'}}
+      <button class="logout-button" {{action 'invalidateSession'}}
+    >Log Out</button>
+    {{/link-to}}
+  {{/if}}
+  </div>
+
+</div>
