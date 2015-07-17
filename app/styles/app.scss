@@ -96,6 +96,46 @@ body {
 	color:white;
 }
 
+.userbox-title{
+	color:white;
+}
+
+/* .user-box-show{
+	position:relative;
+	.table{
+		height:40px;
+		width:70%;
+	}
+	.none{
+		height:0px;
+		display:none;
+	}
+} */
+
+.user-box-content{
+	background-color:white;
+	color:rgb(25, 25, 25);
+	@include outer-container(100%);
+	width:92%;
+}
+
+.userbox-username{
+	padding:4%;
+}
+
+.userbox-capital{
+	padding:4%;
+}
+
+.userbox-status{
+	padding:4%;
+	font-size:14px;
+}
+
+.logout-button{
+	padding:4%;
+}
+
 //Portfolio
 
 .portfolio-page{

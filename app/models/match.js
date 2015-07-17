@@ -2,6 +2,9 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
     date: DS.attr('date'),
+    function(){
+    new Date().format("%m/%d");
+  },
 
     home: DS.belongsTo('team', { async: true }),
     homeGoals: DS.attr('number'),

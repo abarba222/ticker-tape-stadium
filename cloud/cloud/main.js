@@ -85,6 +85,25 @@ Parse.Cloud.afterSave("Match", function(request){
     console.log('8:' + homeValue);
     console.log('8:' + awayValue);
 
+    // if (home){
+    //var oldHomeValue = {{team.value}};
+    //
+    //if("isFinished" = 'true'){
+    //newHomeValue = homeValue + oldHomeValue;
+    //} else{
+    //
+    //}
+  //}
+    // if (away){
+    //var oldAwayValue = {{team.value}};
+    //
+    //if("isFinished" = 'true'){
+    //newHomeValue = homeValue + oldHomeValue;
+    //} else{
+    //
+    //}
+  //}
+
   });
 });
 

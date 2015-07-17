@@ -6,12 +6,38 @@
 
     <div class="nav-box">
       <div class="nav-left">
-        <button class="nav-button"> + </button>
+        <button class="nav-button" id="navbox" {{action "toggleShow" on "click"}}> +
+          <div class={{nav-box-show}}>
+            <h2 class="navigate-dashboard">Dashboard</h2>
+            <h2 class="navigate-portfolio">Portfolio</h2>
+            <h2 class="navigate-top-stocks">Top Stocks</h2>
+            <h2 class="navigate-help">Help</h2>
+          </div>
+        </button>
       </div>
 
       <div class="user-id">
-        <a id="userbox" onclick="toggleTable();">abarba222</a>
-        <i class="fa fa-check-square user-dropdown"></i>
+        <a class="userbox-title" id="userbox">abarba222
+          <div class={{user-box-show}}>
+            <div class="user-box-content">
+              <img class="userbox-image">{{model.image}}
+              <h1 class="userbox-username">abarba</h1>
+              <h2 class="userbox-capital">$100,000</h2>
+              <h2 class="userbox-status">Amateur Investor</h2>
+
+            {{#if session.isAuthenticated}}
+              {{#link-to 'landing'}}
+                <button class="logout-button" {{action 'invalidateSession'}}
+              >Log Out</button>
+              {{/link-to}}
+            {{/if}}
+          </div>
+          </div>
+          <div>
+            <i class="fa fa-check-square user-dropdown"></i>
+          </div>
+
+        </a>
       </div>
     </div>
 

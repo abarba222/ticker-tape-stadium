@@ -17,7 +17,7 @@
       <th class="t-away">Away</th>
       <th class="t-score">Score</th>
     </tr>
-
+{{log 'model.recent' model.recent}}
     {{#each model.recent as |match|}}
       {{recent-match match=match}}
     {{/each}}
@@ -37,14 +37,12 @@
 
     <div class="trade-stock-action">
       <button class="buy-sell-action">Action</button>
-      <input class="stock-input" type="text" placeholder="Quantity">
+      {{input class="stock-input" type="text" value=quantity placeholder="Quantity"}}
       <button class="submit-action" type="submit">Submit</button>
     </div>
 
     <div class=trade-stock-bottom>
-      <h2 class="total-stock-amount">Total: $
-        <input id="the-total-stock-amount" type="text">
-      </h2>
+      <h2 class="total-stock-amount">Total: ${{total}}</h2>
       <h2 class="shares-you-own">Shares You Own:</h2>
     </div>
 

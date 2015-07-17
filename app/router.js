@@ -26,7 +26,7 @@ Router.map(function() {
     this.route('create', {path: 'header/help'});
     this.route('show', {path: ':parse-user_id'});
   });
-  this.route('users.current', {path: 'header/portfolio'});
+  // this.route('users.current', {path: 'header/portfolio'});
 });
 
 export default Router;
