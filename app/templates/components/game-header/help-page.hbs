@@ -1,1 +1,107 @@
-{{yield}}
+<div class="help-page">
+
+  <div class="how-to-play">
+    <h1 class="how-to-play-title">How to Play</h1>
+
+    <div class=play-instructions>
+      <h2 class="play-overview">Overview</h2>
+      <p class="instructions-to-play">
+    Players will be given $100,000 to invest in various teams as they wish.
+    Use this money to invest in teams you think will build the strongest possible
+    portfolio. Select at least 5 teams for your portfolio from 3 different leagues.
+    The number associated with each team is its stock price. You can buy as many
+    shares of a team, with the money you have, as you wantUse the “portfolio” page
+    to manage all of your teams. In order to find teams you wish to invest in simply
+    go to the “Research" pages.
+      </p>
+    </div>
+
+    <div class=buy-instructions>
+      <h2 class="buy-overview">How to Buy</h2>
+      <p class="instructions-to-buy">
+    Once you’ve found a team you want to
+    buy click on its name and enter the amount of shares you want in the upper
+    right hand box where it says “quantity.” Then click on the “Action” box and
+    select “buy”. Finally, hit submit to enter your transaction.
+      </p>
+    </div>
+
+    <div class=sell-instructions>
+      <h2 class="sell-overview">How to Sell</h2>
+      <p class="instructions-to-sell">
+    In order to sell
+    a team you own follow the same process and select “sell” in the action box
+    once you’ve entered the desired number of shares you wish to sell.
+      </p>
+    </div>
+
+    <div class=go-play-instructions>
+      <h2 class="go-play-overview">Get Started</h2>
+      <p class="instructions-to-go-play">
+    Now you know how to play! View the standings to see where you match up
+    with other players. Go watch soccer and root for the teams you’re
+    invested in!
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="scoring-breakdown">
+    <h1 class="scoring-breakdown-title">Scoring Breakdown</h1>
+
+    <div class=scoring-instructions>
+      <h2 class="step-by-step">Step by Step</h2>
+      <p class="step-by-step-instructions">
+        1) Goals = $1 + (.90 - time the goal was scored)
+2)    (Team 1 – Team 2) Take the difference of the two "Goals" scores to get each teams total.
+3) Add or subtract points for winning, losing or tying at home or away.
+a) Home win = (10% + $0.20) Home loss = (-20% -$0.40) Home tie = ($0) Away win = (20% + $0.40) Away loss = (-10% - $0.20) Away tie = ($0.25).
+4) Rank: A teams position on the table will determine if they receive more, less, or an equal amount of money for the above scoring.
+  Take the lower team's rank percentage(or spot on the table) and subtract it from the higher team's rank percentage.
+  Rank percentages are assigned to teams as follows: (1-4) = 0%, (5-8) = 12.5%, (9-12) = 25%, (13-16) = 37.5%, (17-20) = 50%.
+  Lower ranked teams will receive that percentage boost and higher ranked teams will decline by that percentage in order to compensate for difference in skill between teams.
+5) Yellow Cards = -$0.15 Red Cards = -$0.35 Fouls = -$0.01 Corner Kicks = $0.03
+6) Shots off target = -$0.01 Shots on target = $0.05
+7) Possesstion Time: Possession scoring is determined by the difference of possesion percentage between teams * 2.
+      </p>
+    </div>
+
+    <div class=exapmle-instructions>
+      <h2 class="game-example">Example</h2>
+      <p class="game-scoring">
+        Arsenal(5) v. <strong>Aston Villa(14)</strong>
+Final Score (1-3)
+1.     [$1 + (90-22)] + [$1 + (90-61)] + [$1 + (90-85)] = $4.02
+2.     [$4.02 - $1.84] = $2.18
+3.     [$2.18* .20 = $0.44, $2.18 + $0.44 +$0.40] = $3.02
+4.     [$3.02 * (37.5 - 12.5) = $3.02 * .25 = $3.02 + $0.76 + $0.40] = $4.18
+5.     [(-$0.15 * 5) + (-$0.35 * 0) + (-$0.01 * 19) + ($0.03 * 3)] = -$0.85, $4.18 - $0.85 = $3.33
+6.     [(-$0.01 * 5) + ($0.05 * 5)] = $0.20, $3.33 + $0.20 = $3.53
+7.     [44% - 56% = -12 * 2 = -$0.24] $3.53 - $0.24 = <strong>$3.29</strong>
+      </p>
+    </div>
+  </div>
+
+  <div class=navigation-instructions>
+      <h1 class="nav-example">Navigation</h1>
+
+      <p class="game-navigation">
+        Dashboard- Check out the latest results from matches around the globe and use the calendar to look up future or past matches.
+Portfolio- Manage your current teams/stock holdings
+Matches- View all the upcoming and past matches from around the world
+Research-
+Search- Search any team that interests you, from within our extensive catalog, as a potential investment using our “search” feature.
+Top Stocks- Look up the highest earning stocks in various leagues or the world in general.
+Recent Trades- Evaluate your trading history from the past month.
+Favorites- Look at the most popular teams being bought and sold by other players.
+Alerts- Set up alerts to let you know the match results of teams in your portfolio and alarm you if a stock falls beneath your set threshold.
+Standings- See how your portfolio compares to other players from around the world.
+      </p>
+
+      <a class="help-to-dashboard">{{#link-to "header.dashboard"}}Play Now!{{/link-to}}</a>
+  </div>
+
+
+
+</div>

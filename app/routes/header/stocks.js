@@ -3,11 +3,56 @@ import Ember from 'ember';
 export default Ember.Route.extend({
    model: function(params) {
     return Ember.RSVP.hash({
+      user: this.get('session.currentUser'),
       team: this.store.find('team', params.team_id),
-      recent: this.store.findQuery('match', {where: {objectId: {Home: params.team_id}}})
+      recent: this.store.findQuery('match', {
+        where: {
+          $or: [
+            {
+              home: {
+                __type: "Pointer",
+                className: "Team",
+                objectId: params.team_id
+              }
+            },
+            {
+              away: {
+                __type: "Pointer",
+                className: "Team",
+                objectId: params.team_id
+              }
+            }
+          ]
+        }
+      }),
+      myShare: this.store.findQuery('share', {
+        where: {
+          userId: {
+            __type: "Pointer",
+            className: "_User",
+            objectId: this.get('session.currentUser.id')
+          },
+          teamSelected: {
+            __type: "Pointer",
+            className: "Team",
+            objectId: params.team_id
+          }
+        }
+      }).then(function(shares){
+        return Ember.get(shares, 'firstObject');
+      })
       // You would need to use findQuery or a Cloud function
       // to only find the correct matches
-      });
+    }).then(function(model) {
+      console.log(model);
+      if(!model.myShare) {
+        model.myShare = this.store.createRecord('share', {
+          teamSelected: model.team,
+          userId: this.get('session.currentUser')
+        });
+      }
+      return model;
+    }.bind(this));
   },
 
 

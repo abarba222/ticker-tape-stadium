@@ -20,8 +20,8 @@ export default Ember.Route.extend({
   }
 });
 
-// App.TopStocksComponent = Ember.Component.extend(Ember.SortableMixin, {
-//
+//App.TopStocksComponent = Ember.Component.extend(Ember.SortableMixin, {
+
 //   actions: {
 //     sortValue: function(){
 //       // sort by value
@@ -39,4 +39,4 @@ export default Ember.Route.extend({
 // //     }
 //  }
 //
-// });
+//  });

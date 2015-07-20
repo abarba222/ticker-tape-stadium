@@ -14,9 +14,9 @@
     </tr>
 
     <tr class="stock-holdings-list-down">
-      <td class="p-symbol-column">{{model.symbol}}</td>
-      <td class="p-quantity-column">100</td>
-      <td class="p-value-column">{{model.value}}</td>
+      <td class="p-symbol-column">{{model.team.symbol}}</td>
+      <td class="p-quantity-column">{{model.share.quantity}}</td>
+      <td class="p-value-column">{{model.team.value}}</td>
       <td class="p-plus-minus-column">$</td>
       <td class="p-profit-loss-column">$</td>
       <td class="p-to-date-column">$</td>
@@ -26,8 +26,8 @@
   <div class="user-portfolio">
     <h2 class="username-portfolio-title">Username Portfolio</h2>
     <ul class="username-portfolio">
-      <li class="user-capital">Capital: $100,000</li>
-      <li class="user-worth">Worth: $100,000</li>
+      <li class="user-capital">Capital: ${{session.currentUser.capital}}</li>
+      <li class="user-worth">Worth: ${{session.currentUser.worth}}</li>
       <li class="user-deposits">Deposits: 09/15/15 ~ $100,000</li>
     </ul>
   </div>

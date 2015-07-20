@@ -11,7 +11,7 @@
       <th class="d-score">Score</th>
     </tr>
 
-    {{#each model as |game|}}
+    {{#each model.matches as |game|}}
     <tr class="d-recent-games-data">
       <td class="d-date-column">{{game.date}}</td>
       <td class="d-home-column">{{game.home.Teams}}</td>
@@ -31,7 +31,7 @@
       <th class="d-streak">Streak</th>
     </tr>
 
-    {{#each model as |stock|}}
+    {{#each model.teams as |stock|}}
     <tr class="d-top-stocks-data">
       <td class="d-symbol-column">{{stock.symbol}}</td>
       <td class="d-name-column">{{stock.Teams}}</td>
@@ -53,7 +53,7 @@
         <th class="tud-stock-jump">Stock Jump</th>
       </tr>
 
-      {{#each model as |team|}}
+      {{#each model.trendingUp as |team|}}
       <tr class="trending-up-teams">
         <td class="tud-symbol-column">{{team.symbol}}</td>
         <td class="tud-name-column">{{team.Teams}}</td>
@@ -72,7 +72,7 @@
         <th class="tdd-stock-drop">Stock Drop</th>
       </tr>
 
-      {{#each model as |team|}}
+      {{#each model.trendingDown as |team|}}
       <tr class="trending-down-teams">
         <td class="tdd-symbol-column">{{team.symbol}}</td>
         <td class="tdd-name-column">{{team.Teams}}</td>

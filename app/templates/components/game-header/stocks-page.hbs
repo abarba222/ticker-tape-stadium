@@ -36,14 +36,19 @@
     </div>
 
     <div class="trade-stock-action">
-      <button class="buy-sell-action">Action</button>
+      <button class="buy-sell-action">
+        <div class="action-actions">
+          <button class="buy-action" {{action 'buy'}}>Buy</button>
+          <button class="sell-action" {{action 'sell'}}>Sell</button>
+        </div>
+      </button>
       {{input class="stock-input" type="text" value=quantity placeholder="Quantity"}}
-      <button class="submit-action" type="submit">Submit</button>
+      <button class="submit-action" type="submit" {{action "quantitySubmit" on "click"}}>Submit</button>
     </div>
 
     <div class=trade-stock-bottom>
       <h2 class="total-stock-amount">Total: ${{total}}</h2>
-      <h2 class="shares-you-own">Shares You Own:</h2>
+      <h2 class="shares-you-own">Shares You Own: {{model.myShare.quantity}}</h2>
     </div>
 
   </div>

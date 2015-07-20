@@ -6,6 +6,7 @@ $light-gray: rgb(200,200,200);
 $medium-gray: rgb(175,175,175);
 
 $mobile: new-breakpoint(max-width 768px);
+$desktop: new-breakpoint(min-width 902px);
 
 * {
 	box-sizing: border-box;
@@ -113,23 +114,29 @@ body {
 } */
 
 .user-box-content{
-	background-color:white;
+	background-color:black;
 	color:rgb(25, 25, 25);
 	@include outer-container(100%);
 	width:92%;
+	border:3px solid rgb(235, 195, 16);
+	border-radius:3px;
+	list-style:none;
 }
 
 .userbox-username{
 	padding:4%;
+	color:white;
 }
 
 .userbox-capital{
 	padding:4%;
+	color:white;
 }
 
 .userbox-status{
 	padding:4%;
 	font-size:14px;
+	color:white;
 }
 
 .logout-button{
@@ -976,6 +983,23 @@ body {
 	font-weight:bold;
 	font-size:14px;
 	border-radius:5px;
+	background-color:white;
+	color:white;
+	border:1px solid black;
+}
+
+.buy-action{
+	background-color:rgb(0, 175, 0);
+	color:white;
+	border-radius:5px;
+	padding:3px;
+}
+
+.sell-action{
+	background-color:rgb(200, 0, 0);
+	color:white;
+	border-radius:5px;
+	padding:3px;
 }
 
 .stock-input{
@@ -988,6 +1012,8 @@ body {
 	font-weight:bold;
 	font-size:14px;
 	border-radius:5px;
+	background-color:white;
+	color:rgb(25, 25, 25);
 }
 
 .trade-stock-bottom{
@@ -1000,4 +1026,75 @@ body {
 
 .shares-you-own{
 	padding-left:4%;
+}
+
+//Help
+
+.help-page{
+	@include outer-container(100%);
+	background-color:rgb(25, 25, 25);
+	padding-bottom:50px;
+}
+
+.how-to-play{
+	@include outer-container(100%);
+	width:92%;
+	color:white;
+}
+
+.how-to-play-title{
+	margin:0px;
+	text-align:center;
+	padding-top:30px;
+	color:rgb(235, 195, 16);
+}
+
+.scoring-breakdown{
+	@include outer-container(100%);
+	width:92%;
+	color:white;
+}
+
+.scoring-breakdown-title{
+	margin:0px;
+	text-align:center;
+	padding-top:30px;
+	color:rgb(235, 195, 16);
+}
+
+.navigation-instructions{
+	@include outer-container(100%);
+	width:92%;
+	color:white;
+}
+
+.nav-example{
+	margin:0px;
+	text-align:center;
+	padding-top:30px;
+	color:rgb(235, 195, 16);
+}
+
+.help-to-dashboard{
+	margin:0px;
+	font-size:28px;
+	padding-top:30px;
+	text-align:center;
+		a{
+			color:rgb(235, 195, 16);
+		}
+}
+
+//Desktop
+
+//Header
+
+.header{
+	height:auto;
+	margin-top:0px;
+
+@include media($desktop) {
+	min-width: 902;
+	max-width: 1280px;
+	}
 }

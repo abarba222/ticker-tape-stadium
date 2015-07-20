@@ -6,39 +6,36 @@
 
     <div class="nav-box">
       <div class="nav-left">
-        <button class="nav-button" id="navbox" {{action "toggleShow" on "click"}}> +
-          <div class={{nav-box-show}}>
-            <h2 class="navigate-dashboard">Dashboard</h2>
-            <h2 class="navigate-portfolio">Portfolio</h2>
-            <h2 class="navigate-top-stocks">Top Stocks</h2>
-            <h2 class="navigate-help">Help</h2>
+        <button class="nav-button"{{action "toggleShow"}}> + </button>
+          {{#if showNav}}
+          <div class="nav-box-show">
+            <h2 class="navigate-dashboard">{{#link-to "header.dashboard"}}Dashboard{{/link-to}}</h2>
+            <h2 class="navigate-portfolio">{{#link-to "header.portfolio"}}Portfolio{{/link-to}}</h2>
+            <h2 class="navigate-top-stocks">{{#link-to "header.top-stocks"}}Top Stocks{{/link-to}}</h2>
+            <h2 class="navigate-help">{{#link-to "header.help"}}Help{{/link-to}}</h2>
           </div>
-        </button>
+          {{/if}}
       </div>
 
       <div class="user-id">
-        <a class="userbox-title" id="userbox">abarba222
-          <div class={{user-box-show}}>
+        <div class="userbox-title">abarba222
+          {{#if showUser}}
             <div class="user-box-content">
-              <img class="userbox-image">{{model.image}}
-              <h1 class="userbox-username">abarba</h1>
-              <h2 class="userbox-capital">$100,000</h2>
-              <h2 class="userbox-status">Amateur Investor</h2>
+              <li class="userbox-username">abarba</li>
+              <li class="userbox-capital">$100,000</li>
+              <li class="userbox-status">Amateur Investor</li>
 
             {{#if session.isAuthenticated}}
-              {{#link-to 'landing'}}
+
                 <button class="logout-button" {{action 'invalidateSession'}}
               >Log Out</button>
-              {{/link-to}}
+
             {{/if}}
           </div>
-          </div>
-          <div>
-            <i class="fa fa-check-square user-dropdown"></i>
-          </div>
-
-        </a>
+        {{/if}}
+        </div>
       </div>
+
     </div>
 
 </div>
