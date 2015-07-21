@@ -1,0 +1,2761 @@
+{
+  "i": [
+    {
+      "eventfk": "1990638",
+      "startdate": "2015-07-15 22:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "519",
+      "tournamentfk": "8964",
+      "tournament_stagefk": "836968",
+      "homefk": "316468",
+      "awayfk": "80591",
+      "countryfk": "31",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "38",
+      "winner": "2",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "316468",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "80591",
+          "r": {
+            "1": "4",
+            "4": "4",
+            "5": "2",
+            "6": "4"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46184932",
+      "incidents_hash": "417e2c0cfbf5a7c40c5d0cf1eafc9917",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1908386",
+      "startdate": "2015-07-15 22:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "131",
+      "tournamentfk": "9255",
+      "tournament_stagefk": "839152",
+      "homefk": "425692",
+      "awayfk": "4417",
+      "countryfk": "83",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "10",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "425692",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "4417",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46185380",
+      "incidents_hash": "4a6264c20665981118ce83f24f8a42ca",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1912127",
+      "startdate": "2015-07-15 23:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "9296",
+      "tournamentfk": "9274",
+      "tournament_stagefk": "839237",
+      "homefk": "162181",
+      "awayfk": "197329",
+      "countryfk": "16",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "1",
+      "winner": "1",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "162181",
+          "r": {
+            "1": "5",
+            "4": "5",
+            "5": "3",
+            "6": "5"
+          }
+        },
+        "2": {
+          "p": "197329",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "1",
+            "6": "2"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46189140",
+      "incidents_hash": "f0d71c5676f81c5643e96b953f3fa13e",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1986422",
+      "startdate": "2015-07-16 00:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "9305",
+      "tournamentfk": "9304",
+      "tournament_stagefk": "839325",
+      "homefk": "10094",
+      "awayfk": "89395",
+      "countryfk": "48",
+      "status_descfk": "13",
+      "status_type": "finished",
+      "live": "1",
+      "round": "1/16",
+      "winner": "1",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "10094",
+          "r": {
+            "1": "1",
+            "3": "6",
+            "4": "7",
+            "5": "0",
+            "6": "7"
+          }
+        },
+        "2": {
+          "p": "89395",
+          "r": {
+            "1": "1",
+            "3": "5",
+            "4": "6",
+            "5": "1",
+            "6": "6"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46185887",
+      "incidents_hash": "85eb9f8e76d960f1a672a3b3fca18f7e",
+      "winners": [],
+      "status_desc_name": "Finished AP",
+      "status_desc_short": "FAP"
+    },
+    {
+      "eventfk": "1939639",
+      "startdate": "2015-07-16 00:05:00",
+      "sportfk": "1",
+      "tournament_templatefk": "298",
+      "tournamentfk": "9352",
+      "tournament_stagefk": "839622",
+      "homefk": "5857",
+      "awayfk": "5858",
+      "countryfk": "11",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "3",
+      "winner": "1",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "5857",
+          "r": {
+            "1": "1",
+            "4": "1",
+            "5": "0",
+            "6": "1"
+          }
+        },
+        "2": {
+          "p": "5858",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46187824",
+      "incidents_hash": "5e68d9a0cda0f2969d37eb8b0a01bdfc",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1981301",
+      "startdate": "2015-07-16 00:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "9067",
+      "tournamentfk": "9291",
+      "tournament_stagefk": "839286",
+      "homefk": "172341",
+      "awayfk": "197806",
+      "countryfk": "51",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "3",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "172341",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "197806",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46185970",
+      "incidents_hash": "265dfc5caba7b81733f3d25a4ae2d4aa",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1975480",
+      "startdate": "2015-07-16 01:35:00",
+      "sportfk": "1",
+      "tournament_templatefk": "489",
+      "tournamentfk": "9162",
+      "tournament_stagefk": "838420",
+      "homefk": "267810",
+      "awayfk": "8659",
+      "countryfk": "11",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "1",
+      "winner": "1",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "267810",
+          "r": {
+            "1": "3",
+            "4": "3",
+            "5": "1",
+            "6": "3"
+          }
+        },
+        "2": {
+          "p": "8659",
+          "r": {
+            "1": "1",
+            "4": "1",
+            "5": "1",
+            "6": "1"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46186410",
+      "incidents_hash": "2865d1e46606a189271697b4a61aa00a",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1981300",
+      "startdate": "2015-07-16 02:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "9067",
+      "tournamentfk": "9291",
+      "tournament_stagefk": "839286",
+      "homefk": "10276",
+      "awayfk": "47387",
+      "countryfk": "51",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "3",
+      "winner": "1",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "10276",
+          "r": {
+            "1": "3",
+            "4": "3",
+            "5": "1",
+            "6": "3"
+          }
+        },
+        "2": {
+          "p": "47387",
+          "r": {
+            "1": "1",
+            "4": "1",
+            "5": "0",
+            "6": "1"
+          }
+        }
+      },
+      "cards": {
+        "1": {
+          "15": "1"
+        }
+      },
+      "n": "46186554",
+      "incidents_hash": "ed88efe782500979af1fc57987e2fac9",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1923285",
+      "startdate": "2015-07-16 02:10:00",
+      "sportfk": "1",
+      "tournament_templatefk": "8972",
+      "tournamentfk": "9169",
+      "tournament_stagefk": "839324",
+      "homefk": "207242",
+      "awayfk": "607853",
+      "countryfk": "16",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "1",
+      "winner": "1",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "207242",
+          "r": {
+            "1": "4",
+            "4": "4",
+            "5": "1",
+            "6": "4"
+          }
+        },
+        "2": {
+          "p": "607853",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": {
+        "2": {
+          "16": "1"
+        }
+      },
+      "n": "46189143",
+      "incidents_hash": "8acba7cbc91b532a124143d0cf244fad",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1986415",
+      "startdate": "2015-07-16 02:20:00",
+      "sportfk": "1",
+      "tournament_templatefk": "9305",
+      "tournamentfk": "9304",
+      "tournament_stagefk": "839325",
+      "homefk": "10096",
+      "awayfk": "10103",
+      "countryfk": "48",
+      "status_descfk": "13",
+      "status_type": "finished",
+      "live": "1",
+      "round": "1/16",
+      "winner": "2",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "10096",
+          "r": {
+            "1": "0",
+            "3": "5",
+            "4": "5",
+            "5": "0",
+            "6": "5"
+          }
+        },
+        "2": {
+          "p": "10103",
+          "r": {
+            "1": "0",
+            "3": "6",
+            "4": "6",
+            "5": "0",
+            "6": "6"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46186895",
+      "incidents_hash": "92266dca4e501a546f92a01802a52f2e",
+      "winners": [],
+      "status_desc_name": "Finished AP",
+      "status_desc_short": "FAP"
+    },
+    {
+      "eventfk": "1894394",
+      "startdate": "2015-07-16 02:35:00",
+      "sportfk": "1",
+      "tournament_templatefk": "130",
+      "tournamentfk": "9168",
+      "tournament_stagefk": "838440",
+      "homefk": "6397",
+      "awayfk": "6001",
+      "countryfk": "16",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "1",
+      "winner": "2",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "6397",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "6001",
+          "r": {
+            "1": "1",
+            "4": "1",
+            "5": "1",
+            "6": "1"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46188905",
+      "incidents_hash": "86580147041bf600103625512ad9dad7",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1939640",
+      "startdate": "2015-07-16 02:35:00",
+      "sportfk": "1",
+      "tournament_templatefk": "298",
+      "tournamentfk": "9352",
+      "tournament_stagefk": "839622",
+      "homefk": "6710",
+      "awayfk": "7724",
+      "countryfk": "11",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "3",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "6710",
+          "r": {
+            "1": "4",
+            "4": "4",
+            "5": "1",
+            "6": "4"
+          }
+        },
+        "2": {
+          "p": "7724",
+          "r": {
+            "1": "4",
+            "4": "4",
+            "5": "0",
+            "6": "4"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46188110",
+      "incidents_hash": "82b290f212100e798c3d936996b8092a",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1923284",
+      "startdate": "2015-07-16 02:40:00",
+      "sportfk": "1",
+      "tournament_templatefk": "8972",
+      "tournamentfk": "9169",
+      "tournament_stagefk": "839324",
+      "homefk": "303869",
+      "awayfk": "246185",
+      "countryfk": "16",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "303869",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "1",
+            "6": "2"
+          }
+        },
+        "2": {
+          "p": "246185",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "1",
+            "6": "2"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46189158",
+      "incidents_hash": "e37b29616597dec1777c2d22576c0969",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1974004",
+      "startdate": "2015-07-16 03:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "45",
+      "tournamentfk": "9123",
+      "tournament_stagefk": "839947",
+      "homefk": "8702",
+      "awayfk": "8561",
+      "countryfk": "11",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "1/2",
+      "winner": "1",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8702",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "2",
+            "6": "2"
+          }
+        },
+        "2": {
+          "p": "8561",
+          "r": {
+            "1": "1",
+            "4": "1",
+            "5": "1",
+            "6": "1"
+          }
+        }
+      },
+      "cards": {
+        "2": {
+          "15": "1"
+        }
+      },
+      "n": "46188500",
+      "incidents_hash": "f2b953a65d3e5c8d91a773556d2a0888",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1981299",
+      "startdate": "2015-07-16 03:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "9067",
+      "tournamentfk": "9291",
+      "tournament_stagefk": "839286",
+      "homefk": "6546",
+      "awayfk": "7877",
+      "countryfk": "51",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "3",
+      "winner": "1",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "6546",
+          "r": {
+            "1": "3",
+            "4": "3",
+            "5": "0",
+            "6": "3"
+          }
+        },
+        "2": {
+          "p": "7877",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": {
+        "1": {
+          "16": "1"
+        }
+      },
+      "n": "46186952",
+      "incidents_hash": "638e0f70f65f404911853aaaf926b841",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1981304",
+      "startdate": "2015-07-16 03:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "9067",
+      "tournamentfk": "9291",
+      "tournament_stagefk": "839286",
+      "homefk": "2369",
+      "awayfk": "9770",
+      "countryfk": "51",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "3",
+      "winner": "2",
+      "scopes_hash": "7c1886163983bfad394fce80770d006e",
+      "results": {
+        "1": {
+          "p": "2369",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "9770",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "0",
+            "6": "2"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46186954",
+      "incidents_hash": "961be79f3a7fda82e77a7227de855b28",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1981305",
+      "startdate": "2015-07-16 03:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "9067",
+      "tournamentfk": "9291",
+      "tournament_stagefk": "839286",
+      "homefk": "162164",
+      "awayfk": "10283",
+      "countryfk": "51",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "3",
+      "winner": "2",
+      "scopes_hash": "f8133aff135a94288bef6b1c3427b676",
+      "results": {
+        "1": {
+          "p": "162164",
+          "r": {
+            "1": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "10283",
+          "r": {
+            "1": "1",
+            "4": "1",
+            "5": "0",
+            "6": "1"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46186955",
+      "incidents_hash": "1e4de59f56f5b166f869fd7a298594e4",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1912128",
+      "startdate": "2015-07-16 04:05:00",
+      "sportfk": "1",
+      "tournament_templatefk": "9296",
+      "tournamentfk": "9274",
+      "tournament_stagefk": "839237",
+      "homefk": "614326",
+      "awayfk": "614321",
+      "countryfk": "16",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "614326",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "1",
+            "6": "2"
+          }
+        },
+        "2": {
+          "p": "614321",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "2",
+            "6": "2"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46187103",
+      "incidents_hash": "9b459feb6dfd07427976f0f61714af57",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "2006062",
+      "startdate": "2015-07-16 12:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "489",
+      "tournamentfk": "9162",
+      "tournament_stagefk": "838420",
+      "homefk": "7726",
+      "awayfk": "8560",
+      "countryfk": "11",
+      "status_descfk": "106",
+      "status_type": "cancelled",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "7726",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8560",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46175248",
+      "incidents_hash": "3e48349eb27cdf491bdabee0592b196e",
+      "winners": [],
+      "status_desc_name": "Cancelled",
+      "status_desc_short": "CAN"
+    },
+    {
+      "eventfk": "1921331",
+      "startdate": "2015-07-16 13:35:00",
+      "sportfk": "1",
+      "tournament_templatefk": "120",
+      "tournamentfk": "9301",
+      "tournament_stagefk": "839320",
+      "homefk": "6445",
+      "awayfk": "7803",
+      "countryfk": "125",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "19",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "6445",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "0",
+            "6": "2"
+          }
+        },
+        "2": {
+          "p": "7803",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "0",
+            "6": "2"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46206053",
+      "incidents_hash": "8b0bd6f5fe5d19f336f216d27988e55d",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1921332",
+      "startdate": "2015-07-16 13:45:00",
+      "sportfk": "1",
+      "tournament_templatefk": "120",
+      "tournamentfk": "9301",
+      "tournament_stagefk": "839320",
+      "homefk": "198616",
+      "awayfk": "4189",
+      "countryfk": "125",
+      "status_descfk": "6",
+      "status_type": "finished",
+      "live": "1",
+      "round": "19",
+      "winner": "1",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "198616",
+          "r": {
+            "1": "2",
+            "4": "2",
+            "5": "0",
+            "6": "2"
+          }
+        },
+        "2": {
+          "p": "4189",
+          "r": {
+            "1": "1",
+            "4": "1",
+            "5": "1",
+            "6": "1"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46208295",
+      "incidents_hash": "741284ef564fe1ee928782cdc5274550",
+      "winners": [],
+      "status_desc_name": "Finished",
+      "status_desc_short": "FIN"
+    },
+    {
+      "eventfk": "1981807",
+      "startdate": "2015-07-16 15:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "338",
+      "tournamentfk": "9477",
+      "tournament_stagefk": "840368",
+      "homefk": "462237",
+      "awayfk": "198223",
+      "countryfk": "22",
+      "status_descfk": "3",
+      "status_type": "inprogress",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "462237",
+          "r": {
+            "1": "1",
+            "5": "1",
+            "6": "1"
+          }
+        },
+        "2": {
+          "p": "198223",
+          "r": {
+            "1": "0",
+            "5": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46209971",
+      "el": "86",
+      "incidents_hash": "d4ce252d08c62437155bca828b4f1812",
+      "winners": [],
+      "status_desc_name": "2nd half",
+      "status_desc_short": "2H"
+    },
+    {
+      "eventfk": "1995039",
+      "startdate": "2015-07-16 16:45:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8037",
+      "awayfk": "310094",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8037",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "310094",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46210042",
+      "incidents_hash": "7e1c0affcdcbbfbae3976990d2fb2ec7",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1927851",
+      "startdate": "2015-07-16 17:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "251",
+      "tournamentfk": "9314",
+      "tournament_stagefk": "839362",
+      "homefk": "4672",
+      "awayfk": "4447",
+      "countryfk": "24",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "14",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "4672",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "4447",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46151164",
+      "incidents_hash": "e0f930ab647ac00f4de77f813de7755a",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995046",
+      "startdate": "2015-07-16 17:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "192962",
+      "awayfk": "8138",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "192962",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8138",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46151165",
+      "incidents_hash": "4706fc3ba6991120a44ff938a1812a2d",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "2027553",
+      "startdate": "2015-07-16 17:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "489",
+      "tournamentfk": "9162",
+      "tournament_stagefk": "838420",
+      "homefk": "9876",
+      "awayfk": "656341",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "9876",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "656341",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46177052",
+      "incidents_hash": "da42efaa04869ec4990b89acc585dfee",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1981295",
+      "startdate": "2015-07-16 18:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "287",
+      "tournamentfk": "9476",
+      "tournament_stagefk": "840361",
+      "homefk": "80460",
+      "awayfk": "5960",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1/2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "80460",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "5960",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46101784",
+      "incidents_hash": "ea93b904509263969b3d8bc5224254c2",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995057",
+      "startdate": "2015-07-16 18:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8706",
+      "awayfk": "8369",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8706",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8369",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990674",
+      "incidents_hash": "bf91cb8779562375dde05b6734566c54",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995058",
+      "startdate": "2015-07-16 18:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8410",
+      "awayfk": "8014",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8410",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8014",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46187291",
+      "incidents_hash": "1a912d96ad746b6fbadb7024fc02a407",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1996028",
+      "startdate": "2015-07-16 18:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "10068",
+      "awayfk": "1954",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "10068",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "1954",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990752",
+      "incidents_hash": "2644f30ae9db92fe61818262cafa53a5",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "2027999",
+      "startdate": "2015-07-16 18:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "489",
+      "tournamentfk": "9162",
+      "tournament_stagefk": "838420",
+      "homefk": "656546",
+      "awayfk": "10269",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "656546",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "10269",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46077567",
+      "incidents_hash": "08b70df0de9a6cae967ab0d9abdfd7a7",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "2028485",
+      "startdate": "2015-07-16 18:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "489",
+      "tournamentfk": "9162",
+      "tournament_stagefk": "838420",
+      "homefk": "1933",
+      "awayfk": "80654",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "1933",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "80654",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46096090",
+      "incidents_hash": "506fa844474106b3b1d132dc241fe509",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1977630",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "489",
+      "tournamentfk": "9162",
+      "tournament_stagefk": "838420",
+      "homefk": "9908",
+      "awayfk": "9938",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "9908",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "9938",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46083563",
+      "incidents_hash": "042d8cf1c7fc1bfa3ffcd2446cb839db",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995036",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "9754",
+      "awayfk": "10191",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "9754",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "10191",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46115451",
+      "incidents_hash": "ce4ce38894c8a46d8252ba357794438d",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995040",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8349",
+      "awayfk": "2211",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8349",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "2211",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990647",
+      "incidents_hash": "ea0849ac84a8ae8f6b5a0461db5ce7cd",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995045",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "10180",
+      "awayfk": "8180",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "10180",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8180",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990650",
+      "incidents_hash": "be8074fc007da06e880acc9cf4e41b71",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995048",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "10126",
+      "awayfk": "8595",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "10126",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8595",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46187481",
+      "incidents_hash": "a2543154da31d39a0f1ab8599d5e59be",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995051",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "10141",
+      "awayfk": "10058",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "10141",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "10058",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45829857",
+      "incidents_hash": "d5ff280b894e66ceb18b9a0195becf08",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995065",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "5772",
+      "awayfk": "10154",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "5772",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "10154",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46035469",
+      "incidents_hash": "c5c11e49a742111fd391f43c7a7abbd2",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1996006",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "489",
+      "tournamentfk": "9162",
+      "tournament_stagefk": "838420",
+      "homefk": "651781",
+      "awayfk": "8526",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "651781",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8526",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46083349",
+      "incidents_hash": "024e5ea318f2919cc6d7b3c66723d0d5",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "2004011",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "512",
+      "tournamentfk": "9562",
+      "tournament_stagefk": "840560",
+      "homefk": "7789",
+      "awayfk": "95026",
+      "countryfk": "3",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "7789",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "95026",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45509345",
+      "incidents_hash": "da59df431aecbb6c9782b080ee2f343f",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "2028499",
+      "startdate": "2015-07-16 19:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "489",
+      "tournamentfk": "9162",
+      "tournament_stagefk": "838420",
+      "homefk": "9827",
+      "awayfk": "8121",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "9827",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8121",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46104445",
+      "incidents_hash": "86804f758b431ee84fcb469a18616b49",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995047",
+      "startdate": "2015-07-16 19:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "288599",
+      "awayfk": "8103",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "288599",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8103",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46076079",
+      "incidents_hash": "e42eee16753c04a802dc75b3ae8d9ad7",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995059",
+      "startdate": "2015-07-16 19:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "9986",
+      "awayfk": "8173",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "9986",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8173",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990671",
+      "incidents_hash": "12547039ed07a2b81059b8494fcdff28",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995044",
+      "startdate": "2015-07-16 19:45:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "9824",
+      "awayfk": "112484",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "9824",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "112484",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990631",
+      "incidents_hash": "71792c1b91c071bd20021dead6f0d617",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995053",
+      "startdate": "2015-07-16 19:45:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8391",
+      "awayfk": "2188",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8391",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "2188",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46155536",
+      "incidents_hash": "f909f46b48107d24b3206ceb4ea5b759",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1908389",
+      "startdate": "2015-07-16 20:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "131",
+      "tournamentfk": "9255",
+      "tournament_stagefk": "839152",
+      "homefk": "4410",
+      "awayfk": "6398",
+      "countryfk": "83",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "10",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "4410",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "6398",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46185869",
+      "incidents_hash": "6c74d5624029c85b71ca0867e266e583",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995038",
+      "startdate": "2015-07-16 20:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "175388",
+      "awayfk": "8619",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "175388",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8619",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990660",
+      "incidents_hash": "c7bc29ae2cbef941ee5ae62ac1291142",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995054",
+      "startdate": "2015-07-16 20:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "9752",
+      "awayfk": "7951",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "9752",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "7951",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46155568",
+      "incidents_hash": "73a48b93c78535278c39ffbdd25c939c",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995066",
+      "startdate": "2015-07-16 20:05:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "4662",
+      "awayfk": "7971",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "4662",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "7971",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990628",
+      "incidents_hash": "8fa0b83d5d7d414f04fafdc863742b71",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995079",
+      "startdate": "2015-07-16 20:15:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "6019",
+      "awayfk": "1578",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "6019",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "1578",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990656",
+      "incidents_hash": "daed09ca3da285af15dc4e771e8dfa21",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1979251",
+      "startdate": "2015-07-16 20:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "266",
+      "tournamentfk": "9452",
+      "tournament_stagefk": "840334",
+      "homefk": "9991",
+      "awayfk": "8342",
+      "countryfk": "14",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "final",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "9991",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8342",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45650999",
+      "incidents_hash": "bdfac95bf08c4537fe98c4394579030f",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995041",
+      "startdate": "2015-07-16 20:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "6406",
+      "awayfk": "197872",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "6406",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "197872",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46075993",
+      "incidents_hash": "7cfc98d79d46515c301083e3f3d00690",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995043",
+      "startdate": "2015-07-16 20:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8222",
+      "awayfk": "10108",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8222",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "10108",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990634",
+      "incidents_hash": "a020d457c32f94bbf5f1cdca4e3b3d01",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995050",
+      "startdate": "2015-07-16 20:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "6374",
+      "awayfk": "8076",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "6374",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8076",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990638",
+      "incidents_hash": "985f1dff599c2f2b741350d186bdebbe",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1996026",
+      "startdate": "2015-07-16 20:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "1957",
+      "awayfk": "8044",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "1957",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8044",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990747",
+      "incidents_hash": "944cb51c811dd3e299c986cd0cb849e9",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "2027998",
+      "startdate": "2015-07-16 20:30:00",
+      "sportfk": "1",
+      "tournament_templatefk": "489",
+      "tournamentfk": "9162",
+      "tournament_stagefk": "838420",
+      "homefk": "656544",
+      "awayfk": "8302",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "656544",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8302",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46077566",
+      "incidents_hash": "a5f194f40af4b2409acc66738498ab40",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1981294",
+      "startdate": "2015-07-16 20:45:00",
+      "sportfk": "1",
+      "tournament_templatefk": "287",
+      "tournamentfk": "9476",
+      "tournament_stagefk": "840361",
+      "homefk": "5961",
+      "awayfk": "5932",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "1/2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "5961",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "5932",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46101787",
+      "incidents_hash": "4996ed4ead903fca0d60ac75c655b80f",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995052",
+      "startdate": "2015-07-16 20:45:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8066",
+      "awayfk": "2429",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8066",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "2429",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45684240",
+      "incidents_hash": "b0c89ac71b8966392902f4525522811b",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995075",
+      "startdate": "2015-07-16 20:45:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8654",
+      "awayfk": "8001",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8654",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8001",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990664",
+      "incidents_hash": "b5e70294183e842a68f80b5168226141",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995042",
+      "startdate": "2015-07-16 21:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8673",
+      "awayfk": "188191",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8673",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "188191",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45934245",
+      "incidents_hash": "212d2715fb03898259e6918305c21883",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995049",
+      "startdate": "2015-07-16 21:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "4131",
+      "awayfk": "7988",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "4131",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "7988",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45934228",
+      "incidents_hash": "25148681969fbc25bbe86629d5a1396e",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995060",
+      "startdate": "2015-07-16 21:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8025",
+      "awayfk": "9893",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8025",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "9893",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46073537",
+      "incidents_hash": "1a572fdde57c3beaf022e15fa3f8722a",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995061",
+      "startdate": "2015-07-16 21:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8003",
+      "awayfk": "257518",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8003",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "257518",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46073547",
+      "incidents_hash": "2515b6355870a39599ab84c5b30f27a6",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995063",
+      "startdate": "2015-07-16 21:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "4573",
+      "awayfk": "6022",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "4573",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "6022",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46073549",
+      "incidents_hash": "b61cfa9aa904525c54afe47fdff47211",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995064",
+      "startdate": "2015-07-16 21:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8151",
+      "awayfk": "2103",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8151",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "2103",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "46073457",
+      "incidents_hash": "767bfaca7b58a9b7c24d4e7566a8ccdc",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1996030",
+      "startdate": "2015-07-16 21:00:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "10162",
+      "awayfk": "8485",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "10162",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8485",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45935457",
+      "incidents_hash": "97537ab7bf479002a481547ed875b50c",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    },
+    {
+      "eventfk": "1995037",
+      "startdate": "2015-07-16 21:15:00",
+      "sportfk": "1",
+      "tournament_templatefk": "73",
+      "tournamentfk": "9529",
+      "tournament_stagefk": "840498",
+      "homefk": "8130",
+      "awayfk": "8422",
+      "countryfk": "11",
+      "status_descfk": "1",
+      "status_type": "notstarted",
+      "live": "1",
+      "round": "2",
+      "winner": "0",
+      "scopes_hash": "false",
+      "results": {
+        "1": {
+          "p": "8130",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        },
+        "2": {
+          "p": "8422",
+          "r": {
+            "1": "0",
+            "6": "0"
+          }
+        }
+      },
+      "cards": [],
+      "n": "45990677",
+      "incidents_hash": "c1868bbe132840b32a7537571615bf2a",
+      "winners": [],
+      "status_desc_name": "Not started",
+      "status_desc_short": "NS"
+    }
+  ],
+  "t": 68,
+  "n": 46210042
+}
