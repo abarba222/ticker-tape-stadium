@@ -18,12 +18,12 @@
       </div>
 
       <div class="user-id">
-        <div class="userbox-title">abarba222
+        <a class="userbox-title"{{action "toggleHi"}}>abarba222</a>
           {{#if showUser}}
             <div class="user-box-content">
-              <li class="userbox-username">abarba</li>
-              <li class="userbox-capital">$100,000</li>
-              <li class="userbox-status">Amateur Investor</li>
+              <h2 class="userbox-username">abarba</h2>
+              <h2 class="userbox-capital">$100,000</h2>
+              <h2 class="userbox-status">Amateur Investor</h2>
 
             {{#if session.isAuthenticated}}
 
@@ -33,8 +33,8 @@
             {{/if}}
           </div>
         {{/if}}
-        </div>
       </div>
+
 
     </div>
 

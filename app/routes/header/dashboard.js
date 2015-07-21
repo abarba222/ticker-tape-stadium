@@ -11,7 +11,15 @@ export default Ember.Route.extend({
       matches: this.store.findQuery('match', {
         limit: 5,
         order: 'date'
-      })
+      }),
+
+      trendingUp: [
+
+      ],
+
+      trendingDown: [
+        
+      ]
      });
 
   }

@@ -1,5 +1,8 @@
-<form {{action 'authenticate' on='submit'}}>
-  {{input placeholder="Username" label="username"  value=identification}}
-  {{input placeholder="Password" label="Password" type="password" value=password}}
-  <button class="login-button">Log In</button>
-</form>
+<div class="login-page">
+  <form class="login-page-form" {{action 'authenticate' on='submit'}}>
+    <h1 class="login-title">Ticker-Tape Stadium</h1>
+    {{input class="login-username" landingplaceholder="Username" label="username"  value=identification}}
+    {{input class="login-password" placeholder="Password" label="Password" type="password" value=password}}
+    <button class="login-button">Log In</button>
+  </form>
+</div>

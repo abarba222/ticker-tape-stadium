@@ -120,3 +120,7 @@ function adjustmentForRank(rank) {
     return 0.5;
   }
 }
+
+Parse.Cloud.Save("User", function(request) {
+  var userCapital = request.user.get('capital');
+});

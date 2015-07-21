@@ -143,6 +143,69 @@ body {
 	padding:4%;
 }
 
+//Login-Page
+
+body{
+	background-color:rgb(25, 25, 25);
+	height:700px;
+}
+
+.login-page{
+	padding-top:200px;
+}
+
+.login-title{
+	width:70%;
+	margin-left:15%;
+	color:white;
+	text-align:center;
+	margin:0px;
+	padding-bottom:5px;
+	background-image: linear-gradient(
+		to right,
+		rgb(25, 25, 25),
+		rgb(35, 15, 15),
+		rgb(55, 5, 5),
+		rgb(105, 0, 0),
+		rgb(150, 0, 0)
+	);
+}
+
+.login-page-form{
+	@include outer-container(100%);
+	width:70%;
+	margin-top:200px;
+	border:5px solid rgb(235, 195, 16);
+	margin:0px;
+	padding-left:25%;
+	margin-left:15%;
+
+}
+
+.login-username{
+	display:block;
+	text-align:center;
+	margin-top:20px;
+}
+
+.login-password{
+	display:block;
+	text-align:center;
+	margin-top:20px;
+}
+
+.login-button{
+	display:block;
+	text-align:center;
+	margin-top:20px;
+	margin-left:34px;
+	margin-bottom:20px;
+	font-weight:bold;
+	padding:10px;
+	border-radius:5px;
+	background-color:rgb(235, 195, 16);
+}
+
 //Portfolio
 
 .portfolio-page{

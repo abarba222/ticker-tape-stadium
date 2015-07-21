@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   showNav: false,
+  showUser: false,
 
   actions: {
     invalidateSession: function(){
@@ -10,16 +11,16 @@ export default Ember.Component.extend({
     },
 
 
-    HideContent: function(d) {
-      document.getElementById(d).style.display="none";
-    },
-    ShowContent: function(d) {
-      document.getElementById(d).style.display="block";
-    },
-    ReverseDisplay: function(d) {
-      if (document.getElementById(d).style.display === "none") {document.getElementById(d).style.display = "block";}
-      else {document.getElementById(d).style.display = "none";}
-    },
+    // HideContent: function(d) {
+    //   document.getElementById(d).style.display="none";
+    // },
+    // ShowContent: function(d) {
+    //   document.getElementById(d).style.display="block";
+    // },
+    // ReverseDisplay: function(d) {
+    //   if (document.getElementById(d).style.display === "none") {document.getElementById(d).style.display = "block";}
+    //   else {document.getElementById(d).style.display = "none";}
+    // },
 
   // {{#em-accordion configName='bs' selected-idx=1}}
   //   {{em-accordion-item title="abarba222"}}
@@ -65,16 +66,10 @@ export default Ember.Component.extend({
     toggleShow: function(){
 
       this.toggleProperty('showNav');
-    //   var show = this.get('nav-box-show');
-    //
-    //   if(show === 'open'){
-    //     this.set('nav-box-show', 'open');
-    //     document.getElementById('navbox').style.display = 'block';
-    //   } else {
-    //     this.set('nav-box-show', 'closed');
-    //     document.getElementById('navbox').style.display = 'none';
-    // }
-  }
+  },
+    toggleHi: function() {
+      this.toggleProperty('showUser');
+    }
 }
 
 

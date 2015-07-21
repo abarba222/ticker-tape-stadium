@@ -1,6 +1,7 @@
 <form {{action 'createUser' on='submit'}}>
-  <input placeholder="Name" label="Name" value={{model.name}}>
-  <input placeholder="E-mail" label="E-mail" type="email" value={{model.username}}>
-  <input placeholder="Password" label="Password" type="password" value={{model.password}}>
+  {{input placeholder="First Name" label="firstName" value=firstName}}
+  {{input placeholder="Last Name" label="lastName" value=lastName}}
+  {{input placeholder="Username" label="Username" value=identification}}
+  {{input placeholder="Password" label="Password" type="password" value=password}}
   <button class="new-login-button">Sign Up</button>
 </form>
