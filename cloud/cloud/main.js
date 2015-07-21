@@ -39,30 +39,32 @@ Parse.Cloud.beforeSave("Team", function(request, response) {
 
 Parse.Cloud.afterSave("Match", function(request){
   var match = request.object;
-  Parse.Promise.when(
-    match.get('home') && match.get('home').fetch(),
-    match.get('away') && match.get('away').fetch()
-  ).then(function(home, away){
+
+  var fetchHomeAndAway = [];
+  fetchHomeAndAway.push(match.get('home') ? match.get('home').fetch() : Parse.Promise.as());
+  fetchHomeAndAway.push(match.get('away') ? match.get('away').fetch() : Parse.Promise.as());
+
+  Parse.Promise.when(fetchHomeAndAway).then(function(home, away){
     var homeValue = 0;
-    console.log('1:' + homeValue);
+    // console.log('1:' + homeValue);
 
     var awayValue = 0;
-    console.log('1:' + awayValue);
+    // console.log('1:' + awayValue);
 
     match.get('homeGoals').forEach(function(goalMins){
       homeValue += (100 + (90 - goalMins));
     });
-    console.log('2:' + homeValue);
+    // console.log('2:' + homeValue);
 
     match.get('awayGoals').forEach(function(goalMins){
       awayValue += (100 + (90 - goalMins));
     });
-    console.log('2:' + awayValue);
+    // console.log('2:' + awayValue);
 
     homeValue = (homeValue - awayValue);
     awayValue = (awayValue - homeValue);
-    console.log('3:' + homeValue);
-    console.log('3:' + awayValue);
+    // console.log('3:' + homeValue);
+    // console.log('3:' + awayValue);
 
 
     if (home && away && match.get('type') === 'league'){
@@ -77,8 +79,8 @@ Parse.Cloud.afterSave("Match", function(request){
       }else if(homeScore === awayScore){
         awayValue = awayValue + 25;
       }
-      console.log('4:' + homeValue);
-      console.log('4:' + awayValue);
+      // console.log('4:' + homeValue);
+      // console.log('4:' + awayValue);
 
     }
 
@@ -95,28 +97,34 @@ Parse.Cloud.afterSave("Match", function(request){
         awayValue = awayValue * (1 + adjustment);
         homeValue = homeValue * (1 - adjustment);
       }
-      console.log('5:' + homeValue);
-      console.log('5:' + awayValue);
+      // console.log('5:' + homeValue);
+      // console.log('5:' + awayValue);
 
     }
 
     homeValue += (match.get('homeShotsOnGoal')*5) - (match.get('homeShotsOffGoal'));
     awayValue += (match.get('awayShotsOnGoal')*5) - (match.get('awayShotsOffGoal'));
 
-    console.log('6:' + homeValue);
-    console.log('6:' + awayValue);
+    // console.log('6:' + homeValue);
+    // console.log('6:' + awayValue);
 
 
     homeValue += (match.get('homeCorner') * 3) - (match.get('homeYellowCard') * 15) - (match.get('homeRedCard') * 35) - (match.get('homeFoul'));
     awayValue += (match.get('awayCorner') * 3) - (match.get('awayYellowCard') * 15) - (match.get('awayRedCard') * 35) - (match.get('awayFoul'));
-    console.log('7:' + homeValue);
-    console.log('7:' + awayValue);
+    // console.log('7:' + homeValue);
+    // console.log('7:' + awayValue);
 
     homeValue += (match.get('homePos') - match.get('awayPos'))*2;
     awayValue += (match.get('awayPos') - match.get('homePos'))*2;
     console.log('8:' + homeValue);
     console.log('8:' + awayValue);
 
+    home && home.set('value', Math.round(home.get('value') + homeValue));
+    away && away.set('value', Math.round(away.get('value') + awayValue));
+    var saveHomeAndAway = [];
+    saveHomeAndAway.push(home ? home.save() : Parse.Promise.as());
+    saveHomeAndAway.push(away ? away.save() : Parse.Promise.as());
+    return Parse.Promise.when(saveHomeAndAway);
   });
 });
 
@@ -222,7 +230,7 @@ Parse.Cloud.define("sellShares", function(request, response) {
 Parse.Cloud.define('resetTeams', function(request, response){
   var query = new Parse.Query("Team");
   query.each(function(team){
-    team.set('value', 100);
+    team.set('value', 10000);
     team.set('valueHistory', []);
     team.set('twoMatchTrend', 0);
     team.set('threeMatchTrend', 0);
