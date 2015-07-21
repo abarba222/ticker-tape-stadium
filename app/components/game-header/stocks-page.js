@@ -21,25 +21,20 @@ total: function(){
 //   return this.set('model.team.objectId') + this.set('quantity');
 // }.property("model.team.objectId", "quantity")
   actions: {
-    quantitySubmit: function(user){
-      // user.set('model.team.objectId', user.set('model.share.quantity', user.get('model.user.username')));
-      // user.save();
-
-      var prevCapital = this.get('model.user.capital');
-
-      if(this.get('total') <= prevCapital) {
-        var prevQuantity = this.get('model.myShare.quantity') || 0;
-        var newQuantity = Number(this.get('quantity'));
-
-        var total = this.get('isBuying') ? prevQuantity + newQuantity : prevQuantity - newQuantity;
-
-        this.set('model.myShare.quantity', total);
-        this.get('model.myShare').save();
+    quantitySubmit: function(){
+      if(this.get('isBuying')) {
+        if(this.get('total') <= this.get('model.user.capital')) {
+          this.sendAction('buy', this.get('model.team'), this.get('quantity'));
+        } else {
+          alert('Not enough $');
+        }
       } else {
-        alert('No $');
+        if(this.get('quantity') <= this.get('model.myShare.quantity')) {
+          this.sendAction('sell', this.get('model.team'), this.get('quantity'));
+        } else {
+          alert("You don't own that many shares");
+        }
       }
-
-      // TODO function on Cloud for Share that reduces request.user.get('capital')
     },
 
     buy: function(){
@@ -49,5 +44,5 @@ total: function(){
     sell: function(){
       this.set('isBuying', false);
     }
-  }
+  },
 });

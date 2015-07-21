@@ -77,7 +77,51 @@ body {
 	padding-bottom:5px;
   }
 
+	.nav-box-show{
+		background-color:rgb(25, 25, 25);
+		border:3px solid white;
+		position:absolute;
+		margin-top:10px;
+		margin-left:0px;
+	}
+
+	.navigate-dashboard,
+	.navigate-portfolio,
+	.navigate-top-stocks{
+		border-bottom:1px solid white;
+		padding:10px;
+		text-align:center;
+		margin:0px;
+		a{
+			color:rgb(235, 195, 16);
+			text-decoration:none;
+		}
+	}
+
+	/* .navigate-portfolio{
+		a{
+			color:white;
+		}
+	}
+
+	.navigate-top-stocks{
+		a{
+			color:white;
+		}
+	} */
+
+	.navigate-help{
+		padding:10px;
+		margin:0px;
+		text-align:center;
+		a{
+			color:rgb(235, 195, 16);
+			text-decoration:none;
+		}
+	}
+
 .user-id{
+	//position:relative;
 	float:right;
   display:inline-block;
 	padding-right:2%;
@@ -116,31 +160,91 @@ body {
 .user-box-content{
 	background-color:black;
 	color:rgb(25, 25, 25);
-	@include outer-container(100%);
-	width:92%;
-	border:3px solid rgb(235, 195, 16);
-	border-radius:3px;
-	list-style:none;
+	border:3px solid white;
+	position:absolute;
+	margin-top:10px;
 }
 
-.userbox-username{
-	padding:4%;
-	color:white;
+.userbox-username,
+.userbox-capital,
+.userbox-status{
+	padding:10px;
+	color:rgb(235, 195, 16);
+	margin:0px;
+	border-bottom:1px solid white;
+	text-align:center;
 }
 
-.userbox-capital{
+/* .userbox-capital{
 	padding:4%;
 	color:white;
+	margin:0px;
 }
 
 .userbox-status{
 	padding:4%;
-	font-size:14px;
+	//font-size:14px;
 	color:white;
+	margin:0px;
+} */
+
+.adjust-logout{
+	padding:10px;
+	text-align:center;
 }
 
 .logout-button{
-	padding:4%;
+	padding:5px;
+	border-radius:5px;
+	background:none;
+	color:white;
+	font-weight:bold;
+}
+
+//Landing
+
+.landing-login-box{
+	background-color:rgb(25, 25, 25);
+	border:3px solid rgb(235, 195, 16);
+}
+
+.login-header{
+	text-align:center;
+	margin:0px;
+	padding-top:10px;
+	color:white;
+	font-size:35px;
+}
+
+.email-signup-box{
+	display:inline-block;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:10px;
+	padding-left:10%;
+}
+
+.email-signup{
+	font-size:20px;
+	border-radius:5px;
+	background:none;
+	background-color:white;
+}
+
+.user-login-link-box{
+	display:inline-block;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:10px;
+	float:right;
+	padding-right:10%;
+}
+
+.user-login-link{
+	font-size:20px;
+	border-radius:5px;
+	background:none;
+	color:white;
 }
 
 //Login-Page
@@ -155,8 +259,8 @@ body{
 }
 
 .login-title{
-	width:70%;
-	margin-left:15%;
+	//width:70%;
+	//margin-left:15%;
 	color:white;
 	text-align:center;
 	margin:0px;
@@ -177,7 +281,6 @@ body{
 	margin-top:200px;
 	border:5px solid rgb(235, 195, 16);
 	margin:0px;
-	padding-left:25%;
 	margin-left:15%;
 
 }
@@ -185,12 +288,14 @@ body{
 .login-username{
 	display:block;
 	text-align:center;
+	padding-left:25%;
 	margin-top:20px;
 }
 
 .login-password{
 	display:block;
 	text-align:center;
+	padding-left:25%;
 	margin-top:20px;
 }
 

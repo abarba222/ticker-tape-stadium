@@ -18,19 +18,19 @@
       </div>
 
       <div class="user-id">
-        <a class="userbox-title"{{action "toggleHi"}}>abarba222</a>
+        <a class="userbox-title"{{action "toggleHi"}}>{{session.currentUser.username}}</a>
           {{#if showUser}}
             <div class="user-box-content">
-              <h2 class="userbox-username">abarba</h2>
-              <h2 class="userbox-capital">$100,000</h2>
+              <h2 class="userbox-username">{{session.currentUser.username}}</h2>
+              <h2 class="userbox-capital">${{session.currentUser.worth}}</h2>
               <h2 class="userbox-status">Amateur Investor</h2>
 
+            <div class="adjust-logout">
             {{#if session.isAuthenticated}}
-
                 <button class="logout-button" {{action 'invalidateSession'}}
               >Log Out</button>
-
             {{/if}}
+            </div>
           </div>
         {{/if}}
       </div>

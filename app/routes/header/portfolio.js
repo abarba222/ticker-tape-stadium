@@ -11,7 +11,16 @@ export default Ember.Route.extend(AuthenticatedRouteMixin,{
             className: "_User",
             objectId: this.get('session.currentUser.id')
           },
-          
+
+          //     teamSelected: {
+          //       __type: "Pointer",
+          //       className: "Team",
+          //       objectId: params.team_id
+          //     }
+          //   }
+          // }).then(function(shares){
+          //   return Ember.get(shares, 'firstObject');
+          // })
         }
       })
     });

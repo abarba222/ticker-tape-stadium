@@ -117,25 +117,6 @@ Parse.Cloud.afterSave("Match", function(request){
     console.log('8:' + homeValue);
     console.log('8:' + awayValue);
 
-    // if (home){
-    //var oldHomeValue = {{team.value}};
-    //
-    //if("isFinished" = 'true'){
-    //newHomeValue = homeValue + oldHomeValue;
-    //} else{
-    //
-    //}
-  //}
-    // if (away){
-    //var oldAwayValue = {{team.value}};
-    //
-    //if("isFinished" = 'true'){
-    //newHomeValue = homeValue + oldHomeValue;
-    //} else{
-    //
-    //}
-  //}
-
   });
 });
 
@@ -153,6 +134,87 @@ function adjustmentForRank(rank) {
   }
 }
 
-Parse.Cloud.Save("User", function(request) {
-  var userCapital = request.user.get('capital');
+var Share = Parse.Object.extend("Share");
+
+Parse.Cloud.define("buyShares", function(request, response) {
+  Parse.Cloud.useMasterKey();
+
+  var user = request.user;
+  var quantity = Number(request.params.quantity);
+  var teamId = request.params.teamId;
+
+  var teamQuery = new Parse.Query("Team");
+  teamQuery.get(teamId).then(function(team) {
+    var prevCapital = user.get('capital');
+    var total = team.get('value') * quantity;
+    if(total <= prevCapital) {
+      var shareQuery = new Parse.Query("Share");
+      shareQuery.equalTo('userId', user);
+      shareQuery.equalTo('teamSelected', team);
+      shareQuery.first().then(function(share){
+        if(share) {
+          var prevQuanity = share.get('quantity');
+          share.set('quantity', prevQuanity + quantity);
+        } else {
+          share = new Share({
+            teamSelected: team,
+            userId: user,
+            quantity: quantity
+          });
+        }
+
+        var newCapital = prevCapital - total;
+        user.set('capital', Math.round(newCapital));
+
+        Parse.Promise.when(
+          user.save(),
+          share.save()
+        ).then(function(){
+          response.success({quantity: share.get('quantity')});
+        }, function(error){
+          response.error(JSON.stringify(error));
+        });
+      });
+    } else {
+      response.error("Not enough capital");
+    }
+  });
+});
+
+Parse.Cloud.define("sellShares", function(request, response) {
+  Parse.Cloud.useMasterKey();
+
+  var user = request.user;
+  var quantity = Number(request.params.quantity);
+  var teamId = request.params.teamId;
+
+  var teamQuery = new Parse.Query("Team");
+  teamQuery.get(teamId).then(function(team) {
+    var prevCapital = user.get('capital');
+    var total = team.get('value') * quantity;
+
+    var shareQuery = new Parse.Query("Share");
+    shareQuery.equalTo('userId', user);
+    shareQuery.equalTo('teamSelected', team);
+    shareQuery.first().then(function(share){
+      if(share && (share.get('quantity') >= quantity)) {
+        var prevQuanity = share.get('quantity');
+        share.set('quantity', prevQuanity - quantity);
+      } else {
+        return response.error("Not enough shares to sell");
+      }
+
+      var newCapital = prevCapital + total;
+      user.set('capital', Math.round(newCapital));
+
+      Parse.Promise.when(
+        user.save(),
+        share.save()
+      ).then(function(){
+        response.success({quantity: share.get('quantity')});
+      }, function(error){
+        response.error(JSON.stringify(error));
+      });
+    });
+  });
 });

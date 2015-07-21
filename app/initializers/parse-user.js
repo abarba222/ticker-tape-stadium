@@ -6,7 +6,11 @@ export function initialize(){
     firstName: DS.attr('string'),
     lastName: DS.attr('string'),
     capital: DS.attr('number'),
-    worth: DS.attr('number')  
+    worth: DS.attr('number'),
+    username: DS.attr('string'),
+    symbol: DS.attr('string'),
+    quantity: DS.attr('number'),
+    value: DS.attr('number')
   });
 }
 

@@ -55,6 +55,26 @@ export default Ember.Route.extend({
     }.bind(this));
   },
 
+  actions: {
+    buy: function(team, quantity) {
+      this.runCloud('buyShares', {quantity: quantity, teamId: team.id}).then(function(response){
+        this.modelFor(this.routeName).myShare.set('quantity', response.result.quantity);
+      }.bind(this));
+    },
+    sell: function(team, quantity) {
+      this.runCloud('sellShares', {quantity: quantity, teamId: team.id}).then(function(response){
+        this.modelFor(this.routeName).myShare.set('quantity', response.result.quantity);
+      }.bind(this));
+    }
+  },
+
+  runCloud: function(func, params) {
+    var adapter = this.store.adapterFor('application');
+    return adapter.ajax("https://api.parse.com/1/functions/" + func, "POST", {
+      data: params
+    });
+  }
+
 
 
   // var date = Date.parse('Mon Jul 13 2015 12:46:00 GMT-0400 (EDT)');

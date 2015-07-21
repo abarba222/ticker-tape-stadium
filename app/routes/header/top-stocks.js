@@ -3,7 +3,8 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model: function(){
     return this.store.findAll('team', {
-      order: 'value'
+      order: 'value',
+      //sortAscending: false
     });
     //this.store.findRecord('team', paramsObj.id)
     // return [
