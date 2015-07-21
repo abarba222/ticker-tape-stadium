@@ -77,7 +77,9 @@ app.get('/sync/:date', function(req, res) {
             if(!match) { match = new Match(); }
 
             var type = _.contains(leagueNames, leagueResponse.data.tt) ? "league" : "cup";
-            return match.syncData(event, incidentsResponse.data.i, type);
+            if(type === 'league') {
+              return match.syncData(event, incidentsResponse.data.i, type);
+            }
           });
 
         }));
