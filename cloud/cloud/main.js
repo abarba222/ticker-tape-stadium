@@ -5,6 +5,38 @@ Parse.Cloud.define("hello", function(request, response) {
   response.success("Hello world!");
 });
 
+/*
+ * Team beforeSave written by Jake Smith
+ */
+Parse.Cloud.beforeSave("Team", function(request, response) {
+  var team = request.object;
+
+  if(team.dirty('value')) {
+    var newValue, history, twoMatchTrend, threeMatchTrend, oneAgo, twoAgo;
+
+    newValue = team.get('value');
+
+    history = team.get('valueHistory') || [];
+    oneAgo = history[history.length - 1] === undefined ? newValue : history[history.length - 1].value;
+    console.log('oneAgo ' +  oneAgo );
+    twoAgo = history[history.length - 2] === undefined ? newValue : history[history.length - 2].value;
+    console.log('twoAgo ' +  twoAgo );
+
+    twoMatchTrend = newValue - oneAgo;
+    console.log('twoMatchTrend ' +  twoMatchTrend );
+    threeMatchTrend = newValue - twoAgo;
+    console.log('threeMatchTrend ' +  threeMatchTrend );
+
+    team.set('twoMatchTrend', twoMatchTrend);
+    team.set('threeMatchTrend', threeMatchTrend);
+
+    history.push({date: Date.now(), value: newValue});
+    team.set('valueHistory', history);
+  }
+
+  response.success();
+});
+
 Parse.Cloud.afterSave("Match", function(request){
   var match = request.object;
   Parse.Promise.when(
