@@ -218,3 +218,16 @@ Parse.Cloud.define("sellShares", function(request, response) {
     });
   });
 });
+
+Parse.Cloud.define('resetTeams', function(request, response){
+  var query = new Parse.Query("Team");
+  query.each(function(team){
+    team.set('value', 100);
+    team.set('valueHistory', []);
+    team.set('twoMatchTrend', 0);
+    team.set('threeMatchTrend', 0);
+    return team.save();
+  }).then(function(){
+    response.success("Done");
+  });
+});
