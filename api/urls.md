@@ -163,4 +163,6 @@ http://json.mx-api.enetscores.com/live_data/actionzones/:eventfk/:cursor?_=:time
 
 http://ximg.enetscores.com/cdnimg/amalthea/logo/teamlogo/:teamfk
 http://json.mx-api.enetscores.com/live_data/event_texts/:eventfk/3?_=:timestamp
+
+http://json.mx-api.enetscores.com/live_data/event_texts/2028499/3?_=1437110923970
 ```
