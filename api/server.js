@@ -4,6 +4,7 @@ var Parse = require('parse').Parse,
     cheerio = require('cheerio'),
     express = require('express'),
     axios = require('axios'),
+    fs = require('fs'),
     app = express(),
     PORT = process.env.PORT || 3000;
 
@@ -20,25 +21,34 @@ app.get('/sync/:date', function(req, res) {
 
     var eventsHtml = eventsResponse.data;
     var $ = cheerio.load(eventsHtml);
-    var eventsFetched = $('[data-link=event_link][data-event]').map(function() {
+    var eventIds = $('[data-link=event_link][data-event]').map(function() {
       return $(this).data('event');
-    }).get().map(function(id) {
+    }).get();
+    var eventsFetched = eventIds.map(function(id) {
       return axios.get('http://json.mx-api.enetscores.com/live_data/event/' + id + '/0?_=' + Date.now()).then(function(response) {
         return response;
+      }, function(error) {
+        console.log(error);
+        return error;
       });
     });
     console.log('Found ' + eventsFetched.length + ' matches for ' + date);
     console.log('Fetching match data');
 
     // TODO: don't fail on a single failure
-    return axios.all(eventsFetched);
+    return axios.all(eventsFetched).then(function(eventsResponses){
+      return eventsResponses;
+    }, function(error) {
+      console.log(error);
+      return error;
+    });
 
   }).then(function(eventsResponses) {
     if(!eventsResponses.length) { return Parse.Promise.as(); }
-
     console.log('Finding leagues and matches for tracked leagues');
-
-    var events = _.chain(eventsResponses).pluck('data').pluck('i').pluck('0').value();
+    var eventsData = _.pluck(eventsResponses, 'data');
+    var eventsInner = _.pluck(eventsData, 'i');
+    var events = _.pluck(eventsInner, '0');
 
     var teamQuery = new Parse.Query("Team");
     var leagueQuery = new Parse.Query("League");
@@ -61,14 +71,12 @@ app.get('/sync/:date', function(req, res) {
           axios.get('http://json.mx-api.enetscores.com/live_data/actionzones/' + event.eventfk + '/0?_=' + Date.now()),
           axios.get('http://json.mx-api.enetscores.com/live_data/event_texts/' + event.eventfk + '/3?_=' + Date.now())
         ]).then(axios.spread(function(incidentsResponse, leagueResponse) {
-
           var matchQuery = new Parse.Query(Match);
           matchQuery.equalTo('eventfk', event.eventfk);
           return matchQuery.first().then(function(match) {
             if(!match) { match = new Match(); }
 
             var type = _.contains(leagueNames, leagueResponse.data.tt) ? "league" : "cup";
-
             return match.syncData(event, incidentsResponse.data.i, type);
           });
 
@@ -76,7 +84,11 @@ app.get('/sync/:date', function(req, res) {
       });
 
       if(matchesSynced.length > 0) {
-        return Parse.Promise.when(matchesSynced);
+        return Parse.Promise.when(matchesSynced).then(function(){
+          console.log("Done");
+        }, function(error) {
+          console.log(error);
+        });
       } else {
         return Parse.Promise.as();
       }
@@ -100,23 +112,13 @@ var Match = Parse.Object.extend({
     var homeScore = Number(event.results[1].r[1]);
     var awayScore = Number(event.results[2].r[1]);
 
-    console.log('homeScore', homeScore);
-    console.log('awayScore', awayScore);
-
     var defaultHomeGoals = Array.apply(null, new Array(homeScore)).map(Number.prototype.valueOf,0);
     var defaultAwayGoals = Array.apply(null, new Array(awayScore)).map(Number.prototype.valueOf,0);
 
-    console.log('defaultHomeGoals', defaultHomeGoals);
-    console.log('defaultAwayGoals', defaultAwayGoals);
-
     var homeGoals = _.chain(incidents).where({type: 'goal', team: homefk}).pluck('elapsed').value();
     var awayGoals = _.chain(incidents).where({type: 'goal', team: awayfk}).pluck('elapsed').value();
-    console.log('homeGoals', homeGoals);
-    console.log('awayGoals', awayGoals);
     homeGoals = homeGoals.length? homeGoals : defaultHomeGoals;
     awayGoals = awayGoals.length? awayGoals : defaultAwayGoals;
-    console.log('homeGoals', homeGoals);
-    console.log('awayGoals', awayGoals);
 
     var homeShotsOnGoal = _.where(incidents, {type: 'shoton', team: homefk}).length || 0;
     var awayShotsOnGoal = _.where(incidents, {type: 'shoton', team: awayfk}).length || 0;
@@ -130,8 +132,9 @@ var Match = Parse.Object.extend({
     var homeFoul = _.where(incidents, {type: 'foulcommit', team: homefk}).length || 0;
     var awayFoul = _.where(incidents, {type: 'foulcommit', team: awayfk}).length || 0;
 
-    var homePos = +_.where(incidents, {subtype: 'possession'}).pop().homepos || 50;
-    var awayPos = +_.where(incidents, {subtype: 'possession'}).pop().awaypos || 50;
+    var possession = _.where(incidents, {subtype: 'possession'}).pop() || {homepos: 50, awaypos: 50};
+    var homePos = Number(possession.homepos);
+    var awayPos = Number(possession.awaypos);
 
     var homeYellowCard = _.where(incidents, {card_type: 'y', team: homefk}).length || 0;
     var awayYellowCard = _.where(incidents, {card_type: 'y', team: awayfk}).length || 0;
@@ -166,13 +169,18 @@ var Match = Parse.Object.extend({
     teamQuery.containedIn('teamfk', [event.homefk, event.awayfk]);
     return teamQuery.find().then(function(teams) {
       this.set('home', _.find(teams, function(t) {
-        return t.get('teamfk') === event.homefk;
+        return String(t.get('teamfk')) === String(event.homefk);
       }));
       this.set('away', _.find(teams, function(t) {
-        return t.get('teamfk') === event.awayfk;
+        return String(t.get('teamfk')) === String(event.awayfk);
       }));
 
-      return this.save();
+      return this.save().then(function(response) {
+        return response;
+      }, function(error){
+        console.log(error);
+        return error;
+      });
     }.bind(this));
   }
 });
