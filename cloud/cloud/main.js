@@ -142,6 +142,14 @@ function adjustmentForRank(rank) {
   }
 }
 
+// formattedValue: function(){
+//   var realValue = this.get('value'),
+//     formatted = parseFloat(realValue, 10).toFixed(2);
+//
+//   return '$' + formatted;
+// }.property('value');
+
+
 var Share = Parse.Object.extend("Share");
 
 Parse.Cloud.define("buyShares", function(request, response) {

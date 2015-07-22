@@ -3,7 +3,17 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model: function(){
     return this.store.findAll('team', {
-      order: 'value',
+
+          actions: {
+            sortValue: function(){
+              // sort by value
+            if(this.get('sortProperties.0') === 'value') {
+            this.toggleProperty('sortDescending');
+          }
+          this.set('sortProperties', ['value']);
+        }
+      }
+      //order: 'value',
       //sortAscending: false
     });
     //this.store.findRecord('team', paramsObj.id)

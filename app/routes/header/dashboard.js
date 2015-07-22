@@ -2,10 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function() {
+
+
     return Ember.RSVP.hash({
       teams: this.store.findQuery('team', {
         limit: 10,
-        order: 'value'
+        order: 'value',
+        descending: 'value'
       }),
 
       matches: this.store.findQuery('match', {
@@ -14,13 +17,23 @@ export default Ember.Route.extend({
       }),
 
       trendingUp: [
-
+        // limit:5,
+        // order: 'value'
       ],
 
       trendingDown: [
-        
-      ]
+        // limit: 5,
+        // order: 'value'
+      ],
+
+    //   realValue: function(formatted, realValue){
+    //     realValue = this.get('value'),
+    //     formatted = parseFloat(realValue, 10).toFixed(2);
+    //
+    //   return '$' + formatted;
+    // }.property('value')
      });
+
 
   }
 });

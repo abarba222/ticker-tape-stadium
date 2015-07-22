@@ -14,14 +14,14 @@
     </tr>
 
     <tr class="stock-holdings-list-down">
-
-      <td class="p-symbol-column">{{stock.symbol}}</td>
-      <td class="p-quantity-column">{{stock.quantity}}</td>
-      <td class="p-value-column">{{stock.value}}</td>
+      {{#each model.portfolio as |holdings|}}
+      <td class="p-symbol-column">{{holdings.myShares.symbol}}</td>
+      <td class="p-quantity-column">{{holdings.session.parseUser.quantity}}</td>
+      <td class="p-value-column">{{holdings.myShares.value}}</td>
       <td class="p-plus-minus-column">$</td>
       <td class="p-profit-loss-column">$</td>
       <td class="p-to-date-column">$</td>
-
+      {{/each}}
     </tr>
   </table>
 

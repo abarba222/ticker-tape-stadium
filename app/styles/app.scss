@@ -1148,11 +1148,12 @@ body{
 }
 
 .buy-sell-action{
-	font-weight:bold;
-	font-size:14px;
+	display:inline-block;
+	/* font-weight:bold;
+	font-size:14px; */
 	border-radius:5px;
 	background-color:white;
-	color:white;
+	//color:white;
 	border:1px solid black;
 }
 
@@ -1171,12 +1172,14 @@ body{
 }
 
 .stock-input{
+	display:inline-block;
 	font-size:14px;
 	border:1px solid black;
 	text-align:center;
 }
 
 .submit-action{
+	display:inline-block;
 	font-weight:bold;
 	font-size:14px;
 	border-radius:5px;

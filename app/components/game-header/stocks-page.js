@@ -4,6 +4,8 @@ export default Ember.Component.extend({
 
 quantity: 0,
 isBuying: true,
+// showBuy: true,
+// showSell: true,
 
 total: function(){
   return this.get('model.team.value') * Number(this.get('quantity'));
@@ -32,7 +34,7 @@ total: function(){
         if(this.get('quantity') <= this.get('model.myShare.quantity')) {
           this.sendAction('sell', this.get('model.team'), this.get('quantity'));
         } else {
-          alert("You don't own that many shares");
+          alert("You don't own that many shares!");
         }
       }
     },
@@ -43,6 +45,18 @@ total: function(){
 
     sell: function(){
       this.set('isBuying', false);
-    }
+    },
+
+  //   toggleBuy: function(){
+  //
+  //     this.toggleProperty('showBuy');
+  //     return true;
+  // },
+  //   toggleSell: function() {
+  //     this.toggleProperty('showSell');
+  //     return true;
+  //   }
+
   },
+
 });
