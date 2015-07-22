@@ -3,6 +3,7 @@
   <h1 class="research-top-stocks">Research</h1>
 
   <div class="top-stocks-header">
+    <i class="fa fa-line-chart fa-2x top-stocks-icon"></i>
     <h2 class="top-stocks-title">Top Stocks</h2>
     <span class="number-of-stocks">1-98
       <select>
@@ -23,16 +24,14 @@
         <th class="ts-name">Name</th>
         <th class="ts-league">League</th>
         <th class="ts-value">Value</th>
-        <th class="ts-streak">Streak</th>
       </tr>
 
     {{#each content as |stock|}}
-      <tr class=".all-top-stocks">
+      <tr class="all-top-stocks">
         <td class="symbol-column">{{stock.symbol}}</td>
         <td class="name-column">{{link-to stock.Teams "header.stocks" stock}}</td>
         <td class="league-column">{{stock.Name}}</td>
         <td class="value-column">${{stock.value}}</td>
-        <td class="streak-column">{{stock.streak}}</td>
       </tr>
     {{/each}}
 

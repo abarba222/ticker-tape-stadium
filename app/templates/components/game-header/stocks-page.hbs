@@ -9,19 +9,24 @@
       <h1 class="stock-value">${{model.team.value}}</h1>
   </div>
 
-  <table class="recent-stock-matches">
-    <h2 class="s-recent-matches">Recent Matches</h2>
-    <tr class="recent-match-list">
-      <th class="t-date">Date</th>
-      <th class="t-home">Home</th>
-      <th class="t-away">Away</th>
-      <th class="t-score">Score</th>
-    </tr>
-{{log 'model.recent' model.recent}}
-    {{#each model.recent as |match|}}
-      {{recent-match match=match}}
-    {{/each}}
-  </table>
+  <div class="stock-recents">
+    <table class="recent-stock-matches">
+      <i class="fa fa-users fa-2x s-recent-games-icon"></i>
+      <h2 class="s-recent-matches">Recent Matches</h2>
+      <tr class="recent-match-list">
+        <th class="t-date">Date</th>
+        <th class="t-home">Home</th>
+        <th class="t-away">Away</th>
+        <th class="t-score">Score</th>
+      </tr>
+
+  {{log 'model.recent' model.recent}}
+      {{#each model.recent as |match|}}
+        {{recent-match match=match}}
+      {{/each}}
+
+    </table>
+  </div>
 
 
   <div class="team-stock-performance">

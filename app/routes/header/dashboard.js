@@ -16,21 +16,23 @@ export default Ember.Route.extend({
         order: 'date'
       }),
 
-      trendingUp: [
-        // limit:5,
-        // order: 'value'
-      ],
+      trendingUp: this.store.findQuery('team', {
+        limit: 5,
+        order: 'value',
+        descending: 'value'
+      }),
 
-      trendingDown: [
-        // limit: 5,
-        // order: 'value'
-      ],
+      trendingDown: this.store.findQuery('team', {
+        limit: 5,
+        order: 'value',
+        ascending: 'value'
+      }),
 
     //   realValue: function(formatted, realValue){
     //     realValue = this.get('value'),
     //     formatted = parseFloat(realValue, 10).toFixed(2);
     //
-    //   return '$' + formatted;
+    //   return '$' + Number(formatted);
     // }.property('value')
      });
 

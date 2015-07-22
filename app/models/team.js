@@ -3,7 +3,7 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   Teams: DS.attr('string'),
   symbol: DS.attr('string'),
-  value: DS.attr('number'),// ('value').length()),
+  value: DS.attr('number', ('value')/100), //('value').Math.round(100)/100),
   streak: DS.attr('number'),
   rank: DS.attr('number'),
   Name: DS.attr('string'),
