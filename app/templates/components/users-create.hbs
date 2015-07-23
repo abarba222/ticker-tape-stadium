@@ -1,7 +1,8 @@
-<form {{action 'createUser' on='submit'}}>
-  {{input placeholder="First Name" label="firstName" value=firstName}}
-  {{input placeholder="Last Name" label="lastName" value=lastName}}
-  {{input placeholder="Username" label="Username" value=identification}}
-  {{input placeholder="Password" label="Password" type="password" value=password}}
-  <button class="new-login-button">Sign Up</button>
+<form {{action 'createUser' on="submit"}}>
+  {{input placeholder="First Name" label="firstName" value=model.firstName}}
+  {{input placeholder="Last Name" label="lastName" value=model.lastName}}
+  {{input type="email" placeholder="E-mail" label="E-mail" value=model.email}}
+  {{input placeholder="Username" type="username" label="Username" value=model.username}}
+  {{input placeholder="Password" label="Password" type="password" value=model.password}}
+  <button class="new-login-button" type="submit">Sign Up</button>
 </form>

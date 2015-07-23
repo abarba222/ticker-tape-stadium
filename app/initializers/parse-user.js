@@ -10,7 +10,7 @@ export function initialize(){
     username: DS.attr('string'),
     symbol: DS.attr('string'),
     quantity: DS.attr('number'),
-    value: DS.attr('number')
+    value: DS.attr('number'),
   });
 }
 
