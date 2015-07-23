@@ -7,25 +7,22 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       teams: this.store.findQuery('team', {
         limit: 10,
-        order: 'value',
-        descending: 'value'
+        order: '-value',
       }),
 
       matches: this.store.findQuery('match', {
-        limit: 5,
-        order: 'date'
+        limit: 10,
+        order: '-date'
       }),
 
       trendingUp: this.store.findQuery('team', {
         limit: 5,
-        order: 'value',
-        descending: 'value'
+        order: '-value'
       }),
 
       trendingDown: this.store.findQuery('team', {
         limit: 5,
-        order: 'value',
-        ascending: 'value'
+        order: 'value'
       }),
 
     //   realValue: function(formatted, realValue){

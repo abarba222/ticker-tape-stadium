@@ -29,9 +29,9 @@
     {{#each content as |stock|}}
       <tr class="all-top-stocks">
         <td class="symbol-column">{{stock.symbol}}</td>
-        <td class="name-column">{{link-to stock.Teams "header.stocks" stock}}</td>
+        <td class="name-column">{{link-to stock.Teams "header.stocks" stock.id}}</td>
         <td class="league-column">{{stock.Name}}</td>
-        <td class="value-column">${{stock.value}}</td>
+        <td class="value-column">{{to-dollar stock.value}}</td>
       </tr>
     {{/each}}
 

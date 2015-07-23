@@ -6,7 +6,7 @@
       <h1 class="stock-name">{{model.team.Teams}}</h1>
       <h1 class="stock-league">{{model.team.Name}}</h1>
       <h1 class="stock-symbol">{{model.team.symbol}}</h1>
-      <h1 class="stock-value">${{model.team.value}}</h1>
+      <h1 class="stock-value">{{to-dollar model.team.value}}</h1>
   </div>
 
   <div class="stock-recents">
@@ -29,15 +29,15 @@
   </div>
 
 
-  <div class="team-stock-performance">
+  {{!-- <div class="team-stock-performance">
     <h2 class="performance-title">Performance</h2>
-  </div>
+  </div> --}}
 
   <div class="buy-sell-stocks">
 
     <div class="trade-stock-header">
       <h2 class="trade-stock">Trade</h2>
-      <h2 class="stock-price">${{model.team.value}}</h2>
+      <h2 class="stock-price">{{to-dollar model.team.value}}</h2>
     </div>
 
     <div class="trade-stock-action">
@@ -52,7 +52,7 @@
     </div>
 
     <div class=trade-stock-bottom>
-      <h2 class="total-stock-amount">Total: ${{total}}</h2>
+      <h2 class="total-stock-amount">Total: {{to-dollar total}}</h2>
       <h2 class="shares-you-own">Shares You Own: {{model.myShare.quantity}}</h2>
     </div>
 

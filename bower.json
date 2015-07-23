@@ -16,6 +16,7 @@
     "neat": "~1.7.2",
     "fontawesome": "~4.3.0",
     "ember-simple-auth": "0.8.0",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "moment": "~2.10.3"
   }
 }

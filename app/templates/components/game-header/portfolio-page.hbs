@@ -1,40 +1,42 @@
 <div class="portfolio-page">
 
-  
+
   <h1 class="portfolio">Portfolio</h1>
 
-  <table class="stock-holdings">
-    <i class="fa fa-briefcase fa-2x current-holdings-icon"></i>
-    <h2 class="current-stock-holdings">Current Stock Holdings</h2>
-    <tr class="stock-holdings-list">
-      <th class="p-symbol">Sym</th>
-      <th class="p-quantity">Qty</th>
-      <th class="p-value">Value</th>
-      <th class="p-plus-minus">+/-</th>
-      <th class="p-profit-loss">P/L</th>
-      <th class="p-to-date">To Date</th>
-    </tr>
+  <div class="outer-stock-holdings">
+    <table class="stock-holdings">
+      <i class="fa fa-briefcase fa-2x current-holdings-icon"></i>
+      <h2 class="current-stock-holdings">Current Stock Holdings</h2>
+      <tr class="stock-holdings-list">
+        <th class="p-symbol">Sym</th>
+        <th class="p-quantity">Qty</th>
+        <th class="p-value">Value</th>
+        <th class="p-plus-minus">+/-</th>
+        <th class="p-profit-loss">P/L</th>
+      </tr>
 
-    <tr class="stock-holdings-list-down">
-      {{#each model.myShares as |holding|}}
-      <td class="p-symbol-column">{{holding.team.symbol}}</td>
-      <td class="p-quantity-column">{{holding.quantity}}</td>
-      <td class="p-value-column">{{holding.team.value}}</td>
-      <td class="p-plus-minus-column">$</td>
-      <td class="p-profit-loss-column">$</td>
-      <td class="p-to-date-column">$</td>
-      {{/each}}
-    </tr>
-  </table>
+      <tr class="stock-holdings-list-down">
+        {{#each model.myShares as |holding|}}
+        <td class="p-symbol-column">{{holding.teamSelected.symbol}}</td>
+        <td class="p-quantity-column">{{holding.quantity}}</td>
+        <td class="p-value-column">{{to-dollar holding.teamSelected.value}}</td>
+        <td class="p-plus-minus-column">{{to-dollar holding.teamSelected.twoMatchTrend}}</td>
+        <td class="p-profit-loss-column">{{to-dollar holding.profitLoss}}</td>
+        {{/each}}
+      </tr>
+    </table>
+  </div>
 
-  <div class="user-portfolio">
-    <i class="fa fa-folder-open-o fa-2x user-port-i"></i>
-    <h2 class="username-portfolio-title">{{session.currentUser.username}} Portfolio</h2>
-    <ul class="username-portfolio">
-      <li class="user-capital">Capital: ${{session.currentUser.capital}}</li>
-      <li class="user-worth">Worth: ${{session.currentUser.worth}}</li>
-      <li class="user-deposits">Deposits: 09/15/15 ~ $100,000</li>
-    </ul>
+  <div class="outer-user-portfolio">
+    <div class="user-portfolio">
+      <i class="fa fa-folder-open-o fa-2x user-port-i"></i>
+      <h2 class="username-portfolio-title">{{session.currentUser.username}} Portfolio</h2>
+      <ul class="username-portfolio">
+        <li class="user-capital">Capital:{{to-dollar session.currentUser.capital}}</li>
+        <li class="user-worth">Worth:{{to-dollar session.currentUser.worth}}</li>
+        <li class="user-deposits">Deposits: 09/15/15 ~ $100,000</li>
+      </ul>
+    </div>
   </div>
 
 </div>

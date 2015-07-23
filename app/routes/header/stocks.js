@@ -53,6 +53,7 @@ export default Ember.Route.extend({
       }
       return model;
     }.bind(this));
+  
   },
 
   actions: {

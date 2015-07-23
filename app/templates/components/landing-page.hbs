@@ -18,91 +18,99 @@
   {{/link-to}}
   </div>
 
-</div>
+  <div class="dashboard-page">
 
-<div class="dashboard-page">
+    <h1 class="dashboard-title">Dashboard</h1>
 
-  <h1 class="dashboard-title">Dashboard</h1>
+    <div class="outer-recent-games">
+      <table class="dashboard-recent-games">
+        <i class="fa fa-users fa-2x d-recent-games-icon"></i>
+        <h2 class="d-recent-games">Recent Games</h2>
+        <tr class="d-recent-games-list">
+          <th class="d-date">Date</th>
+          <th class="d-home">Home</th>
+          <th class="d-away">Away</th>
+          <th class="d-score">Score</th>
+        </tr>
 
-  <table class="dashboard-recent-games">
-    <h2 class="d-recent-games">Recent Games</h2>
-    <tr class="d-recent-games-list">
-      <th class="d-date">Date</th>
-      <th class="d-home">Home</th>
-      <th class="d-away">Away</th>
-      <th class="d-score">Score</th>
-    </tr>
+        {{#each model.matches as |game|}}
+        <tr class="d-recent-games-data">
+          <td class="d-date-column">{{game.date}}</td>
+          <td class="d-home-column">{{game.home.Teams}}</td>
+          <td class="d-away-column">{{game.away.Teams}}</td>
+          <td class="d-score-column">{{game.homeGoals}}-{{game.awayGoals}}</td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
 
-    {{#each model.matches as |game|}}
-    <tr class="d-recent-games-data">
-      <td class="d-date-column">{{game.date}}</td>
-      <td class="d-home-column">{{game.home.Teams}}</td>
-      <td class="d-away-column">{{game.away.Teams}}</td>
-      <td class="d-score-column">{{game.homeGoals}}-{{game.awayGoals}}</td>
-    </tr>
-    {{/each}}
-  </table>
+    <div class="outer-top-stocks">
+      <table class="dashboard-top-stocks">
+        <i class="fa fa-line-chart fa-2x d-top-stocks-icon"></i>
+        <h2 class="d-top-stocks">Top Stocks</h2>
+        <tr class="d-top-stocks-list">
+          <th class="d-symbol">Sym</th>
+          <th class="d-name">Name</th>
+          <th class="d-league">League</th>
+          <th class="d-value">Value</th>
+        </tr>
 
-
-  <table class="dashboard-top-stocks">
-    <h2 class="d-top-stocks">Top Stocks</h2>
-    <tr class="d-top-stocks-list">
-      <th class="d-symbol">Sym</th>
-      <th class="d-name">Name</th>
-      <th class="d-value">Value</th>
-      <th class="d-streak">Streak</th>
-    </tr>
-
-    {{#each model.teams as |stock|}}
-    <tr class="d-top-stocks-data">
-      <td class="d-symbol-column">{{stock.symbol}}</td>
-      <td class="d-name-column">{{stock.Teams}}</td>
-      <td class="d-value-column">{{stock.value}}</td>
-      <td class="d-streak-column">{{stock.streak}}</td>
-    </tr>
-    {{/each}}
-  </table>
+        {{#each model.teams as |stock|}}
+        <tr class="d-top-stocks-data">
+          <td class="d-symbol-column">{{stock.symbol}}</td>
+          <td class="d-name-column">{{stock.Teams}}</td>
+          <td class="d-league-column">{{stock.Name}}</td>
+          <td class="d-value-column">${{stock.value}}</td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
 
 
-  <div class="both-trending">
-    <table class="dashboard-trending-up">
-      <h2 class="dashboard-trending-teams">Trending Teams</h2>
-      <h2 class="dashboard-trending-up-title">Up</h2>
-      <tr class="trending-up">
-        <th class="tud-symbol">Sym</th>
-        <th class="tud-name">Name</th>
-        <th class="tud-rank-jump">Rank Jump</th>
-        <th class="tud-stock-jump">Stock Jump</th>
-      </tr>
+    <div class="both-trending">
+      <table class="dashboard-trending-up">
+        <h2 class="dashboard-trending-teams">Trending Teams</h2>
+        <h2 class="dashboard-trending-up-title">Up</h2>
+        <i class="fa fa-level-up fa-2x trending-up-icon"></i>
+        <tr class="trending-up">
+          <th class="tud-symbol">Sym</th>
+          <th class="tud-name">Name</th>
+          <th class="tud-rank-jump">Value</th>
+          <th class="tud-stock-jump">Last 3</th>
+        </tr>
 
-      {{#each model.trendingUp as |team|}}
-      <tr class="trending-up-teams">
-        <td class="tud-symbol-column">{{team.symbol}}</td>
-        <td class="tud-name-column">{{team.Teams}}</td>
-        <td class="tud-rank-jump-column">+7</td>
-        <td class="tud-stock-jump-column">$5.37</td>
-      </tr>
-      {{/each}}
-    </table>
+        {{#each model.trendingUp as |team|}}
+        <tr class="trending-up-teams">
+          <td class="tud-symbol-column">{{team.symbol}}</td>
+          <td class="tud-name-column">{{team.Teams}}</td>
+          <td class="tud-rank-jump-column">${{team.value}}</td>
+          <td class="tud-stock-jump-column">{{team.twoMatchTrend}}</td>
+        </tr>
+        {{/each}}
+      </table>
 
-    <table class="dashboard-trending-down">
-      <h2 class="dashboard-trending-down-title">Down</h2>
-      <tr class="trending-down">
-        <th class="tdd-symbol">Sym</th>
-        <th class="tdd-name">Name</th>
-        <th class="tdd-rank-drop">Rank Drop</th>
-        <th class="tdd-stock-drop">Stock Drop</th>
-      </tr>
+      <table class="dashboard-trending-down">
+        <h2 class="dashboard-trending-down-title">Down</h2>
+        <i class="fa fa-level-down fa-2x trending-down-icon"></i>
+        <tr class="trending-down">
+          <th class="tdd-symbol">Sym</th>
+          <th class="tdd-name">Name</th>
+          <th class="tdd-rank-drop">Value</th>
+          <th class="tdd-stock-drop">Last 3</th>
+        </tr>
 
-      {{#each model.trendingDown as |team|}}
-      <tr class="trending-down-teams">
-        <td class="tdd-symbol-column">{{team.symbol}}</td>
-        <td class="tdd-name-column">{{team.Teams}}</td>
-        <td class="tdd-rank-drop-column">-6</td>
-        <td class="tdd-stock-drop-column">$6.11</td>
-      </tr>
-      {{/each}}
-    </table>
+        {{#each model.trendingDown as |team|}}
+        <tr class="trending-down-teams">
+          <td class="tdd-symbol-column">{{team.symbol}}</td>
+          <td class="tdd-name-column">{{team.Teams}}</td>
+          <td class="tdd-rank-drop-column">${{team.value}}</td>
+          <td class="tdd-stock-drop-column">{{team.twoMatchTrend}}</td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+
+
   </div>
 
 

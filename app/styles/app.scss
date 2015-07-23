@@ -38,24 +38,24 @@ body {
 }
 
 .header-box{
-	background-color:rgb(25, 25, 25);
+	background-color:rgb(34, 34, 34);
   padding-top:10px;
   padding-bottom:10px;
-	border-bottom:3px solid rgb(235, 195, 16);
+	border-bottom:3px solid rgb(250, 215, 32);
 
-  background-image: linear-gradient(
-		to right,
-		rgb(25, 25, 25),
-		rgb(35, 15, 15),
-		rgb(55, 5, 5),
-		rgb(105, 0, 0),
-		rgb(150, 0, 0)
-	);
+  /* background-image: linear-gradient(
+  		to right,
+  		rgb(25, 25, 25),
+  		rgb(35, 15, 15),
+  		rgb(55, 5, 5),
+  		rgb(105, 0, 0),
+  		rgb(150, 0, 0)
+  	); */
 }
 
 .header-title{
 	text-align:center;
-  color:rgba(235, 195, 16, 1);
+  color:rgb(250, 215, 32);
   font-style:italic;
 	font-family:serif;
 	margin-top:0px;
@@ -68,7 +68,7 @@ body {
   padding-bottom:4px;
 
 	//border-top:3px solid rgb(200, 200, 200);
-	background-color:rgb(25, 25, 25);
+	background-color:rgb(34, 34, 34);
 }
 
 .nav-left{
@@ -79,7 +79,7 @@ body {
   }
 
 	.nav-box-show{
-		background-color:rgb(25, 25, 25);
+		background-color:rgb(34, 34, 34);
 		border:3px solid white;
 		position:absolute;
 		margin-top:10px;
@@ -94,7 +94,7 @@ body {
 		text-align:center;
 		margin:0px;
 		a{
-			color:rgb(235, 195, 16);
+			color:rgb(235, 235, 235);
 			text-decoration:none;
 		}
 	}
@@ -116,7 +116,7 @@ body {
 		margin:0px;
 		text-align:center;
 		a{
-			color:rgb(235, 195, 16);
+			color:white;
 			text-decoration:none;
 		}
 	}
@@ -139,15 +139,15 @@ body {
 	font-size:20px;
   background:none;
   border:none;
-	color:white;
+	color:rgb(235, 235, 235);
 }
 
 .userbox-title{
-	color:white;
+	color:rgb(235, 235, 235);
 }
 
 .userbox-icon{
-	color:white;
+	color:rgb(235, 235, 235);
 }
 
 /* .user-box-show{
@@ -163,8 +163,8 @@ body {
 } */
 
 .user-box-content{
-	background-color:black;
-	color:rgb(25, 25, 25);
+	background-color:rgb(34, 34, 34);
+	color:rgb(34, 34, 34);
 	border:3px solid white;
 	position:absolute;
 	margin-top:10px;
@@ -174,9 +174,9 @@ body {
 .userbox-capital,
 .userbox-status{
 	padding:10px;
-	color:rgb(235, 195, 16);
+	color:white;
 	margin:0px;
-	border-bottom:1px solid white;
+	border-bottom:1px solid rgb(235, 235, 235);
 	text-align:center;
 }
 
@@ -202,22 +202,22 @@ body {
 	padding:5px;
 	border-radius:5px;
 	background:none;
-	color:white;
+	color:rgb(235, 235, 235);
 	font-weight:bold;
 }
 
 //Landing
 
 .landing-login-box{
-	background-color:rgb(25, 25, 25);
-	border:3px solid rgb(235, 195, 16);
+	background-color:rgb(34, 34, 34);
+	border:3px solid white;
 }
 
 .login-header{
 	text-align:center;
 	margin:0px;
 	padding-top:10px;
-	color:white;
+	color:rgb(235, 235, 235);
 	font-size:35px;
 }
 
@@ -226,14 +226,15 @@ body {
 	text-align:center;
 	padding-top:30px;
 	padding-bottom:10px;
-	padding-left:10%;
+	padding-left:25%;
 }
 
 .email-signup{
 	font-size:20px;
+	font-weight:bold;
 	border-radius:5px;
 	background:none;
-	background-color:white;
+	background-color:rgb(235, 235, 235);
 }
 
 .user-login-link-box{
@@ -242,20 +243,22 @@ body {
 	padding-top:30px;
 	padding-bottom:10px;
 	float:right;
-	padding-right:10%;
+	padding-right:25%;
 }
 
 .user-login-link{
 	font-size:20px;
+	font-weight:bold;
 	border-radius:5px;
 	background:none;
-	color:white;
+	background-color:rgb(235, 235, 235);
+	color:rgb(34, 34, 34);
 }
 
 //Login-Page
 
 body{
-	background-color:rgb(25, 25, 25);
+	background-color:rgb(34, 34, 34);
 	height:700px;
 }
 
@@ -266,25 +269,25 @@ body{
 .login-title{
 	//width:70%;
 	//margin-left:15%;
-	color:white;
+	color:rgb(235, 235, 235);
 	text-align:center;
 	margin:0px;
 	padding-bottom:5px;
-	background-image: linear-gradient(
+	/* background-image: linear-gradient(
 		to right,
 		rgb(25, 25, 25),
 		rgb(35, 15, 15),
 		rgb(55, 5, 5),
 		rgb(105, 0, 0),
 		rgb(150, 0, 0)
-	);
+	); */
 }
 
 .login-page-form{
 	@include outer-container(100%);
 	width:70%;
 	margin-top:200px;
-	border:5px solid rgb(235, 195, 16);
+	border:5px solid white;
 	margin:0px;
 	margin-left:15%;
 
@@ -293,14 +296,14 @@ body{
 .login-username{
 	display:block;
 	text-align:center;
-	padding-left:25%;
+	margin-left:38%;
 	margin-top:20px;
 }
 
 .login-password{
 	display:block;
 	text-align:center;
-	padding-left:25%;
+	margin-left:38%;
 	margin-top:20px;
 }
 
@@ -308,42 +311,48 @@ body{
 	display:block;
 	text-align:center;
 	margin-top:20px;
-	margin-left:34px;
+	margin-left:43%;
 	margin-bottom:20px;
 	font-weight:bold;
 	padding:10px;
 	border-radius:5px;
-	background-color:rgb(235, 195, 16);
+	background-color:rgb(235, 235, 235);
+	font-size:16px;
 }
 
 //Portfolio
 
 .portfolio-page{
-	background-color:rgb(25, 25, 25);
+	background-color:rgb(34, 34, 34);
 	height:auto;
 	padding-bottom:50px;
 }
 
 .portfolio{
-	color:white;
+	color:rgb(235, 235, 235);
 	margin:0px;
 	padding-top:30px;
 	padding-left:4%;
 	display:inline-block;
 }
 
+.outer-stock-holdings{
+	@include outer-container(100%);
+	width:92%;
+	background-color:rgb(235, 235, 235);
+	margin-top:20px;
+	border-radius:5px;
+	border:3px solid white;
+}
+
 .stock-holdings{
 	@include outer-container(100%);
 	width:92%;
-	background-color:white;
-	margin-top:20px;
-	border-radius:5px;
-	border:3px solid rgb(235, 195, 16);
 }
 
 .current-holdings-icon{
 	display:inline-block;
-	padding-left:1%;
+	//padding-left:1%;
 }
 
 .current-stock-holdings{
@@ -351,7 +360,7 @@ body{
 	margin:0px;
 	padding-left:.5%;
 	padding-top:20px;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 }
 
 .stock-holdings-list{
@@ -364,26 +373,28 @@ body{
 
 .p-symbol{
 	@include span-columns(2);
+	text-align:left;
+	padding:5px;
 }
 
 .p-quantity{
 	@include span-columns(2);
+	padding:5px;
 }
 
 .p-value{
 	@include span-columns(2);
+	padding:5px;
 }
 
 .p-plus-minus{
-	@include span-columns(2);
+	@include span-columns(3);
+	padding:5px;
 }
 
 .p-profit-loss{
-	@include span-columns(2);
-}
-
-.p-to-date{
-	@include span-columns(2);
+	@include span-columns(3);
+	padding:5px;
 }
 
 .stock-holdings-list-down{
@@ -394,49 +405,55 @@ body{
 
 .p-symbol-column{
 	@include span-columns(2);
+	padding:5px;
 }
 
 .p-quantity-column{
 	@include span-columns(2);
 	text-align:center;
+	padding:5px;
 }
 
 .p-value-column{
 	@include span-columns(2);
 	text-align:center;
+	padding:5px;
 }
 
 .p-plus-minus-column{
-	@include span-columns(2);
+	@include span-columns(3);
 	text-align:center;
+	padding:5px;
 }
 
 .p-profit-loss-column{
-	@include span-columns(2);
+	@include span-columns(3);
 	text-align:center;
+	padding:5px;
 }
 
-.p-to-date-column{
-	@include span-columns(2);
-	text-align:center;
+.outer-user-portfolio{
+	@include outer-container(100%);
+	width:92%;
+	background-color:rgb(235, 235, 235);
+	border-radius:5px;
+	border:3px solid white;
+	margin-top:20px;
 }
 
 .user-portfolio{
 	@include outer-container(100%);
 	width:92%;
-	background-color:white;
-	border-radius:5px;
-	border:3px solid rgb(235, 195, 16);
-	margin-top:20px;
+
 }
 
 .user-port-i{
 	display:inline-block;
-	padding-left:1%;
+	//padding-left:1%;
 }
 
 .username-portfolio-title{
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	padding-left:.5%;
 	padding-top:20px;
 	margin:0px;
@@ -448,6 +465,7 @@ body{
 	margin:0px;
 	font-size:20px;
 	font-weight:bold;
+	padding-left:0px;
 }
 
 .user-capital{
@@ -471,12 +489,12 @@ body{
 
 .dashboard-page{
 	height:auto;
-	background-color:rgb(25, 25, 25);
+	background-color:rgb(34, 34, 34);
 	padding-bottom:50px;
 }
 
 .dashboard-title{
-	color:white;
+	color:rgb(235, 235, 235);
 	margin-top:0px;
 	padding-top:10px;
 	padding-left:4%;
@@ -485,9 +503,9 @@ body{
 .outer-recent-games{
 	@include outer-container(100%);
 	width:92%;
-	border:3px solid rgb(235, 195, 16);
+	border:3px solid white;
 	border-radius:5px;
-	background-color:white;
+	background-color:rgb(235, 235, 235);
 }
 
 .dashboard-recent-games{
@@ -512,7 +530,7 @@ body{
 
 .d-recent-games-list{
 	@include span-columns(12);
-  color:rgb(25, 25, 25);
+  color:rgb(34, 34, 34);
 	padding:5px;
 	//padding-left:4%;
 	font-size:20px;
@@ -521,21 +539,21 @@ body{
 .d-date{
 	@include span-columns(2);
 	font-weight:bold;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:left;
 }
 
 .d-home{
 	@include span-columns(4);
 	font-weight:bold;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:left;
 }
 
 .d-away{
 	@include span-columns(4);
 	font-weight:bold;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:left;
 }
 
@@ -543,7 +561,7 @@ body{
 	@include span-columns(2);
 	text-align:center;
 	font-weight:bold;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 }
 
 .d-recent-games-data{
@@ -578,9 +596,9 @@ body{
 .outer-top-stocks{
 	@include outer-container(100%);
 	width:92%;
-	border:3px solid rgb(235, 195, 16);
+	border:3px solid white;
 	border-radius:5px;
-	background-color:white;
+	background-color:rgb(235, 235, 235);
 	margin-top:20px;
 	padding-bottom:10px;
 }
@@ -614,14 +632,14 @@ body{
 
 .d-top-stocks{
 	display:inline-block;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:left;
 	padding-left:.5%;
 }
 
 .d-top-stocks-list{
 	@include span-columns(12);
-  color:rgb(25, 25, 25);
+  color:rgb(34, 34, 34);
 	padding:5px;
 	//padding-left:4%;
 	font-size:20px;
@@ -630,28 +648,28 @@ body{
 .d-symbol{
 	@include span-columns(2);
 	font-weight:bold;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:left;
 }
 
 .d-name{
 	@include span-columns(4);
 	font-weight:bold;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:left;
 }
 
 .d-value{
 	@include span-columns(3);
 	font-weight:bold;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:center;
 }
 
 .d-league{
 	@include span-columns(3);
 	font-weight:bold;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:left;
 }
 
@@ -698,9 +716,9 @@ body{
 	@include outer-container(100%);
 	width:92%;
 	margin-top:20px;
-	background-color:white;
+	background-color:rgb(235, 235, 235);
 	border-radius:5px;
-	border:3px solid rgb(235, 195, 16);
+	border:3px solid white;
 }
 
 .dashboard-trending-up{
@@ -724,14 +742,14 @@ body{
 }
 
 .dashboard-trending-teams{
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:center;
 }
 
 .dashboard-trending-up-title{
 	display:inline-block;
 	//width:100%;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 }
 
 .trending-up-icon{
@@ -807,7 +825,7 @@ body{
 
 .dashboard-trending-down-title{
 	display:inline-block;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 }
 
 .trending-down-icon{
@@ -841,7 +859,7 @@ body{
 
 .trending-down{
   @include span-columns(12);
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	//padding:5px;
 	font-size:20px;
 	font-weight:bold;
@@ -902,7 +920,7 @@ body{
 
 .top-stocks-page{
   height:auto;
-  background-color:rgb(25, 25, 25);
+  background-color:rgb(34, 34, 34);
 	padding-bottom:50px;
 }
 
@@ -910,7 +928,7 @@ body{
 
 .research-top-stocks{
   //display:inline-block;
-	color:white;
+	color:rgb(235, 235, 235);
   margin-top:0px;
 	padding-top:30px;
 	padding-left:4%;
@@ -919,7 +937,7 @@ body{
 .top-stocks-header{
 	@include outer-container(100%);
 	width:92%;
-	background-color:white;
+	background-color:rgb(235, 235, 235);
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
 }
@@ -930,14 +948,14 @@ body{
 
 .top-stocks-title{
   display:inline-block;
-  color:rgb(25, 25, 25);
+  color:rgb(34, 34, 34);
 	padding-left:.5%;
 }
 
 .number-of-stocks{
   display:inline-block;
   float:right;
-  color:rgb(25, 25, 25);
+  color:rgb(34, 34, 34);
 	padding-right:4%;
 	padding-top:25px;
 	vertical-align:bottom;
@@ -952,7 +970,7 @@ body{
 	@include outer-container(100%);
 	width:92%;
 	border-collapse:collapse;
-	border:2px solid black;
+	//border:2px solid black;
 	border-radius:10px;
 }
 
@@ -980,24 +998,24 @@ body{
 }
 
 .top-stocks-options th{
-	color:black;
+	color:rgb(34, 34, 34);
 }
 
 .ts-symbol{
 	@include span-columns(2);
-	text-decoration:underline;
+	//text-decoration:underline;
 	text-align:left;
 	padding:5px;
 }
 .ts-name{
 	@include span-columns(4);
-	text-decoration:underline;
+	//text-decoration:underline;
 	text-align:left;
 	padding:5px;
 }
 .ts-value{
 	@include span-columns(3);
-	text-decoration:underline;
+	//text-decoration:underline;
 	padding:5px;
 }
 /* .ts-streak{
@@ -1007,7 +1025,7 @@ body{
 } */
 .ts-league{
 	@include span-columns(3);
-	text-decoration:underline;
+	//text-decoration:underline;
 	text-align:left;
 	padding:5px;
 }
@@ -1034,7 +1052,7 @@ body{
 
 .name-column:hover{
 	font-weight:bold;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 }
 
 .league-column{
@@ -1063,13 +1081,13 @@ body{
 
 .team-stocks-page{
 	height:auto;
-	background-color:rgb(25, 25, 25);
+	background-color:rgb(34, 34, 34);
 	padding-bottom:50px;
 }
 
 .stock-header-title{
 	margin:0px;
-	color:white;
+	color:rgb(235, 235, 235);
 	padding-left:4%;
 	padding-top:30px;
 	padding-bottom:20px;
@@ -1080,31 +1098,32 @@ body{
 	width:92%;
 	margin-left:4%;
 	padding-top:20px;
-	background-color:white;
+	background-color:rgb(235, 235, 235);
 	border-radius:5px;
-	border:3px solid rgb(235, 195, 16);
+	border:3px solid white;
 }
 
 .stock-name{
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	text-align:center;
 	padding-top:5px;
 	margin:0px;
 	padding-left:4%;
 	padding-bottom:15px;
-	border-bottom:1px solid rgb(25, 25, 25);
-	background-color:rgb(235, 195 ,16);
+	border-top:1px solid rgb(34, 34, 34);
+	border-bottom:1px solid rgb(34, 34, 34);
+	background-color:rgb(250, 215, 32);
 }
 
 .stock-league{
 	padding-top:20px;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	margin:0px;
 	padding-left:4%;
 }
 
 .stock-symbol{
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	margin-top:15px;
 	padding-left:4%;
 	display:inline-block;
@@ -1112,7 +1131,7 @@ body{
 
 .stock-value{
 	padding-top:15px;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 	margin:0px;
 	display:inline-block;
 	padding-left:4%;
@@ -1120,10 +1139,10 @@ body{
 
 .stock-recents{
 	width:92%;
-	background-color:white;
+	background-color:rgb(235, 235, 235);
 	@include outer-container(100%);
 	border-radius: 5px;
-	border:3px solid rgb(235, 195, 16);
+	border:3px solid white;
 	margin-top:30px;
 }
 
@@ -1197,21 +1216,22 @@ body{
 	text-align:center;
 }
 
-.performance-title{
+/* .performance-title{
 	color:white;
 	padding-left:4%;
 	padding-top:30px;
 	margin:0px;
 	padding-bottom:15px;
-}
+} */
 
 .buy-sell-stocks{
-	background-color:white;
+	background-color:rgb(235, 235, 235);
 	//background-color:rgba(235, 195, 16, .9);
 	@include outer-container(100%);
 	width:92%;
 	border-radius:5px;
-	border:3px solid rgb(235, 195, 16);
+	border:3px solid white;
+	margin-top:30px;
 }
 
 .trade-stock-header{
@@ -1261,7 +1281,7 @@ body{
 .stock-input{
 	display:inline-block;
 	font-size:14px;
-	border:1px solid black;
+	border:1px solid rgb(34, 34, 34);
 	text-align:center;
 }
 
@@ -1271,7 +1291,7 @@ body{
 	font-size:14px;
 	border-radius:5px;
 	background-color:white;
-	color:rgb(25, 25, 25);
+	color:rgb(34, 34, 34);
 }
 
 .trade-stock-bottom{
@@ -1290,47 +1310,47 @@ body{
 
 .help-page{
 	@include outer-container(100%);
-	background-color:rgb(25, 25, 25);
+	background-color:rgb(34, 34, 34);
 	padding-bottom:50px;
 }
 
 .how-to-play{
 	@include outer-container(100%);
 	width:92%;
-	color:white;
+	color:rgb(235, 235, 235);
 }
 
 .how-to-play-title{
 	margin:0px;
 	text-align:center;
 	padding-top:30px;
-	color:rgb(235, 195, 16);
+	color:rgb(250, 215, 32);
 }
 
 .scoring-breakdown{
 	@include outer-container(100%);
 	width:92%;
-	color:white;
+	color:rgb(235, 235, 235);
 }
 
 .scoring-breakdown-title{
 	margin:0px;
 	text-align:center;
 	padding-top:30px;
-	color:rgb(235, 195, 16);
+	color:rgb(250, 215, 32);
 }
 
 .navigation-instructions{
 	@include outer-container(100%);
 	width:92%;
-	color:white;
+	color:rgb(235, 235, 235);
 }
 
 .nav-example{
 	margin:0px;
 	text-align:center;
 	padding-top:30px;
-	color:rgb(235, 195, 16);
+	color:rgb(250, 215, 32);
 }
 
 .help-to-dashboard{
@@ -1339,7 +1359,7 @@ body{
 	padding-top:30px;
 	text-align:center;
 		a{
-			color:rgb(235, 195, 16);
+			color:rgb(250, 215, 32);
 		}
 }
 
