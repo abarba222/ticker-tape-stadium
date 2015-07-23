@@ -64,7 +64,7 @@
         <td class="tud-symbol-column">{{team.symbol}}</td>
         <td class="tud-name-column">{{link-to team.Teams "header.stocks" stock.id}}</td>
         <td class="tud-rank-jump-column">{{to-dollar team.value}}</td>
-        <td class="tud-stock-jump-column">{{to-dollar team.twoMatchTrend}}</td>
+        <td class="tud-stock-jump-column">{{to-dollar team.threeMatchTrend}}</td>
       </tr>
       {{/each}}
     </table>
@@ -84,7 +84,7 @@
         <td class="tdd-symbol-column">{{team.symbol}}</td>
         <td class="tdd-name-column">{{link-to team.Teams "header.stocks" stock}}</td>
         <td class="tdd-rank-drop-column">{{to-dollar team.value}}</td>
-        <td class="tdd-stock-drop-column">{{to-dollar team.twoMatchTrend}}</td>
+        <td class="tdd-stock-drop-column">{{to-dollar team.threeMatchTrend}}</td>
       </tr>
       {{/each}}
     </table>

@@ -22,6 +22,10 @@ export default Ember.Route.extend(AuthenticatedRouteMixin,{
           //   return Ember.get(shares, 'firstObject');
           // })
         }
+      }).then(function(shares){
+        return shares.filter(function(s){
+          return s.get('quantity') > 0;
+        });
       })
     });
   }

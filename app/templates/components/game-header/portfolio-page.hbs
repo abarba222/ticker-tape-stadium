@@ -17,7 +17,7 @@
 
       {{#each model.myShares as |holding|}}
       <tr class="stock-holdings-list-down">
-        <td class="p-symbol-column">{{holding.teamSelected.symbol}}</td>
+        <td class="p-symbol-column">{{link-to holding.teamSelected.symbol 'header.stocks' holding.teamSelected.id}}</td>
         <td class="p-quantity-column">{{holding.quantity}}</td>
         <td class="p-value-column">{{to-dollar holding.teamSelected.value}}</td>
         <td class="p-plus-minus-column">{{to-dollar holding.teamSelected.twoMatchTrend}}</td>
@@ -34,7 +34,7 @@
       <ul class="username-portfolio">
         <li class="user-capital">Capital:{{to-dollar session.currentUser.capital}}</li>
         <li class="user-worth">Worth:{{to-dollar session.currentUser.worth}}</li>
-        <li class="user-deposits">Deposits: 09/15/15 ~ $100,000</li>
+        <li class="user-deposits">Deposits: Jul 15th 2015 ~ $100,000</li>
       </ul>
     </div>
   </div>

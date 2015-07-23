@@ -53,8 +53,8 @@
     <div class="trade-stock-action">
       <button class="buy-sell-action">
         <div class="action-actions">
-            <button id="buy-color" class="buy-action" {{action 'buy'}}>Buy</button>
-            <button id="sell-color" class="sell-action" {{action 'sell'}}>Sell</button>
+            <button id="buy-color" {{bind-attr class="isBuying:active :buy-action"}} {{action 'buy'}}>Buy</button>
+            <button id="sell-color" {{bind-attr class="isBuying::active :sell-action"}} {{action 'sell'}}>Sell</button>
         </div>
       </button>
       {{input class="stock-input" type="text" value=quantity placeholder="Quantity"}}

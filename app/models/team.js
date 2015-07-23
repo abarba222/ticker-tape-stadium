@@ -8,5 +8,6 @@ export default DS.Model.extend({
   rank: DS.attr('number'),
   Name: DS.attr('string'),
   twoMatchTrend: DS.attr('number'),
-  
+  threeMatchTrend: DS.attr('number')
+
 });

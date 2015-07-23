@@ -6,6 +6,7 @@ export default Ember.Route.extend({
       user: this.get('session.currentUser'),
       team: this.store.find('team', params.team_id),
       recent: this.store.findQuery('match', {
+        order: '-date',
         where: {
           $or: [
             {
@@ -53,7 +54,7 @@ export default Ember.Route.extend({
       }
       return model;
     }.bind(this));
-  
+
   },
 
   actions: {

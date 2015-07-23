@@ -56,8 +56,8 @@ body {
 .header-title{
 	text-align:center;
   color:rgb(250, 215, 32);
-  font-style:italic;
-	font-family:serif;
+  //font-style:italic;
+	font-family:open-sans;
 	margin-top:0px;
 	margin-bottom:0px;
 }
@@ -168,6 +168,7 @@ body {
 	border:3px solid white;
 	position:absolute;
 	margin-top:10px;
+	//margin-right:10%;
 }
 
 .userbox-username,
@@ -424,6 +425,14 @@ body{
 .p-symbol-column{
 	@include span-columns(2);
 	padding:5px;
+	a{
+		text-decoration:none;
+		color:inherit;
+	}
+}
+
+.p-symbol-column:hover{
+	font-weight:bold;
 }
 
 .p-quantity-column{
@@ -1350,6 +1359,11 @@ body{
 	color:white;
 	border-radius:5px;
 	padding:3px;
+}
+
+.buy-action.active,
+.sell-action.active {
+	border-style: inset;
 }
 
 .stock-input{

@@ -2,8 +2,27 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function(){
-    return this.store.findAll('team', {
+    return this.store.findQuery('team', {
+      order: '-value'
     });
+  },
+
+      // actions: {
+      //   sort: function(){
+      //     return this.store.findQuery('team', {
+      //       if (this.sendAction.('all-click')){
+      //         return limit: 100;
+      //       } else if (this.sendAction.('fifty-click')){
+      //         return limit: 50;
+      //       } else if (this.sendAction.('twenty-five-click')){
+      //         return limit: 25;
+      //       } else if (this.sendAction.('ten-click')){
+      //         return limit: 10;
+      //       }
+      //     }
+      //   )}
+      // },
+  });
     // .then(function() {
     //   return Ember.RSVP.hash({
     //     teams: this.store.findQuery('team', {
@@ -23,8 +42,7 @@ export default Ember.Route.extend({
     //   {value: 'value'},
     //   {streak: 'streak'}
     // ];
-  }
-});
+
 
 //App.TopStocksComponent = Ember.Component.extend(Ember.SortableMixin, {
 

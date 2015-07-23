@@ -48,21 +48,21 @@ total: function(){
 
     buy: function(){
       this.set('isBuying', true);{
-      if(this.get('isBuying', true)){
-        return document.getElementById("sell-color").style.color = "rgb(34, 34, 34)";
-      } else {
-        return document.getElementById("buy-color").style.color = "rgb(34, 34, 34)";
-      }
+      // if(this.get('isBuying', true)){
+      //   return document.getElementById("sell-color").style.color = "rgb(34, 34, 34)";
+      // } else {
+      //   return document.getElementById("buy-color").style.color = "rgb(34, 34, 34)";
+      // }
     }
   },
 
     sell: function(){
       this.set('isBuying', false);{
-        if(this.get('isBuying', false)){
-          return document.getElementById("buy-color").style.color = "rgb(34, 34, 34)";
-        } else {
-          return document.getElementById("sell-color").style.color = "rgb(34, 34, 34)";
-      }
+      //   if(this.get('isBuying', false)){
+      //     return document.getElementById("buy-color").style.color = "rgb(34, 34, 34)";
+      //   } else {
+      //     return document.getElementById("sell-color").style.color = "rgb(34, 34, 34)";
+      // }
     }
   },
 

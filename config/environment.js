@@ -21,10 +21,10 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self'",
-      'font-src': "'self'",
+      'font-src': "'self' *.gstatic.com",
       'connect-src': "'self' api.parse.com",
       'img-src': "'self'",
-      'style-src': "'self'",
+      'style-src': "'self' *.googleapis.com",
       'media-src': "'self'"
     },
 
