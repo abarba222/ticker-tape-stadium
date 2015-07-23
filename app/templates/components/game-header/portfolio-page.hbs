@@ -15,15 +15,15 @@
         <th class="p-profit-loss">P/L</th>
       </tr>
 
+      {{#each model.myShares as |holding|}}
       <tr class="stock-holdings-list-down">
-        {{#each model.myShares as |holding|}}
         <td class="p-symbol-column">{{holding.teamSelected.symbol}}</td>
         <td class="p-quantity-column">{{holding.quantity}}</td>
         <td class="p-value-column">{{to-dollar holding.teamSelected.value}}</td>
         <td class="p-plus-minus-column">{{to-dollar holding.teamSelected.twoMatchTrend}}</td>
         <td class="p-profit-loss-column">{{to-dollar holding.profitLoss}}</td>
-        {{/each}}
       </tr>
+      {{/each}}
     </table>
   </div>
 

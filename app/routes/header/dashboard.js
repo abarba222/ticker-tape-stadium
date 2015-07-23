@@ -17,12 +17,12 @@ export default Ember.Route.extend({
 
       trendingUp: this.store.findQuery('team', {
         limit: 5,
-        order: '-value'
+        order: '-threeMatchTrend'
       }),
 
       trendingDown: this.store.findQuery('team', {
         limit: 5,
-        order: 'value'
+        order: 'threeMatchTrend'
       }),
 
     //   realValue: function(formatted, realValue){

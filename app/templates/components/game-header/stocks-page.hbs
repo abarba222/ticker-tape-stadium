@@ -20,9 +20,18 @@
         <th class="t-score">Score</th>
       </tr>
 
-  {{log 'model.recent' model.recent}}
+
       {{#each model.recent as |match|}}
-        {{recent-match match=match}}
+      <tr class="recent-match-info">
+        <td class="t-date-column">{{format-date match.date}}</td>
+        <td class="t-home-column">{{match.home.Teams}}
+          <span class="t-home-column-score">{{to-dollar match.share.teamSelected.twoMatchTrend}}</span>
+        </td>
+        <td class="t-away-column">{{match.away.Teams}}
+          <span class="t-away-column-score">{{to-dollar match.teamSelected.twoMatchTrend}}</span>
+        </td>
+        <td class="t-score-column">{{match.homeGoals.length}} - {{match.awayGoals.length}}</td>
+      </tr>
       {{/each}}
 
     </table>
@@ -30,6 +39,7 @@
 
 
   {{!-- <div class="team-stock-performance">
+    {{recent-match match=match}}
     <h2 class="performance-title">Performance</h2>
   </div> --}}
 
@@ -43,8 +53,8 @@
     <div class="trade-stock-action">
       <button class="buy-sell-action">
         <div class="action-actions">
-            <button class="buy-action" {{action 'buy'}}>Buy</button>
-            <button class="sell-action" {{action 'sell'}}>Sell</button>
+            <button id="buy-color" class="buy-action" {{action 'buy'}}>Buy</button>
+            <button id="sell-color" class="sell-action" {{action 'sell'}}>Sell</button>
         </div>
       </button>
       {{input class="stock-input" type="text" value=quantity placeholder="Quantity"}}

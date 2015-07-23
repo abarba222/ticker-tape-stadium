@@ -7,6 +7,13 @@ isBuying: true,
 // showBuy: true,
 // showSell: true,
 
+
+date: function(){
+  var date = this.get('match.date');
+  return  (moment(date).format("MMM Do YYYY"));
+
+}.property('match.date'),
+
 total: function(){
   return this.get('model.team.value') * Number(this.get('quantity'));
 }.property("model.team.value", "quantity"),
@@ -40,12 +47,24 @@ total: function(){
     },
 
     buy: function(){
-      this.set('isBuying', true);
-    },
+      this.set('isBuying', true);{
+      if(this.get('isBuying', true)){
+        return document.getElementById("sell-color").style.color = "rgb(34, 34, 34)";
+      } else {
+        return document.getElementById("buy-color").style.color = "rgb(34, 34, 34)";
+      }
+    }
+  },
 
     sell: function(){
-      this.set('isBuying', false);
-    },
+      this.set('isBuying', false);{
+        if(this.get('isBuying', false)){
+          return document.getElementById("buy-color").style.color = "rgb(34, 34, 34)";
+        } else {
+          return document.getElementById("sell-color").style.color = "rgb(34, 34, 34)";
+      }
+    }
+  },
 
   //   toggleBuy: function(){
   //

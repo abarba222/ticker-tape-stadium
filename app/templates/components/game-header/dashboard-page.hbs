@@ -62,7 +62,7 @@
       {{#each model.trendingUp as |team|}}
       <tr class="trending-up-teams">
         <td class="tud-symbol-column">{{team.symbol}}</td>
-        <td class="tud-name-column">{{link-to team.Teams "header.stocks" stock}}</td>
+        <td class="tud-name-column">{{link-to team.Teams "header.stocks" stock.id}}</td>
         <td class="tud-rank-jump-column">{{to-dollar team.value}}</td>
         <td class="tud-stock-jump-column">{{to-dollar team.twoMatchTrend}}</td>
       </tr>

@@ -9,25 +9,23 @@ export default Ember.Route.extend(UnauthenticatedRouteMixin, {
     return Ember.RSVP.hash({
       teams: this.store.findQuery('team', {
         limit: 10,
-        order: 'value',
-        descending: 'value'
+        order: '-value',
       }),
 
       matches: this.store.findQuery('match', {
         limit: 5,
-        order: 'date'
+        order: '-date'
       }),
 
       trendingUp: this.store.findQuery('team', {
         limit: 5,
-        order: 'value',
-        descending: 'value'
+        order: '-threeMatchTrend',
+
       }),
 
       trendingDown: this.store.findQuery('team', {
         limit: 5,
-        order: 'value',
-        ascending: 'value'
+        order: 'threeMatchTrend',
       }),
 
 
